@@ -1,0 +1,188 @@
+﻿@model AutomaxWebSite.Models.Vehicle
+@using Our.Umbraco.Vorto.Extensions
+
+@{
+    Layout = "MobileMasterTemplate.cshtml";
+    var model = Model;
+    var title = Model.Information.YearID + " " + Model.Information.VehicleMake + " " + Model.Information.AutoModelID;
+    Model.Vir.Exterior.Heading = Model.Content.GetVortoValue<string>("exteriorHeading");
+    Model.Vir.Interior.Heading = Model.Content.GetVortoValue<string>("interiorHeading");
+    Model.Vir.Frame.Heading = Model.Content.GetVortoValue<string>("frameHeading");
+    Model.Vir.Mechanics.Heading = Model.Content.GetVortoValue<string>("mechanicsHeading");
+
+    Model.Vir.Exterior.Part = Model.Content.GetVortoValue<string>("part");
+    Model.Vir.Exterior.Condition = Model.Content.GetVortoValue<string>("condition");
+
+    Model.Vir.Interior.Part = Model.Content.GetVortoValue<string>("part");
+    Model.Vir.Interior.Condition = Model.Content.GetVortoValue<string>("condition");
+
+    Model.Vir.Mechanics.Part = Model.Content.GetVortoValue<string>("part");
+    Model.Vir.Mechanics.Condition = Model.Content.GetVortoValue<string>("condition");
+
+    Model.Vir.Frame.Part = Model.Content.GetVortoValue<string>("part");
+    Model.Vir.Frame.Condition = Model.Content.GetVortoValue<string>("condition");
+}
+<link rel="stylesheet" type="text/css" href="/assets/plugins/easypiechart/stylesheets/jquery.easy-pie-chart.css">
+@section mainArea{
+   
+
+    <div class="content-container custom-background">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+               
+               
+                <div class="tab-content">
+                 <div id="vir_tab" class="tab-pane fade in active margin-none">
+                        <div class="panel panel-default border-top-none">
+                            <div class="panel-body">
+                                <div class="item-grade">
+                                    <span class="title">@Model.Content.GetVortoValue("overallGrade")</span><br>
+                                    @if (Model.Vir.Ratting > 0)
+                                    {
+                                        <span class="rating">
+                                            @String.Format("{0:0.00}", Model.Vir.Ratting)
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="rating">
+                                            4.0
+                                        </span>
+                                    }
+
+                                </div>
+                                
+                                <div class="row svg-content m-top-30">
+                                    @Html.Partial("~/Views/Partials/MobileVehicle/Exterior.cshtml", Model.Vir.Exterior)
+                                    @Html.Partial("~/Views/Partials/MobileVehicle/Interior.cshtml", Model.Vir.Interior)
+
+                                    @Html.Partial("~/Views/Partials/MobileVehicle/Mechanic.cshtml", Model.Vir.Mechanics)
+                                    @Html.Partial("~/Views/Partials/MobileVehicle/Frame.cshtml", Model.Vir.Frame)
+
+                                    <div id="rating_tab" class="svg-tab @(Request["tab"]=="5"?"active":"") text-center">
+                                        <div class="row">
+                                            <div class="col-md-offset-3 col-lg-offset-3 col-md-6 col-lg-6 rating text-center">
+                                                <div class="title">@Model.Content.GetVortoValue("overallGrade")</div>
+
+                                                @if (Model.Vir.Ratting>0)
+                                                {
+                                                <span class="text">
+                                                    @String.Format("{0:0.00}", Model.Vir.Ratting)
+                                                </span>
+                                                }
+                                                else
+                                                {
+                                                <span class="text">
+                                                    4.0
+                                                </span>
+                                                }
+
+
+                                                @if (Model.Vir.Ratting!=0 && Model.Vir.Ratting < 1)
+                                                          {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("poor")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("poorText")
+                                                </span>
+                                                           }
+                                                          else if (Model.Vir.Ratting > 1 && Model.Vir.Ratting < 2)
+                                                               {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("average")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("averageText")
+                                                </span>
+                                                               }
+                                                    else if (Model.Vir.Ratting > 2 && Model.Vir.Ratting < 3)
+                                                                 {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("good")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("goodText")
+                                                </span>
+                                                                 }
+                                                     else if (Model.Vir.Ratting > 3 && Model.Vir.Ratting < 4)
+                                                                   {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("veryGood")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("veryGoodText")
+                                                </span>
+                                                }
+                                                else if (Model.Vir.Ratting > 4 && Model.Vir.Ratting < 5)
+                                                {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("excellent")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("excellentText")
+                                                </span>
+                                                }
+                                                else
+                                                {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("vexcellent")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("vexcellentText")
+                                                </span>
+                                                }
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+@section jsArea{
+
+    <script>
+
+
+        function Filter() {
+            $("#formFiler").click();
+        }
+        function AddFavorite(id) {
+            $.ajax({
+                type: "GET",
+                url: "/Umbraco/Surface/InventorySurface/AddFavorite",
+                data: { Id: id, isArabic: "@System.Globalization.CultureInfo.CurrentCulture.Name" },
+                success: function (returndata) {
+                    console.log(returndata);
+                    if (returndata.Success) {
+                        $('#successmessage').html(returndata.Message);
+                        $('#successmessage').fadeIn('fast').delay(5000).fadeOut('fast');
+                    }
+                    else {
+                        $('#successmessage').html(returndata.Message);
+                        $('#successmessage').fadeIn('fast').delay(5000).fadeOut('fast');
+                    }
+
+                },
+                failure: function (returndata) {
+                    $('#successmessage').html("There is some issue.Try later");
+                    $('#successmessage').fadeIn('fast').delay(5000).fadeOut('fast');
+
+                }
+            });
+        }
+        
+    </script>
+
+}

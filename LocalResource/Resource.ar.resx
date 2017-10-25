@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Anetenna" xml:space="preserve">
+    <value>هوائي</value>
+  </data>
+  <data name="Audio" xml:space="preserve">
+    <value>سمعي</value>
+  </data>
+  <data name="Backscreen" xml:space="preserve">
+    <value>الشاشة الخلفية</value>
+  </data>
+  <data name="BodyStyle" xml:space="preserve">
+    <value>عنوان السيارة</value>
+  </data>
+  <data name="Condition" xml:space="preserve">
+    <value>شرط</value>
+  </data>
+  <data name="Doors" xml:space="preserve">
+    <value>الأبواب</value>
+  </data>
+  <data name="DriveType" xml:space="preserve">
+    <value>نوع القيادة</value>
+  </data>
+  <data name="ExteriorColor" xml:space="preserve">
+    <value>اللون الخارجي</value>
+  </data>
+  <data name="FrontBumper" xml:space="preserve">
+    <value>المصد الأمامي</value>
+  </data>
+  <data name="FuelType" xml:space="preserve">
+    <value>نوع الوقود</value>
+  </data>
+  <data name="Grill" xml:space="preserve">
+    <value>شواء</value>
+  </data>
+  <data name="Headlight" xml:space="preserve">
+    <value>مصباح أمامي</value>
+  </data>
+  <data name="Hood" xml:space="preserve">
+    <value>غطاء محرك السيارة</value>
+  </data>
+  <data name="InteriorColor" xml:space="preserve">
+    <value>اللون الداخلي</value>
+  </data>
+  <data name="LeftDoor" xml:space="preserve">
+    <value>اليسار الباب</value>
+  </data>
+  <data name="LeftFender" xml:space="preserve">
+    <value>اليسار الحاجز</value>
+  </data>
+  <data name="LeftMirror" xml:space="preserve">
+    <value>اليسار مرآة</value>
+  </data>
+  <data name="LeftQuarter" xml:space="preserve">
+    <value>الربع الأيسر</value>
+  </data>
+  <data name="LMudGuard" xml:space="preserve">
+    <value>غطاء عجلة لجانب اليسار</value>
+  </data>
+  <data name="LRDoor" xml:space="preserve">
+    <value>LR الباب</value>
+  </data>
+  <data name="LtRockerPanel" xml:space="preserve">
+    <value>لوحةرفرفالجانب اليسار</value>
+  </data>
+  <data name="Make" xml:space="preserve">
+    <value>يصنع</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>نموذج</value>
+  </data>
+  <data name="Odometer" xml:space="preserve">
+    <value>عداد المسافات</value>
+  </data>
+  <data name="RearBumper" xml:space="preserve">
+    <value>الصدام الخلفي</value>
+  </data>
+  <data name="RearWindow" xml:space="preserve">
+    <value>النافذة الخلفية</value>
+  </data>
+  <data name="RightMirror" xml:space="preserve">
+    <value>الحق مرآة</value>
+  </data>
+  <data name="RightDoor" xml:space="preserve">
+    <value>الباب الصحيح</value>
+  </data>
+  <data name="RightFender" xml:space="preserve">
+    <value>حق الحاجز</value>
+  </data>
+  <data name="RightQuarter" xml:space="preserve">
+    <value>الربع الصحيح</value>
+  </data>
+  <data name="RMudGuard" xml:space="preserve">
+    <value>غطاء عجلة لجانب الأيمن</value>
+  </data>
+  <data name="Roof" xml:space="preserve">
+    <value>سقف</value>
+  </data>
+  <data name="RRDoor" xml:space="preserve">
+    <value>RR الباب</value>
+  </data>
+  <data name="RRearLight" xml:space="preserve">
+    <value>الخلفية اليمنى</value>
+  </data>
+  <data name="RtRockerPanel" xml:space="preserve">
+    <value>رفرفالجانب الأيمن</value>
+  </data>
+  <data name="Stock" xml:space="preserve">
+    <value>مخزون</value>
+  </data>
+  <data name="TailerHitch" xml:space="preserve">
+    <value>وصلة مقطورة</value>
+  </data>
+  <data name="Transmission" xml:space="preserve">
+    <value>انتقال</value>
+  </data>
+  <data name="TrunkCargo" xml:space="preserve">
+    <value>الجذع / شحن</value>
+  </data>
+  <data name="Vin" xml:space="preserve">
+    <value>فين</value>
+  </data>
+  <data name="Windshield" xml:space="preserve">
+    <value>الزجاج الأمامي</value>
+  </data>
+  <data name="Wipers" xml:space="preserve">
+    <value>مساحات</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>عام</value>
+  </data>
+  <data name="AirBag" xml:space="preserve">
+    <value>وسادة هوائية لل</value>
+  </data>
+  <data name="Battery" xml:space="preserve">
+    <value>البطارية</value>
+  </data>
+  <data name="ClimateControl" xml:space="preserve">
+    <value>مراقبة المناخ</value>
+  </data>
+  <data name="Clutch" xml:space="preserve">
+    <value>التشبث</value>
+  </data>
+  <data name="Console" xml:space="preserve">
+    <value>وحدة التحكم</value>
+  </data>
+  <data name="CowlPanelFirewall" xml:space="preserve">
+    <value>جدار حماية لوحة قلنسوة</value>
+  </data>
+  <data name="Dash" xml:space="preserve">
+    <value>اندفاع</value>
+  </data>
+  <data name="Electrics" xml:space="preserve">
+    <value>الكهربائية</value>
+  </data>
+  <data name="Emissions" xml:space="preserve">
+    <value>انبعاثات</value>
+  </data>
+  <data name="Engine" xml:space="preserve">
+    <value>محرك</value>
+  </data>
+  <data name="Exhaust" xml:space="preserve">
+    <value>العادم</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>الميزات</value>
+  </data>
+  <data name="FloorPans" xml:space="preserve">
+    <value>المقالي الكلمة</value>
+  </data>
+  <data name="FourthRowSeat" xml:space="preserve">
+    <value>مقعد الصف 4TH</value>
+  </data>
+  <data name="FrontAxle" xml:space="preserve">
+    <value>المحور الأمامي</value>
+  </data>
+  <data name="FrontBrakes" xml:space="preserve">
+    <value>الفرامل الأمامية</value>
+  </data>
+  <data name="FrontShocks" xml:space="preserve">
+    <value>أمام الصدمات</value>
+  </data>
+  <data name="FrSeats" xml:space="preserve">
+    <value>مقاعد الاب</value>
+  </data>
+  <data name="FuelTank" xml:space="preserve">
+    <value>خزان الوقود</value>
+  </data>
+  <data name="Gauges" xml:space="preserve">
+    <value>مقاييس</value>
+  </data>
+  <data name="GloveBox" xml:space="preserve">
+    <value>علبة القفازات</value>
+  </data>
+  <data name="Headliner" xml:space="preserve">
+    <value>المتصدر عناوين</value>
+  </data>
+  <data name="InteriorParts" xml:space="preserve">
+    <value>قطع غيار أجزاء داخلية</value>
+  </data>
+  <data name="L" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="Lamp" xml:space="preserve">
+    <value>مصباح</value>
+  </data>
+  <data name="LeftAPillar" xml:space="preserve">
+    <value>غادر دعامة</value>
+  </data>
+  <data name="LeftApron" xml:space="preserve">
+    <value>اليسار المئزر</value>
+  </data>
+  <data name="LeftBPillar" xml:space="preserve">
+    <value>اليسار عمود B</value>
+  </data>
+  <data name="LeftCPillar" xml:space="preserve">
+    <value>اليسار C عمود</value>
+  </data>
+  <data name="LeftDPillar" xml:space="preserve">
+    <value>اليسار D عمود</value>
+  </data>
+  <data name="LeftFrontRail" xml:space="preserve">
+    <value>اليسار جبهة السكك الحديدية</value>
+  </data>
+  <data name="LeftRearLockPillar" xml:space="preserve">
+    <value>اليسار الخلفي قفل عمود</value>
+  </data>
+  <data name="LeftRearRail" xml:space="preserve">
+    <value>اليسار الخلفي السكك الحديدية</value>
+  </data>
+  <data name="LeftStrutTowerApron" xml:space="preserve">
+    <value>اليسار تبختر برج المئزر</value>
+  </data>
+  <data name="LFDoorMechanics" xml:space="preserve">
+    <value>ميكانيكا LF الباب</value>
+  </data>
+  <data name="LFDoorPanel" xml:space="preserve">
+    <value>لوحة الباب LF</value>
+  </data>
+  <data name="LFWheel" xml:space="preserve">
+    <value>LF العجلة</value>
+  </data>
+  <data name="LFWinMechanics" xml:space="preserve">
+    <value>ميكانيكا LF فوز</value>
+  </data>
+  <data name="LRCarpet" xml:space="preserve">
+    <value>LR السجاد</value>
+  </data>
+  <data name="LRDooPanel" xml:space="preserve">
+    <value>لوحة الباب LR</value>
+  </data>
+  <data name="LRDoorMechanics" xml:space="preserve">
+    <value>ميكانيكا LR الباب</value>
+  </data>
+  <data name="LRWheel" xml:space="preserve">
+    <value>LR العجلة</value>
+  </data>
+  <data name="LRWinMechanics" xml:space="preserve">
+    <value>ميكانيكا LR فوز</value>
+  </data>
+  <data name="Manuals" xml:space="preserve">
+    <value>كتيبات</value>
+  </data>
+  <data name="Odor" xml:space="preserve">
+    <value>رائحة</value>
+  </data>
+  <data name="PerimeterFrame" xml:space="preserve">
+    <value>الإطار محيط</value>
+  </data>
+  <data name="PowerSteering" xml:space="preserve">
+    <value>نظام قيادة كهربائي</value>
+  </data>
+  <data name="R" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="RadiatorCoreSupport" xml:space="preserve">
+    <value>دعم المبرد الأساسية</value>
+  </data>
+  <data name="Radio" xml:space="preserve">
+    <value>راديو</value>
+  </data>
+  <data name="RearArmrest" xml:space="preserve">
+    <value>مسند الذراع الخلفي</value>
+  </data>
+  <data name="RearAxle" xml:space="preserve">
+    <value>المحور الخلفي</value>
+  </data>
+  <data name="RearBrakes" xml:space="preserve">
+    <value>الفرامل الخلفية</value>
+  </data>
+  <data name="RearShocks" xml:space="preserve">
+    <value>الصدمات الخلفي</value>
+  </data>
+  <data name="RearViewMirror" xml:space="preserve">
+    <value>المرآة الخلفية</value>
+  </data>
+  <data name="RFDoorMechanics" xml:space="preserve">
+    <value>ميكانيكا RF باب</value>
+  </data>
+  <data name="RFDoorPanel" xml:space="preserve">
+    <value>لوحة الباب RF</value>
+  </data>
+  <data name="RFWheel" xml:space="preserve">
+    <value>RF العجلة</value>
+  </data>
+  <data name="RFWinMechanics" xml:space="preserve">
+    <value>ميكانيكا RF فوز</value>
+  </data>
+  <data name="RightAPillar" xml:space="preserve">
+    <value>الحق دعامة</value>
+  </data>
+  <data name="RightApron" xml:space="preserve">
+    <value>الحق المئزر</value>
+  </data>
+  <data name="RightBPillar" xml:space="preserve">
+    <value>عمود B الصحيح</value>
+  </data>
+  <data name="RightCPillar" xml:space="preserve">
+    <value>C الركن الأيمن</value>
+  </data>
+  <data name="RightDPillar" xml:space="preserve">
+    <value>عمود D الصحيح</value>
+  </data>
+  <data name="RIGHTFRONTRAIL" xml:space="preserve">
+    <value>السكك الحديدية الجبهة اليمنى</value>
+  </data>
+  <data name="RightRearLockPillar" xml:space="preserve">
+    <value>الصحيح عمود قفل الخلفية</value>
+  </data>
+  <data name="RightRearRail" xml:space="preserve">
+    <value>الخلفي الأيمن السكك الحديدية</value>
+  </data>
+  <data name="RRCarpet" xml:space="preserve">
+    <value>RR السجاد</value>
+  </data>
+  <data name="RRDoorMechanics" xml:space="preserve">
+    <value>ميكانيكا باب RR</value>
+  </data>
+  <data name="RRDoorPanel" xml:space="preserve">
+    <value>لوحة الباب RR</value>
+  </data>
+  <data name="RrSeats" xml:space="preserve">
+    <value>مقاعد ص ص</value>
+  </data>
+  <data name="RRWheel" xml:space="preserve">
+    <value>عجلة RR</value>
+  </data>
+  <data name="RRWinMechanics" xml:space="preserve">
+    <value>ميكانيكا RR فوز</value>
+  </data>
+  <data name="RSTRUTTWRAPR" xml:space="preserve">
+    <value>R تبختر برج أبريل</value>
+  </data>
+  <data name="ShiftKnob" xml:space="preserve">
+    <value>التحول المقبض</value>
+  </data>
+  <data name="SpareTyre" xml:space="preserve">
+    <value>إطار احتياطي</value>
+  </data>
+  <data name="SteeringWheel" xml:space="preserve">
+    <value>المقود</value>
+  </data>
+  <data name="ThirdRowSeat" xml:space="preserve">
+    <value>3 صف المقاعد</value>
+  </data>
+  <data name="ToolsJacks" xml:space="preserve">
+    <value>أدوات / الرافعات</value>
+  </data>
+  <data name="WarningLights" xml:space="preserve">
+    <value>أضواء تحذيرية</value>
+  </data>
+  <data name="Exterior" xml:space="preserve">
+    <value>الخارج</value>
+  </data>
+  <data name="ExteriorParts" xml:space="preserve">
+    <value>قطع غيار أجزاء خارجية</value>
+  </data>
+  <data name="Interiors" xml:space="preserve">
+    <value>داخلي</value>
+  </data>
+  <data name="OverallGrade" xml:space="preserve">
+    <value>الصف العام</value>
+  </data>
+  <data name="Plate" xml:space="preserve">
+    <value>طبق</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>السعر</value>
+  </data>
+  <data name="VehicleSpecifications" xml:space="preserve">
+    <value>مواصفات السيارة</value>
+  </data>
+  <data name="VehicleType" xml:space="preserve">
+    <value>نوع السيارة</value>
+  </data>
+  <data name="InterorParts" xml:space="preserve">
+    <value>قطع غيار أجزاء داخلية</value>
+  </data>
+  <data name="ExteriorPartsImages" xml:space="preserve">
+    <value>قطع غيار أجزاء خارجية الصور</value>
+  </data>
+  <data name="FrameParts" xml:space="preserve">
+    <value>أجزاء الإطار</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>صالة عرض</value>
+  </data>
+  <data name="InteriorPartsImages" xml:space="preserve">
+    <value>قطع غيار أجزاء داخلية صور</value>
+  </data>
+  <data name="MechanicParts" xml:space="preserve">
+    <value>أجزاء الميكانيكية</value>
+  </data>
+  <data name="MechanicPartsImages" xml:space="preserve">
+    <value>أجزاء ميكانيكية صور</value>
+  </data>
+  <data name="SunRoof" xml:space="preserve">
+    <value>فتحة سقف</value>
+  </data>
+  <data name="DamageParts" xml:space="preserve">
+    <value>الأضرار قطع غيار المركبات معرض</value>
+  </data>
+</root>
