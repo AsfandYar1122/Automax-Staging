@@ -1,0 +1,21 @@
+﻿@using Our.Umbraco.Vorto.Extensions
+@inherits UmbracoTemplatePage
+@{
+        if (Model.Content.GetVortoValue<string>("bannerImage") != null && Model.Content.GetVortoValue<string>("bannerImage") != "")
+        {
+            var banner = Umbraco.TypedMedia(Model.Content.GetVortoValue<int>("bannerImage"));
+        <div class="main-tab">
+            @*<div class="banner-video">
+                <video autoplay loop>
+                    <source src="/assets/video/automax.mp4" type="video/mp4">
+                    <source src="/assets/video/automax.ogv" type="video/ogg">
+                    <source src="/assets/video/automax.webm" type="video/webm">
+                </video>
+            </div>*@
+            <img class="img-responsive" src="@banner.Url">
+        </div>
+    }
+
+
+}
+

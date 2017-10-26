@@ -1,0 +1,380 @@
+.tab-title {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 30px;
+  .title {
+    padding: 50px 0 30px 0;
+    margin: 0;
+  }
+  .under-line {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    @include translate(-50%, 0%);
+    width: 5%;
+    border-bottom: 4px solid darkorange;
+  }
+}
+
+.main-tab {
+  background: #2a2a2a;
+  margin: 0 -15px;
+}
+
+.deal-tab {
+  background-color: #eaeaea;
+}
+
+.feature-tab {
+  background: url('../../images/feature_bg.png');
+}
+
+.deal-tab, .feature-tab {
+  margin: 0 -15px;
+  padding-bottom: 50px;
+  .carousel-custom, .carousel-custom-feature {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    @include translate(-50%, 0);
+    @media (min-width: $screen-md-min) {
+      width: 80%;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: 70%;
+    }
+    .carousel-item {
+      margin: 20px;
+      box-sizing: border-box;
+      border: 2px solid transparent;
+      &:hover,
+      &:focus {
+        border: 2px solid darkorange;
+      }
+
+      .item-img {
+        position: relative;
+        img {
+          width: 100%;
+          height: auto;
+          display: inline;
+        }
+        .item-rent {
+          position: absolute;
+          bottom: 15%;
+          z-index: 10;
+          background-color: #3a3f4a;
+          padding: 5px;
+          .currency {
+            color: #ffffff;
+          }
+          .rent-value {
+            color: darkorange;
+            padding-left: 10px;
+            font-size: 1.2em;
+          }
+        }
+      }
+
+      .item-info {
+        padding: 10px;
+        background-color: #fff;
+        .item-name {
+          padding-bottom: 15px;
+          a {
+            font-size: 1.3em;
+            color: #000;
+          }
+        }
+        .item-detail {
+          margin-bottom: 10px;
+          @include clearfix;
+          .info {
+            float: left;
+            width: 33%;
+            .title {
+              padding-bottom: 5px;
+            }
+            .detail {
+              color: #9d9d9d;
+            }
+          }
+        }
+      }
+
+      .item-price {
+        @include clearfix;
+        border-top: 1px solid #9d9d9d;
+        padding: 5px 0;
+        .title {
+        }
+        .price {
+          float: right;
+          font-size: 1.2em;
+          color: darkorange;
+        }
+      }
+    }
+  }
+
+  .slick-prev, .slick-next {
+    background-color: #373d49;
+    color: darkorange;
+    border: none;
+    font-size: 3em;
+    padding: 0 15px 4px 15px;
+    @include translate(0, -50%);
+
+    &:focus,
+    &:hover,
+    &:active {
+      border: none;
+    }
+  }
+  .slick-prev {
+    position: absolute;
+    left: -70px;
+    top: 50%;
+  }
+  .slick-next {
+    position: absolute;
+    right: -70px;
+    top: 50%;
+  }
+}
+
+.reason-tab {
+  margin: 0 -15px;
+  background: url('../../images/background02.png');
+  .carousel-custom-reason {
+    @include clearfix;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    .carousel-item {
+      float: left;
+      width: 25%;
+      position: relative;
+      padding-top: 75px;
+      padding-bottom: 75px;
+      text-align: center;
+      .reason-img {
+        height: 100px;
+        img {
+          display: inline;
+        }
+      }
+      .reason-text {
+        font-size: 1.4em;
+        color: orangered;
+        position: relative;
+        //top: -10px;
+      }
+    }
+  }
+}
+
+.brand-tab {
+  margin: 0 -15px;
+  background-color: #eaeaea;
+  .carousel-custom-brand {
+    @include clearfix;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    .carousel-item {
+      float: left;
+      width: 16.6%;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      text-align: center;
+      img {
+        display: inline;
+      }
+    }
+  }
+}
+
+.comments-tab {
+  margin: 0 -15px;
+  padding-bottom: 100px;
+  background: url('../../images/background03.png') no-repeat bottom center;
+  .quote-icon {
+    .fa {
+      font-size: 10em;
+      color: rgba(244, 244, 244, 0.9);
+    }
+  }
+  .carousel-custom-comment {
+    position: relative;
+    left: 50%;
+    @include translate(-50%, 0);
+    @media (min-width: $screen-md-min) {
+      width: 60%;
+    }
+    .carousel-item {
+      .comment-text {
+        line-height: 1.7;
+        font-size: 1em;
+        color: #7e7e7e;
+      }
+    }
+  }
+}
+
+.search-tab {
+  margin: 0 -15px;
+  position: relative;
+  padding: 20px 10px;
+  @media(min-width: $screen-md-min) {
+    padding: 20px 20%;
+  }
+  .nav.nav-tabs {
+    border-bottom: 2px solid transparent;
+    @media(min-width: $screen-md-min) {
+      position: absolute;
+      left: 50%;
+      @include translate(-50%, 0);
+    }
+    li {
+      a {
+        border: 2px solid transparent;
+        color: #9d9d9d;
+        &:hover,
+        &:focus {
+          color: darkorange;
+          background-color: transparent;
+          border-bottom: 2px solid darkorange;
+        }
+      }
+      &.active {
+        a {
+          border: 2px solid transparent;
+          &:hover,
+          &:focus {
+            border-bottom: 2px solid darkorange;
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    border-top: 1px solid #9d9d9d;
+    @media(min-width: $screen-md-min) {
+      margin-top: 45px;
+    }
+    .tab-pane {
+      padding-top: 30px;
+      .title {
+        margin-bottom: 10px;
+      }
+      .vehicle-type {;
+        .carousel-custom-type {
+          margin: 0 auto;
+          width: 90%;
+          .slick-prev-type {
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            color: orangered;
+            font-size: 1.5em;
+            border: none;
+            background: none;
+            @include translate(0, -50%);
+            &:active {
+              background-color: #1b6d85;
+            }
+          }
+          .slick-next-type {
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            color: orangered;
+            font-size: 1.5em;
+            border: none;
+            background: none;
+            @include translate(0, -50%);
+          }
+        }
+      }
+      .search-btn {
+        padding-top: 30px;
+      }
+      .custom-control {
+        background-color: #f2f2f2;
+        &:hover,
+        &:focus,
+        &:active {
+          border-color: darkorange;
+        }
+      }
+    }
+  }
+}
+
+.contact-tab {
+  margin: 0 -15px;
+  @include clearfix;
+  .contact-info {
+    padding: 50px 20px 0 20px;
+    background-color: #373d49;
+    height: 500px;
+    float: left;
+    width: 100%;
+    @media (min-width: $screen-md-min) {
+      padding: 50px 75px 0 75px;
+      width: 50%;
+    }
+    .content-content {
+      margin-bottom: 20px;
+      @include clearfix;
+      .icon {
+        float: left;
+        width: 10%;
+        font-size: 3em;
+        color: darkorange;
+      }
+      .text {
+        float: left;
+        width: 90%;
+        padding-left: 10px;
+        padding-top: 10px;
+        color: #9d9d9d;
+        font-size: 1.2em;
+      }
+    }
+    .social-links {
+      margin-left: 10%;
+      ul {
+        @include clearfix;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li {
+          float: left;
+          padding-right: 15px;
+          a {
+            color: #9d9d9d;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+  .map-box {
+    float: left;
+    width: 100%;
+    @media (min-width: $screen-md-min) {
+      width: 50%;
+    }
+    #map {
+      height: 500px;
+    }
+  }
+}
+
+.btn-custom-nocolor {
+  @include button-variant(#9d9d9d, #ffffff, #ffffff);
+}
