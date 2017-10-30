@@ -1,0 +1,585 @@
+﻿@model AutomaxWebSite.Models.Vehicle
+@using Our.Umbraco.Vorto.Extensions
+
+@{
+    Layout = "MasterTemplate.cshtml";
+    var model = Model;
+    var title = Model.Information.YearID + " " + Model.Information.VehicleMake + " " + Model.Information.AutoModelID;
+    Model.Vir.Exterior.Heading = Model.Content.GetVortoValue<string>("exteriorHeading");
+    Model.Vir.Interior.Heading = Model.Content.GetVortoValue<string>("interiorHeading");
+    Model.Vir.Frame.Heading = Model.Content.GetVortoValue<string>("frameHeading");
+    Model.Vir.Mechanics.Heading = Model.Content.GetVortoValue<string>("mechanicsHeading");
+
+    Model.Vir.Exterior.Part = Model.Content.GetVortoValue<string>("part");
+    Model.Vir.Exterior.Condition = Model.Content.GetVortoValue<string>("condition");
+
+    Model.Vir.Interior.Part = Model.Content.GetVortoValue<string>("part");
+    Model.Vir.Interior.Condition = Model.Content.GetVortoValue<string>("condition");
+
+    Model.Vir.Mechanics.Part = Model.Content.GetVortoValue<string>("part");
+    Model.Vir.Mechanics.Condition = Model.Content.GetVortoValue<string>("condition");
+
+    Model.Vir.Frame.Part = Model.Content.GetVortoValue<string>("part");
+    Model.Vir.Frame.Condition = Model.Content.GetVortoValue<string>("condition");
+}
+<link rel="stylesheet" type="text/css" href="/assets/plugins/easypiechart/stylesheets/jquery.easy-pie-chart.css">
+@section mainArea{
+    <div class="img-pop-container">
+        <div class="img-pop">
+            <img class="img-responsive">
+        </div>
+    </div>
+    <div class="img-header">
+        <div class="img-header-text">@Model.Content.GetVortoValue("bannerHeading")</div>
+    </div>
+    <div class="img-top-detail"></div>
+    <ol class="breadcrumb custom-breadcrumb">
+        <li class="breadcrumb-item"><a href="@Model.InventoryPage">@Model.Content.GetVortoValue("inventoryList")</a></li>
+        <li class="breadcrumb-item">
+            <a href="javascript:void(0);" onclick="Filter()">
+                @Model.Information.VehicleMake
+            </a>
+        </li>
+        <li class="breadcrumb-item active">@Model.Information.VehicleName</li>
+    </ol>
+    <form action="@Model.InventoryPage" method="get">
+
+        <input type="hidden" name="Name" value="@Model.Information.VehicleMake" />
+        <input type="submit" id="formFiler" style="display:none;" />
+    </form>
+    <div class="detail-item-box">
+
+        <div class="detail-body-title">
+
+            <h3>@title</h3>
+        </div>
+        <div class="detail-item-body">
+            <div class="detail-item-img ">
+                @if (!string.IsNullOrEmpty(Model.VehicleImage))
+                {
+
+                    <img src="@Model.VehicleImage" class="img-focusable">
+                }
+                else
+                {
+                    <img src="/assets/images/audi-q7-2014-s-line-wallpaper-2.jpg" class="img-focusable">
+                }
+            </div>
+            <div class="detail-item-info">
+                <div class="detail-item-title">
+                    <span class="left">@Model.Content.GetVortoValue("specifications")</span>
+                    @if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                    {
+                        <span class="right">
+                            SAR
+                            @Model.Content.GetVortoValue("price")
+                            <span class="color-orange">
+                                @Model.Information.Price.ToString("N2")
+                            </span>
+                        </span>
+                    }
+                    else
+                    {
+                        <span class="right">
+                            @Model.Content.GetVortoValue("price")
+                            <span class="color-orange">
+                                @Model.Information.Price.ToString("N2") SAR
+                            </span>
+                        </span>
+                    }
+
+                </div>
+                <div class="detail-item-list-box">
+                    <ul class="detail-item-list">
+                        <li class="list-item">
+                            <div class="list-sub-item">
+                                <span class="title">@Model.Content.GetVortoValue("stock")</span>
+                                <span class="text">@(!string.IsNullOrEmpty(Model.Information.StockNumber) ? Model.Information.StockNumber : "N/A")</span>
+                            </div>
+                            <div class="list-sub-item">
+                                <span class="title">@Model.Content.GetVortoValue("bodyStyle")</span>
+                                <span class="text">@(!string.IsNullOrEmpty(Model.Information.AutoBodyStyleID) ? Model.Information.AutoBodyStyleID : "N/A")</span>
+                            </div>
+
+                        </li>
+                        <li class="list-item">
+                            <div class="list-sub-item">
+                                <span class="title">@Model.Content.GetVortoValue("overallGrade")</span>
+
+                                @if (Model.Vir.Ratting > 0.0)
+                                    { <span class="text">
+                                    @String.Format("{0:0.00}", Model.Vir.Ratting)
+                                </span>
+                                    }
+                                    else
+                                    {
+                                <span class="text">
+                                    4.0
+                                </span>
+
+                                    }
+
+                            </div>
+                            <div class="list-sub-item">
+                                <span class="title">@Model.Content.GetVortoValue("odometer")</span>
+                                <span class="text">@(!string.IsNullOrEmpty(Model.Information.Odometer) ? Model.Information.Odometer : "N/A")</span>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="list-sub-item">
+                                <span class="title">@Model.Content.GetVortoValue("color")</span>
+                                <span class="text">@(!string.IsNullOrEmpty(Model.Information.AutoExteriorColorID) ? Model.Information.AutoExteriorColorID : "N/A")</span>
+                            </div>
+                            <div class="list-sub-item">
+                                <span class="title">@Model.Content.GetVortoValue("transmission")</span>
+                                <span class="text">@(!string.IsNullOrEmpty(Model.Information.AutoTransmissionID) ? Model.Information.AutoTransmissionID : "N/A")</span>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="list-sub-item">
+                                <span class="title">@Model.Content.GetVortoValue("engine")</span>
+                                <span class="text">@(!string.IsNullOrEmpty(Model.Information.AutoEngineID) ? Model.Information.AutoEngineID : "N/A")</span>
+                            </div>
+                            <div class="list-sub-item">
+                                <span class="title">@Model.Content.GetVortoValue("fuelType")</span>
+                                <span class="text">@(!string.IsNullOrEmpty(Model.Information.FuelTypeID) ? Model.Information.FuelTypeID : "N/A")</span>
+                            </div>
+
+                        </li>
+                        <li class="list-item">
+                            <div class="list-sub-item">
+                                <span class="title">@Model.Content.GetVortoValue("doors")</span>
+                                <span class="text">@(!string.IsNullOrEmpty(Model.Information.Door) ? Model.Information.Door : "N/A")</span>
+                            </div>
+                            <div class="list-sub-item">
+                                <span class="title"></span>
+                                <span class="text"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="detail-item-info-footer">
+                    <div class="left">
+                        <i class="fa fa-phone"></i><a href="tel:+966 565818403">+966 565818403</a>
+                    </div>
+                    <div class="right">
+                        <!-- AddToAny BEGIN -->
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="float:left">
+
+
+                            <a class="a2a_button_facebook"></a>
+                            <a class="a2a_button_twitter"></a>
+                            <a class="a2a_button_google_plus"></a>
+                            <a class="a2a_button_linkedin"></a>
+                            <a class="a2a_button_email"></a>
+                            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                        </div>
+                        <script async src="https://static.addtoany.com/menu/page.js"></script>
+                        <!-- AddToAny END -->
+
+                        <a type="button" class="btn btn-custom-orange" style="margin-top: 0 !important;" href="@(@System.Globalization.CultureInfo.CurrentCulture.Name=="ar"?"/ar/print-report?id="+@Request["id"]:"/print-report?id="+@Request["id"])" target="_blank">
+                            <i class="fa fa-print"></i>@Model.Content.GetVortoValue("print")
+                        </a>
+
+                        <a class="btn btn-custom-orange" style="margin-top: 0 !important;" onclick="AddFavorite(@Request["id"])"><i class="fa fa-star"></i> @Model.Content.GetVortoValue("favorite")</a>
+                        <div class="qr-pop-up">
+                            <a class="pop-up-anchor" href="javascript:void(0)"><img src="/assets/images/qr.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <p style="display:none;color:green;" id="successmessage"></p>
+            </div>
+        </div>
+    </div>
+    <div class="content-container custom-background">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="overall-grader-header">
+
+                </div>
+                <ul class="nav nav-tabs">
+
+                    <li><a data-toggle="tab" href="#360_tab">@Model.Content.GetVortoValue("view")</a></li>
+
+
+                    <li><a data-toggle="tab" href="#video_tab">@Model.Content.GetVortoValue("video")</a></li>
+                    <li><a data-toggle="tab" href="#gallery_tab">@Model.Content.GetVortoValue("gallery")</a></li>
+                    <li class="active"><a data-toggle="tab" href="#vir_tab">@Model.Content.GetVortoValue("taqeem")</a></li>
+                    <li><a data-toggle="tab" href="#info_tab">@Model.Content.GetVortoValue("information")</a></li>
+                </ul>
+                <div class="tab-content">
+
+                    <div id="360_tab" class="tab-pane fade margin-none">
+                        <div class="panel panel-default border-top-none">
+                            @if (Model.Information.Has360)
+                            {
+                                @*<div style="width:100%;height:auto;padding:20px;">
+
+                                        <script src="//dealermade.com/assets/media-layer/v1/dm.js"
+                                                data-dm-dealership-id="numou-automotive"
+                                                data-dm-vehicle-vin="@Model.Information.VIN"></script>
+                                    </div>*@
+                                <script src="//dealermade.com/assets/media-layer/v2/dm.js"
+                                        data-dm-dealership-id="numou-automotive"
+                                        data-dm-vehicle-vin="@Model.Information.VIN"></script>
+                            }
+                            else
+                            {
+                                <p>@Model.Content.GetVortoValue("threeMessage")</p>
+                            }
+                        </div>
+                    </div>
+
+
+                    <div id="video_tab" class="tab-pane fade margin-none">
+                        <div class="panel panel-default border-top-none">
+                            <div style="padding:20px">
+                                @if (ViewBag.VideoGallery.Count != 0)
+                                {
+                                    foreach (var item in ViewBag.VideoGallery as List<AutoMax.Models.Entities.VehicleVideoViewModel>)
+                                    {
+                                        <iframe id="video" width="420" height="315"  src="@item.VideoPath" frameborder="0" allowfullscreen></iframe>
+                                        @*<embed width="420" height="315" src="@item.VideoPath">*@
+                                    }
+                                }
+                                else
+                                {
+                                    <p>@Model.Content.GetVortoValue("videoMessage")</p>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="gallery_tab" class="tab-pane fade margin-none">
+                        <div class="panel panel-default border-top-none">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="gallery-container">
+                                            @if (ViewBag.Gallery != null && ViewBag.Gallery.Count != 0)
+                                            {
+                                                <ul class="row light-gallery" id="imageGallery" style="display: block;">
+
+                                                    @foreach (var item in ViewBag.Gallery)
+                                                    {
+
+                                                        <li class="col-sm-4 col-md-4 col-lg-3" data-src="@(@item.ImagePath.StartsWith("http://")?""+@item.ImagePath+"":"http://dms.automax.online/"+@item.ImagePath+"")">
+                                                            <a class="">
+                                                                <img class="img-responsive img-rounded" src="@(@item.ImagePath.StartsWith("http://")?""+@item.ImagePath+"":"http://dms.automax.online/"+@item.ImagePath+"")">
+                                                                <i class="fa fa-search-plus"></i>
+                                                            </a>
+                                                        </li>
+
+                                                    }
+
+
+                                                </ul>
+                                            }
+                                            else
+                                            {
+                                                <p>@Model.Content.GetVortoValue("galleryMessage")</p>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="vir_tab" class="tab-pane fade in active margin-none">
+                        <div class="panel panel-default border-top-none">
+                            <div class="panel-body">
+                                <div class="item-grade">
+                                    <span class="title">@Model.Content.GetVortoValue("overallGrade")</span><br>
+                                    @if (Model.Vir.Ratting > 0)
+                                    {
+                                        <span class="rating">
+                                            @String.Format("{0:0.00}", Model.Vir.Ratting)
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="rating">
+                                            4.0
+                                        </span>
+                                    }
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="btn-group btn-group-justified svg-btn-grp">
+                                            <a class="btn btn-custom-orange svg-tab-btn active" href="javascript:void(0)" data-target="#exterior_tab">@Model.Content.GetVortoValue("exterior")</a>
+                                            <a class="btn btn-custom-orange svg-tab-btn" href="javascript:void(0)" data-target="#interior_tab">@Model.Content.GetVortoValue("interior")</a>
+                                            <a class="btn btn-custom-orange svg-tab-btn" href="javascript:void(0)" data-target="#mechanics_tab">@Model.Content.GetVortoValue("mechanics")</a>
+                                            <a class="btn btn-custom-orange svg-tab-btn" href="javascript:void(0)" data-target="#frame_tab">@Model.Content.GetVortoValue("frame")</a>
+
+                                            <a class="btn btn-custom-orange svg-tab-btn" href="javascript:void(0)" data-target="#rating_tab">@Model.Content.GetVortoValue("grade")</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row svg-content m-top-30">
+                                    @Html.Partial("~/Views/Partials/Vehicle/Exterior.cshtml", Model.Vir.Exterior)
+                                    @Html.Partial("~/Views/Partials/Vehicle/Interior.cshtml", Model.Vir.Interior)
+
+                                    @Html.Partial("~/Views/Partials/Vehicle/Mechanic.cshtml", Model.Vir.Mechanics)
+                                    @Html.Partial("~/Views/Partials/Vehicle/Frame.cshtml", Model.Vir.Frame)
+
+                                    <div id="rating_tab" class="svg-tab text-center">
+                                        <div class="row">
+                                            <div class="col-md-offset-3 col-lg-offset-3 col-md-6 col-lg-6 rating text-center">
+                                                <div class="title">@Model.Content.GetVortoValue("overallGrade")</div>
+
+                                                @if (Model.Vir.Ratting>0)
+                                                {
+                                                <span class="text">
+                                                    @String.Format("{0:0.00}", Model.Vir.Ratting)
+                                                </span>
+                                                }
+                                                else
+                                                {
+                                                <span class="text">
+                                                    4.0
+                                                </span>
+                                                }
+
+
+                                                @if (Model.Vir.Ratting!=0 && Model.Vir.Ratting < 1)
+                                                          {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("poor")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("poorText")
+                                                </span>
+                                                           }
+                                                          else if (Model.Vir.Ratting > 1 && Model.Vir.Ratting < 2)
+                                                               {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("average")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("averageText")
+                                                </span>
+                                                               }
+                                                    else if (Model.Vir.Ratting > 2 && Model.Vir.Ratting < 3)
+                                                                 {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("good")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("goodText")
+                                                </span>
+                                                                 }
+                                                     else if (Model.Vir.Ratting > 3 && Model.Vir.Ratting < 4)
+                                                                   {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("veryGood")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("veryGoodText")
+                                                </span>
+                                                }
+                                                else if (Model.Vir.Ratting > 4 && Model.Vir.Ratting < 5)
+                                                {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("excellent")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("excellentText")
+                                                </span>
+                                                }
+                                                else
+                                                {
+                                                <h3 class="title-scnd">
+                                                    @Model.Content.GetVortoValue("vexcellent")
+                                                </h3>
+                                                <span class="text-scnd">
+                                                    @Model.Content.GetVortoValue("vexcellentText")
+                                                </span>
+                                                }
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="info_tab" class="tab-pane fade margin-none">
+                        <div class="panel panel-default border-top-none">
+                            <div style="padding:20px">
+                                @Html.Partial("~/Views/Partials/Vehicle/CarInformation.cshtml", @Model.Information)
+                                <br/>
+                                @if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                                {
+                                    <h3>خيارات والميزات</h3>
+                                }
+                                else
+                                {
+                                    <h3>Options and features</h3>
+                                }
+                                
+                                <ul class="vehicle-feature-list">
+                                    @foreach (var item in @Model.Vir.Otions.FirstOrDefault(a => a.Name == "Interior").List.Where(x => x.Checked))
+                                    {
+                                        if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                                        {
+                                            <li>@item.ArabicName</li>
+                                        }
+                                        else
+                                        {
+                                            <li>@item.Name</li>
+                                        }
+
+
+                                    }
+                                    @foreach (var item in @Model.Vir.Otions.FirstOrDefault(a => a.Name == "Windows").List.Where(x => x.Checked))
+                                    {
+                                        if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                                        {
+                                            
+                                            <li>@item.ArabicName</li>
+                                        }
+                                        else
+                                        {
+                                            <li>@item.Name</li>
+                                        }
+
+                                    }
+                                    @foreach (var item in @Model.Vir.Otions.FirstOrDefault(a => a.Name == "System").List.Where(x => x.Checked))
+                                    {
+                                        if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                                        {
+                                            <li>@item.ArabicName</li>
+                                        }
+                                        else
+                                        {
+                                            <li>@item.Name</li>
+                                        }
+                                    }
+                                    @foreach (var item in @Model.Vir.Otions.FirstOrDefault(a => a.Name == "Drive Train").List.Where(x => x.Checked))
+                                    {
+                                        if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                                        {
+                                            <li>@item.ArabicName</li>
+                                        }
+                                        else
+                                        {
+                                            <li>@item.Name</li>
+                                        }
+                                    }
+                                    @foreach (var item in @Model.Vir.Otions.FirstOrDefault(a => a.Name == "Safety").List.Where(x => x.Checked))
+                                    {
+                                        if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                                        {
+                                            <li>@item.ArabicName</li>
+                                        }
+                                        else
+                                        {
+                                            <li>@item.Name</li>
+                                        }
+                                    }
+                                    @foreach (var item in @Model.Vir.Otions.FirstOrDefault(a => a.Name == "Sound System").List.Where(x => x.Checked))
+                                    {
+                                        if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                                        {
+                                            <li>@item.ArabicName</li>
+                                        }
+                                        else
+                                        {
+                                            <li>@item.Name</li>
+                                        }
+                                    }
+                                    @foreach (var item in @Model.Vir.Otions.FirstOrDefault(a => a.Name == "Comfort").List.Where(x => x.Checked))
+                                    {
+                                        if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                                        {
+                                            <li>@item.ArabicName</li>
+                                        }
+                                        else
+                                        {
+                                            <li>@item.Name</li>
+                                        }
+                                    }
+                                    @foreach (var item in @Model.Vir.Otions.FirstOrDefault(a => a.Name == "Seats").List.Where(x => x.Checked))
+                                    {
+                                        if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                                        {
+                                            <li>@item.ArabicName</li>
+                                        }
+                                        else
+                                        {
+                                            <li>@item.Name</li>
+                                        }
+                                    }
+                                    
+
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+@section jsArea{
+
+    <script>
+
+
+        function Filter() {
+            $("#formFiler").click();
+        }
+        function AddFavorite(id) {
+            $.ajax({
+                type: "GET",
+                url: "/Umbraco/Surface/InventorySurface/AddFavorite",
+                data: { Id: id, isArabic: "@System.Globalization.CultureInfo.CurrentCulture.Name" },
+                success: function (returndata) {
+                    console.log(returndata);
+                    if (returndata.Success) {
+                        $('#successmessage').html(returndata.Message);
+                        $('#successmessage').fadeIn('fast').delay(5000).fadeOut('fast');
+                    }
+                    else {
+                        $('#successmessage').html(returndata.Message);
+                        $('#successmessage').fadeIn('fast').delay(5000).fadeOut('fast');
+                    }
+
+                },
+                failure: function (returndata) {
+                    $('#successmessage').html("There is some issue.Try later");
+                    $('#successmessage').fadeIn('fast').delay(5000).fadeOut('fast');
+
+                }
+            });
+        }
+        $(function () {
+            var isMobile = window.matchMedia("only screen and (max-width: 768px)");
+            var panelFixed = $('.part-detail').closest('.panel');
+            var navTabTop = $('.nav.nav-tabs').offset().top;
+            var panelFixedWidth = 0;
+            $(document).on('scroll', function () {
+                if (!isMobile.matches && $(this).scrollTop() >= navTabTop) {
+                    if (panelFixed.width() > 0 && panelFixedWidth == 0) {
+                        panelFixedWidth = panelFixed.width();
+                    }
+                    panelFixed.css({ 'position': 'fixed', 'top': '100px', 'width': panelFixedWidth + 'px' });
+                } else if ($(this).scrollTop() < navTabTop) {
+                    panelFixed.css({ 'position': 'relative', 'top': '0' });
+                }
+                $(window).on("resize", function () {
+                    $("#dm-hd-media-layer").css("width", "100%");
+                });
+            });
+
+
+        });
+    </script>
+
+}

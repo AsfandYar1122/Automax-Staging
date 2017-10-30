@@ -1,0 +1,1097 @@
+﻿@model AutomaxWebSite.Models.ExteriorModel
+@using AutomaxWebSite.LocalResource
+<div id="exterior_tab" class="svg-tab active">
+    <div class="col-md-8 col-lg-9 text-center">
+        <p class="alert alert-success partSuccess" style="display:none;"></p>
+        <p class="alert alert-danger partError" style="display:none;"></p>
+        <h3 class="tab-title">@Model.Heading</h3>
+        <div id="progress-circle-ex" class="progress-circle" data-rating="@Model.Ratting" data-rating-value="@(Model.Ratting>0? Model.Ratting:4.0)"><strong class="progress-value"></strong></div>
+        <svg width="95%" viewBox="50 165 744 598" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+            <desc>Created with Sketch.</desc>
+            <defs>
+                <rect id="ex-path-1" x="0" y="2" width="141.299363" height="27.6" rx="13.8"></rect>
+                <mask id="ex-mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="141.299363" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-1"></use>
+                </mask>
+                <circle id="ex-path-3" cx="14.5" cy="14.5" r="14.5"></circle>
+                <mask id="ex-mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.8" y="-4.8" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-3" fill="black"></use>
+                </mask>
+                <path d="M127.287758,1 C134.913924,1 141.096154,7.17679469 141.096154,14.8 C141.096154,22.4215295 134.911719,28.6 127.287758,28.6 L27.3973964,28.6 C31.1006167,25.1243325 33.4142628,20.1826457 33.4142628,14.7 C33.4142628,9.32168269 31.187831,4.46393257 27.6072846,1 L127.287758,1 Z" id="ex-path-5"></path>
+                <mask id="ex-mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="113.698757" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-5"></use>
+                </mask>
+                <path d="M29.6072846,2 L105.287758,2 C112.913924,2 119.096154,8.17679469 119.096154,15.8 C119.096154,23.4215295 112.911719,29.6 105.287758,29.6 L29.3973964,29.6 C33.1006167,26.1243325 35.4142628,21.1826457 35.4142628,15.7 C35.4142628,10.3216827 33.187831,5.46393257 29.6072846,2 L29.6072846,2 Z" id="ex-path-7"></path>
+                <mask id="ex-mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="89.6987574" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-7"></use>
+                </mask>
+                <path d="M0.00175581902,2.43360887e-13 L62.909553,2.43360887e-13 C70.5357194,2.43360887e-13 76.7179487,6.17679469 76.7179487,13.8 C76.7179487,21.4215295 70.5335136,27.6 62.909553,27.6 L0.846239922,27.6 C3.34211834,23.8130494 4.79487179,19.2763605 4.79487179,14.4 C4.79487179,8.99709159 3.01144406,4.01117055 0.00175581901,-1.8483437e-11 Z" id="ex-path-9"></path>
+                <mask id="ex-mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="76.7161929" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-9"></use>
+                </mask>
+                <ellipse id="ex-path-11" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                <mask id="ex-mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.3692308" height="38.4">
+                    <rect x="-4.8" y="-4.8" width="38.3692308" height="38.4" fill="white"></rect>
+                    <use xlink:href="#ex-path-11" fill="black"></use>
+                </mask>
+                <path d="M126.287758,1 C133.913924,1 140.096154,7.17679469 140.096154,14.8 C140.096154,22.4215295 133.911719,28.6 126.287758,28.6 L27.3973964,28.6 C31.1006167,25.1243325 33.4142628,20.1826457 33.4142628,14.7 C33.4142628,9.32168269 31.187831,4.46393257 27.6072846,1 L126.287758,1 Z" id="ex-path-13"></path>
+                <mask id="ex-mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="112.698757" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-13"></use>
+                </mask>
+                <rect id="ex-path-15" x="0" y="1" width="154.471338" height="27.6" rx="13.8"></rect>
+                <mask id="ex-mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="154.471338" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-15"></use>
+                </mask>
+                <ellipse id="ex-path-17" cx="14.5" cy="14.5" rx="14.5" ry="14.5"></ellipse>
+                <mask id="ex-mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.8" y="-4.8" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-17" fill="black"></use>
+                </mask>
+                <path d="M13.8083957,2 C6.18222935,2 0,8.17679469 0,15.8 C0,23.4215295 6.18443514,29.6 13.8083957,29.6 L144.653655,29.6 C141.162984,26.146525 139,21.3511286 139,16.05 C139,10.4879964 141.381108,5.48272526 145.178542,2 L13.8083957,2 Z" id="ex-path-19"></path>
+                <mask id="ex-mask-20" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="145.178542" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-19"></use>
+                </mask>
+                <circle id="ex-path-21" cx="14.5" cy="15.2" r="14.5"></circle>
+                <mask id="ex-mask-22" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.56923077" y="-4.1" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-21" fill="black"></use>
+                </mask>
+                <path d="M258.153365,28.3679723 C255.429943,30.2704233 251.753449,34.5834552 250.013891,37.3943657 C250.006319,37.3943657 250.006319,37.4029695 250.006319,37.4029695 L249.004786,40.7923586 C248.989137,40.856128 249.012863,40.9285011 249.061324,40.9689895 C249.117358,41.0089718 249.189545,41.0089718 249.245073,40.9765811 C250.782709,40.0210537 252.329431,39.0650202 253.875144,38.1175906 C257.01503,36.1898343 260.164003,34.2782735 263.327615,32.4072011 C263.760232,32.1420018 264.192345,31.8854062 264.63304,31.6277985 C267.813815,29.7410368 271.009735,27.8851476 274.222313,26.0859422 C274.73469,25.7807605 275.255649,25.4922803 275.776102,25.2108856 C279.02856,23.3803017 282.28859,21.5962794 285.565783,19.8780509 C295.466016,14.649474 305.464181,9.91131338 315.549172,5.91206695 C316.478518,5.54159765 317.295292,4.95603347 317.927813,4.17713696 L318,4.08856848 L317.89601,4 C292.230217,8.9001144 276.089586,15.7988398 258.153365,28.3679723 L258.153365,28.3679723 Z" id="ex-path-23"></path>
+                <mask id="ex-mask-24" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="69" height="37" fill="white">
+                    <use xlink:href="#ex-path-23"></use>
+                </mask>
+                <rect id="ex-path-25" x="0" y="1" width="140.101911" height="27.6" rx="13.8"></rect>
+                <mask id="ex-mask-26" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="140.101911" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-25"></use>
+                </mask>
+                <ellipse id="ex-path-27" cx="14.5" cy="14.5" rx="14.5" ry="14.5"></ellipse>
+                <mask id="ex-mask-28" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.8" y="-4.8" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-27" fill="black"></use>
+                </mask>
+                <path d="M429.993065,37.4037189 C429.993065,37.4037189 429.993065,37.3951148 429.983979,37.3951148 C428.247013,34.5840986 424.569652,30.2709046 421.84583,28.3683822 C403.911313,15.7987772 387.770299,8.89979246 362.104995,4 L362,4.08857181 L362.073194,4.17714362 C362.706195,4.95606941 363.522937,5.5416556 364.452247,5.91213882 C374.535838,9.90849883 384.533616,14.6554417 394.434979,19.8781416 L394.434474,19.8781416 C395.894313,20.6439082 397.350114,21.426883 398.804401,22.2169435 C399.254669,22.4614017 399.703928,22.7088966 400.153692,22.9548732 C401.511564,23.6998886 402.868427,24.448447 404.223271,25.2111768 C404.223776,25.2106706 404.223776,25.2096584 404.22428,25.2091523 C404.744209,25.5006801 405.265148,25.7891711 405.784572,26.0832295 C405.782553,26.0842417 405.779524,26.085254 405.777505,26.0867724 C407.345873,26.9654047 408.910707,27.8582085 410.472008,28.7611349 C410.699666,28.8927273 410.92682,29.0273564 411.154982,29.1594549 C412.561314,29.975834 413.965627,30.7977803 415.365901,31.6283308 C415.366406,31.6278247 415.366406,31.6273186 415.366911,31.6268125 C415.804055,31.884936 416.239685,32.1450841 416.676829,32.404726 C416.675314,32.4057383 416.673295,32.4062444 416.671781,32.4072566 C419.835775,34.2783994 422.983616,36.1900321 426.123886,38.1178607 C426.12439,38.1173546 426.124895,38.1168485 426.1254,38.1163424 C427.671053,39.0658322 429.214181,40.0188648 430.754281,40.9769587 C430.809807,41.0088446 430.881992,41.0088446 430.939033,40.9693669 C430.986482,40.9288769 431.011217,40.8570072 430.995064,40.7927294 L429.993065,37.4037189 L429.993065,37.4037189 Z" id="ex-path-29"></path>
+                <mask id="ex-mask-30" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="69" height="37" fill="white">
+                    <use xlink:href="#ex-path-29"></use>
+                </mask>
+                <path d="M106.178542,2 L13.7910521,2 C6.17446434,2 0,8.17679469 0,15.8 C0,23.4215295 6.17475933,29.6 13.7910521,29.6 L105.653655,29.6 C102.162984,26.146525 100,21.3511286 100,16.05 C100,10.4879964 102.381108,5.48272526 106.178542,2 Z" id="ex-path-31"></path>
+                <mask id="ex-mask-32" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="106.178542" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-31"></use>
+                </mask>
+                <circle id="ex-path-33" cx="14.5" cy="15.2" r="14.5"></circle>
+                <mask id="ex-mask-34" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.56923077" y="-4.1" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-33" fill="black"></use>
+                </mask>
+                <path d="M115.287758,1 C122.913924,1 129.096154,7.17679469 129.096154,14.8 C129.096154,22.4215295 122.911719,28.6 115.287758,28.6 L27.3973964,28.6 C31.1006167,25.1243325 33.4142628,20.1826457 33.4142628,14.7 C33.4142628,9.32168269 31.187831,4.46393257 27.6072846,1 L115.287758,1 Z" id="ex-path-35"></path>
+                <mask id="ex-mask-36" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="101.698757" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-35"></use>
+                </mask>
+                <path d="M270,0 L269.211785,0.131369114 C267.99025,0.334958331 267,1.51661521 267,2.75641163 L267,220.743588 C267,221.98977 267.949219,223.316406 269.132276,223.710759 L270,224 L270,208 L271.5,202 L270,0 Z" id="ex-path-37"></path>
+                <mask id="ex-mask-38" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="4.5" height="224" fill="white">
+                    <use xlink:href="#ex-path-37"></use>
+                </mask>
+                <path d="M149.178542,2 L13.8035515,2 C6.18006053,2 2.84217094e-14,8.17679469 2.84217094e-14,15.8 C2.84217094e-14,23.4215295 6.18252714,29.6 13.8035515,29.6 L148.653655,29.6 C145.162984,26.146525 143,21.3511286 143,16.05 C143,10.4879964 145.381108,5.48272526 149.178542,2 Z" id="ex-path-39"></path>
+                <mask id="ex-mask-40" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="149.178542" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-39"></use>
+                </mask>
+                <circle id="ex-path-41" cx="14.5" cy="15.2" r="14.5"></circle>
+                <mask id="ex-mask-42" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.56923077" y="-4.1" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-41" fill="black"></use>
+                </mask>
+                <path d="M123.287758,1 C130.913924,1 137.096154,7.17679469 137.096154,14.8 C137.096154,22.4215295 130.911719,28.6 123.287758,28.6 L27.3973964,28.6 C31.1006167,25.1243325 33.4142628,20.1826457 33.4142628,14.7 C33.4142628,9.32168269 31.187831,4.46393257 27.6072846,1 L123.287758,1 Z" id="ex-path-43"></path>
+                <mask id="ex-mask-44" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="109.698757" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-43"></use>
+                </mask>
+                <path d="M244.045049,33.12101 C235.096705,34.8628207 227.762805,37.9196471 224.518153,42.2617357 C223.28304,43.9186752 222.855911,45.6443895 223.041509,47.9207912 C223.065408,48.3461227 223.122867,48.7875505 223.19558,49.2519033 C223.235242,49.4996881 223.396941,49.716256 223.655252,49.855757 C223.904919,49.9947701 224.219163,50.0333036 224.510526,49.9713574 L251.211148,44.3054732 C251.744042,44.189385 252.074558,43.77137 251.985573,43.3299422 L251.606242,41.5037481 L251.468951,40.8691652 L250.589778,36.6275563 C250.339094,35.4354574 249.491447,34.3823716 248.249215,33.7165717 C248.127686,33.6468212 247.999548,33.5926793 247.869884,33.5312208 L247.861748,33.5312208 C246.707484,33.0205303 245.344232,32.8654209 244.045049,33.12101 L244.045049,33.12101 Z" id="ex-path-45"></path>
+                <mask id="ex-mask-46" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="29" height="17" fill="white">
+                    <use xlink:href="#ex-path-45"></use>
+                </mask>
+                <path d="M0,14 C0,6.2680135 6.27700951,0 14.0019739,0 L145,0 L145,28 L14.0019739,28 C6.26889727,28 0,21.7336865 0,14 L0,14 Z" id="ex-path-47"></path>
+                <mask id="ex-mask-48" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="145" height="28" fill="white">
+                    <use xlink:href="#ex-path-47"></use>
+                </mask>
+                <ellipse id="ex-path-49" cx="14.5" cy="14.5" rx="14.5" ry="14.5"></ellipse>
+                <mask id="ex-mask-50" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.8" y="-4.8" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-49" fill="black"></use>
+                </mask>
+                <path d="M89.1785422,2 L13.8083957,2 C6.18222935,2 0,8.17679469 0,15.8 C0,23.4215295 6.18443514,29.6 13.8083957,29.6 L88.6536553,29.6 C85.1629837,26.146525 83,21.3511286 83,16.05 C83,10.4879964 85.381108,5.48272526 89.1785422,2 Z" id="ex-path-51"></path>
+                <mask id="ex-mask-52" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="89.1785422" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-51"></use>
+                </mask>
+                <circle id="ex-path-53" cx="14.5" cy="15.2" r="14.5"></circle>
+                <mask id="ex-mask-54" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.56923077" y="-4.1" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-53" fill="black"></use>
+                </mask>
+                <path d="M27.6072846,1 L103.287758,1 C110.913924,1 117.096154,7.17679469 117.096154,14.8 C117.096154,22.4215295 110.911719,28.6 103.287758,28.6 L27.3973964,28.6 C31.1006167,25.1243325 33.4142628,20.1826457 33.4142628,14.7 C33.4142628,9.32168269 31.187831,4.46393257 27.6072846,1 L27.6072846,1 Z" id="ex-path-55"></path>
+                <mask id="ex-mask-56" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="89.6987574" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-55"></use>
+                </mask>
+                <path d="M129.178542,2 L13.8047042,2 C6.18057658,2 2.84217094e-14,8.17679469 2.84217094e-14,15.8 C2.84217094e-14,23.4215295 6.17949609,29.6 13.8047042,29.6 L128.653655,29.6 C125.162984,26.146525 123,21.3511286 123,16.05 C123,10.4879964 125.381108,5.48272526 129.178542,2 Z" id="ex-path-57"></path>
+                <mask id="ex-mask-58" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="129.178542" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-57"></use>
+                </mask>
+                <circle id="ex-path-59" cx="14.5" cy="15.2" r="14.5"></circle>
+                <mask id="ex-mask-60" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.56923077" y="-4.1" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-59" fill="black"></use>
+                </mask>
+                <path d="M159.819008,174.533172 L161.003942,189.079532 L161.945762,194.992482 L163.26431,201.911891 L165.303161,208.63957 L164.938488,209.376299 L163.436097,212.941682 L162.217508,215.540864 L160.208293,218.979936 L158.366847,221.537853 L156.483208,223.760619 L154.219325,226.142909 L147.270956,227.100052 L131.186686,229.18141 L118.738091,230.565292 L105.25274,231.62912 L91.4976527,232 L78.0062747,231.511364 L57.8995555,229.641362 L38.9280429,227.235924 L30.9886289,226.142405 L27.720138,222.581551 L24.8323934,218.677495 L22.2379943,213.953677 L19.9057977,208.276238 L21.551345,203.169463 L22.5248097,199.363536 L23.6238505,192.978556 L24.5345273,184.738169 L25.1312642,176.025751 L25.383923,158.469574 L25.0750062,132.622183 L23.8338135,97.1968192 L22.9130906,87.2997991 L21.4061792,76.3963195 L17.9729326,58.8688262 L13.1297193,40.3695962 L10.1872236,30.1006893 L4.94618561,13.913297 L0,0.000503229781 L2.10515527,1.00344018 L3.21173056,1.74520088 L4.32634271,2.73757001 L5.09587215,3.58249281 L5.41383046,4.28651127 L5.8543509,5.23208003 L6.14719402,5.94515663 L6.64949783,6.42725076 L7.40295355,7.03515234 L8.240294,7.43371032 L9.03795245,7.75728707 L25.7973191,69.60624 C25.7973191,69.60624 45.6619278,63.8653947 92.6022188,63.8246331 C139.54251,63.7838715 159.407119,69.60624 159.407119,69.60624 L159.825035,68.2968362 L174.566145,14.7099097 L175.78172,9.986595 L176.070043,7.80710682 L177.126388,7.37281952 L178.278673,6.63659435 L179.00852,5.84803328 L179.254147,5.19031196 L179.795128,4.01979949 L180.406934,3.14317321 L181.876675,1.74469765 L185,0 L176.952088,23.9783958 L170.589406,44.8624317 L166.570976,62.0562836 L162.385278,84.5340483 L161.247057,100.140713 L160.711099,111.624417 L159.706492,144.921622 L159.819008,174.533172 L159.819008,174.533172 Z" id="ex-path-61"></path>
+                <mask id="ex-mask-62" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="187" height="234">
+                    <rect x="-1" y="-1" width="187" height="234" fill="white"></rect>
+                    <use xlink:href="#ex-path-61" fill="black"></use>
+                </mask>
+                <rect id="ex-path-63" x="22.5" y="-8.5" width="27" height="72" rx="12"></rect>
+                <mask id="ex-mask-64" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="29" height="74">
+                    <rect x="21.5" y="-9.5" width="29" height="74" fill="white"></rect>
+                    <use xlink:href="#ex-path-63" fill="black"></use>
+                </mask>
+                <rect id="ex-path-65" x="0" y="-3.55271368e-15" width="128.262821" height="27.6" rx="13.8"></rect>
+                <mask id="ex-mask-66" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="128.262821" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-65"></use>
+                </mask>
+                <ellipse id="ex-path-67" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                <mask id="ex-mask-68" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.3692308" height="38.4">
+                    <rect x="-4.8" y="-4.8" width="38.3692308" height="38.4" fill="white"></rect>
+                    <use xlink:href="#ex-path-67" fill="black"></use>
+                </mask>
+                <path d="M129.178542,2 L13.8047042,2 C6.18057658,2 0,8.17679469 0,15.8 C0,23.4215295 6.17949609,29.6 13.8047042,29.6 L128.653655,29.6 C125.162984,26.146525 123,21.3511286 123,16.05 C123,10.4879964 125.381108,5.48272526 129.178542,2 Z" id="ex-path-69"></path>
+                <mask id="ex-mask-70" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="129.178542" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-69"></use>
+                </mask>
+                <circle id="ex-path-71" cx="14.5" cy="15.2" r="14.5"></circle>
+                <mask id="ex-mask-72" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.56923077" y="-4.1" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-71" fill="black"></use>
+                </mask>
+                <rect id="ex-path-73" x="0" y="-1.42108547e-14" width="154.634615" height="27.6" rx="13.8"></rect>
+                <mask id="ex-mask-74" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="154.634615" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-73"></use>
+                </mask>
+                <ellipse id="ex-path-75" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                <mask id="ex-mask-76" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.3692308" height="38.4">
+                    <rect x="-4.8" y="-4.8" width="38.3692308" height="38.4" fill="white"></rect>
+                    <use xlink:href="#ex-path-75" fill="black"></use>
+                </mask>
+                <path d="M13.8083957,2 C6.18222935,2 0,8.17679469 0,15.8 C0,23.4215295 6.18443514,29.6 13.8083957,29.6 L135.653655,29.6 C132.162984,26.146525 130,21.3511286 130,16.05 C130,10.4879964 132.381108,5.48272526 136.178542,2 L13.8083957,2 Z" id="ex-path-77"></path>
+                <mask id="ex-mask-78" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="136.178542" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-77"></use>
+                </mask>
+                <circle id="ex-path-79" cx="14.5" cy="15.2" r="14.5"></circle>
+                <mask id="ex-mask-80" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.56923077" y="-4.1" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-79" fill="black"></use>
+                </mask>
+                <rect id="ex-path-81" x="0" y="-3.01980663e-14" width="149.839744" height="27.6" rx="13.8"></rect>
+                <mask id="ex-mask-82" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="149.839744" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-81"></use>
+                </mask>
+                <ellipse id="ex-path-83" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                <mask id="ex-mask-84" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.3692308" height="38.4">
+                    <rect x="-4.8" y="-4.8" width="38.3692308" height="38.4" fill="white"></rect>
+                    <use xlink:href="#ex-path-83" fill="black"></use>
+                </mask>
+                <path d="M160,58.8832635 C160,59.0750483 159.97541,59.2643229 159.924724,59.4455645 L144.370256,116 C143.681734,115.835326 142.98167,115.675673 142.278094,115.524554 C129.34322,112.765765 108.400015,111.240021 80.0301103,110.98799 C51.6145382,111.239017 30.6597915,112.765765 17.7284304,115.52355 C17.0163223,115.677179 16.3137491,115.835828 15.6302458,116 L0.0777848871,59.4520912 C0.026095575,59.265327 0,59.0750483 0,58.8842676 C0,58.418863 0.152558746,57.9564708 0.428569636,57.5824402 C14.7194098,38.258361 41.480422,28.6455228 79.9678824,29.0100144 C118.507032,28.6450207 145.282096,38.258863 159.574441,57.5844484 C159.847943,57.9579769 160,58.418863 160,58.8832635 L160,58.8832635 Z" id="ex-path-85"></path>
+                <mask id="ex-mask-86" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="162" height="89">
+                    <rect x="-1" y="28" width="162" height="89" fill="white"></rect>
+                    <use xlink:href="#ex-path-85" fill="black"></use>
+                </mask>
+                <path d="M122.287758,1 C129.913924,1 136.096154,7.17679469 136.096154,14.8 C136.096154,22.4215295 129.911719,28.6 122.287758,28.6 L27.3973964,28.6 C31.1006167,25.1243325 33.4142628,20.1826457 33.4142628,14.7 C33.4142628,9.32168269 31.187831,4.46393257 27.6072846,1 L122.287758,1 Z" id="ex-path-87"></path>
+                <mask id="ex-mask-88" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="108.698757" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-87"></use>
+                </mask>
+                <path d="M0.279069502,0.644429 L87.319966,0.644429 C95.0565884,0.644429 101.32836,6.91074245 101.32836,14.644429 C101.32836,22.3764155 95.0550085,28.644429 87.319966,28.644429 L1.28521719,28.644429 C4.56130863,25.1407454 6.5747359,20.3839054 6.5747359,15.144429 C6.5747359,9.38785724 4.14427852,4.21388774 0.279069502,0.644429 Z" id="ex-path-89"></path>
+                <mask id="ex-mask-90" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="101" height="28" fill="white">
+                    <use xlink:href="#ex-path-89"></use>
+                </mask>
+                <ellipse id="ex-path-91" cx="15.247886" cy="14.844429" rx="14.5" ry="14.5"></ellipse>
+                <mask id="ex-mask-92" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.052114" y="-4.455571" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-91" fill="black"></use>
+                </mask>
+                <rect id="ex-path-93" x="0" y="-5.5067062e-14" width="155.833333" height="27.6" rx="13.8"></rect>
+                <mask id="ex-mask-94" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="155.833333" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-93"></use>
+                </mask>
+                <ellipse id="ex-path-95" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                <mask id="ex-mask-96" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.3692308" height="38.4">
+                    <rect x="-4.8" y="-4.8" width="38.3692308" height="38.4" fill="white"></rect>
+                    <use xlink:href="#ex-path-95" fill="black"></use>
+                </mask>
+                <path d="M109.178542,2 L13.8056,2 C6.18097767,2 0,8.17679469 0,15.8 C0,23.4215295 6.17176609,29.6 13.8056,29.6 L108.653655,29.6 C105.162984,26.146525 103,21.3511286 103,16.05 C103,10.4879964 105.381108,5.48272526 109.178542,2 Z" id="ex-path-97"></path>
+                <mask id="ex-mask-98" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="109.178542" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-97"></use>
+                </mask>
+                <circle id="ex-path-99" cx="14.5" cy="15.2" r="14.5"></circle>
+                <mask id="ex-mask-100" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.56923077" y="-4.1" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-99" fill="black"></use>
+                </mask>
+                <rect id="ex-path-101" x="2.84217094e-14" y="1" width="149.681529" height="27.6" rx="13.8"></rect>
+                <mask id="ex-mask-102" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="149.681529" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-101"></use>
+                </mask>
+                <circle id="ex-path-103" cx="14.5" cy="14.5" r="14.5"></circle>
+                <mask id="ex-mask-104" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.6" height="38.6">
+                    <rect x="-4.8" y="-4.8" width="38.6" height="38.6" fill="white"></rect>
+                    <use xlink:href="#ex-path-103" fill="black"></use>
+                </mask>
+                <rect id="ex-path-105" x="0" y="-4.08562073e-14" width="135.455128" height="27.6" rx="13.8"></rect>
+                <mask id="ex-mask-106" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="135.455128" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-105"></use>
+                </mask>
+                <ellipse id="ex-path-107" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                <mask id="ex-mask-108" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.3692308" height="38.4">
+                    <rect x="-4.8" y="-4.8" width="38.3692308" height="38.4" fill="white"></rect>
+                    <use xlink:href="#ex-path-107" fill="black"></use>
+                </mask>
+                <path d="M3,0 L2.21178532,0.131369114 C0.990250016,0.334958331 1.77635684e-15,1.51661521 1.77635684e-15,2.75641163 L1.77635684e-15,220.743588 C1.77635684e-15,221.98977 0.94921875,223.316406 2.1322757,223.710759 L3,224 L3,208 L4.5,202 L3,0 Z" id="ex-path-109"></path>
+                <mask id="ex-mask-110" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="4.5" height="224" fill="white">
+                    <use xlink:href="#ex-path-109"></use>
+                </mask>
+                <rect id="ex-path-111" x="14" y="1" width="173.814103" height="27.6" rx="13.8"></rect>
+                <mask id="ex-mask-112" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="173.814103" height="27.6" fill="white">
+                    <use xlink:href="#ex-path-111"></use>
+                </mask>
+                <ellipse id="ex-path-113" cx="15.1987179" cy="15.3142857" rx="14.3846154" ry="14.4"></ellipse>
+                <mask id="ex-mask-114" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4.8" y="-4.8" width="38.3692308" height="38.4">
+                    <rect x="-3.98589744" y="-3.88571429" width="38.3692308" height="38.4" fill="white"></rect>
+                    <use xlink:href="#ex-path-113" fill="black"></use>
+                </mask>
+            </defs>
+            <g id="Exterior" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(50.000000, 170.000000)">
+                <g id="outline" transform="translate(269.000000, 40.000000)" stroke="#A4B1B7" stroke-width="1.01535509" fill="#FFFFFF" opacity="0.65">
+                    <path d="M2.36634563,371.531832 L0.598236264,377.842283 C0.597232512,377.873916 0.59622876,377.90605 0.595225008,377.937181 C-0.158090959,403.784022 0.11342399,435.919723 1.04390221,456.308687 C1.15582057,458.739877 1.87199771,461.07366 3.17035107,463.137812 L5.32841813,466.579739 C6.04559902,467.726546 6.51535502,469.025491 6.69853978,470.372136 C8.2684081,482.049081 11.4688717,491.792924 17.7659107,500.708796 C18.8464498,502.238709 20.0183304,503.744521 21.2885787,505.231755 C31.9368831,518.44263 59.3734436,527 104.801257,527 C150.237101,527 178.072151,518.44263 188.712425,505.231755 C197.392873,495.080705 201.470616,484.052981 203.309992,470.372136 C203.493177,469.025491 203.955405,467.726546 204.680114,466.579739 L206.838683,463.137812 C208.128504,461.074162 208.853213,458.739877 208.96463,456.308687 C209.896614,435.89512 210.167125,403.705693 209.410798,377.842283 L207.635662,371.531832 L210,148.297612 L209.808785,78.8575433 C209.808785,77.2643652 209.602012,75.6872545 209.204025,74.1407722 C205.046985,58.0849719 201.37526,49.2414028 193.889277,35.5761227 C192.105107,32.3094298 189.612289,29.5448417 186.561886,27.4088885 C168.227852,14.5891526 151.781875,7.71282949 124.982697,2.82835548 L121.988003,2.41361704 L118.738355,1.96774811 L115.257343,0.525703566 C114.421217,0.174732417 113.529384,0 112.621992,0 L97.3855364,0 C96.4781445,0 95.5858089,0.175234522 94.7496833,0.525703566 L91.2691729,1.96774811 L88.0119972,2.41361704 L85.7821619,2.72492192 L85.0253328,2.82885758 C58.225653,7.71333159 41.7801783,14.5891526 23.4461439,27.4093906 C20.7385226,29.2978062 18.4845972,31.6802927 16.756136,34.469484 C16.5333031,34.8360204 16.3174964,35.2020547 16.1107234,35.5771269 C8.63277012,49.2419049 4.96104486,58.0859761 0.804005449,74.1417764 C0.406017733,75.6877566 0.19874292,77.2653695 0.190211027,78.8585475 L0,145.908096 L2.36634563,371.531832 L2.36634563,371.531832 Z" id="Shape"></path>
+                </g>
+                <g id="vc_mud_guards" class="svg-container" transform="translate(263.000000, 440.000000)" fill="#9D9D9D">
+                    <path d="M6.72023447,0 L4.58868758,0 L2.13154689,0 C0.954400122,0 0,0.727964572 0,1.6262397 L2.13154689,52.3742627 C2.13154689,53.2720354 1.48728685,54 2.66443362,54 L4.86845311,54 L7,54 L6.72023447,0 L6.72023447,0 Z" id="Shape"></path>
+                    <path d="M216.221665,0 L218.688782,0 L221.532883,0 C222.895275,0 224,0.727964572 224,1.6262397 L221.63523,52.3742627 C221.63523,53.2720354 222.380971,54 221.018579,54 L218.467117,54 L216,54 L216.221665,0 L216.221665,0 Z" id="Shape"></path>
+                </g>
+                <g id="vc_left_mud_guard" class="svg-container div-@Model.LMUDGuardId" transform="translate(33.000000, 120.000000)" data-partname="@Resource.LMudGuard" data-v="@Model.LMUDGuardData.Id" data-name="@Model.LMUDGuardId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.LMUDGuardData.ArabicCondition:Model.LMUDGuardData.Condition)" data-sv="@Model.LMUDGuardData.Severity" data-cor="@Model.LMUDGuardData.CostOfRepair" data-corp="@Model.LMUDGuardData.CostOfReplacement" data-esr="@Model.LMUDGuardData.EstimatedRepairCost" data-des="@Model.LMUDGuardData.Description" data-img="@Model.LMUDGuardData.ImagePath">
+                    <path d="M234.0969,84 L230.9031,84 C229.852113,84 229,83.2180194 229,82.2537613 L231.427325,27.7462387 C231.427325,26.7814771 230.852113,26 231.9031,26 L233.870906,26 L235.774007,26 L236,84 L234.0969,84 Z" id="Shape" class="hover-able" fill="#9D9D9D"></path>
+                    <g id="Group-8">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-2)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001" xlink:href="#ex-path-1"></use>
+                        <text id="L.MUD-GUARD" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" class="hover-able" fill="#4E4E4E">
+                            <tspan x="12.631" y="20">@Resource.LMudGuard</tspan>
+                        </text>
+                        <g id="Group-15" transform="translate(128.000000, 0.000000)">
+                            <g id="Oval-2">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-3"></use>
+                                <use stroke="#FFFFFF" mask="url(#ex-mask-4)" stroke-width="9.6" xlink:href="#ex-path-3"></use>
+                                <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-3"></use>
+                            </g>
+                            <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18" letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                <tspan x="4.862" y="19" id="rating-@Model.LMUDGuardId">@String.Format("{0:n1}", Model.LMUDGuardData.Ratting)</tspan>
+
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_right_mud_guard" class="svg-container div-@Model.RMudGuardId" transform="translate(479.000000, 121.000000)" data-partname="@Resource.RMudGuard" data-v="@Model.RMudGuardData.Id" data-name="@Model.RMudGuardId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.RMudGuardData.ArabicCondition:Model.RMudGuardData.Condition)" data-sv="@Model.RMudGuardData.Severity" data-cor="@Model.RMudGuardData.CostOfRepair" data-corp="@Model.RMudGuardData.CostOfReplacement" data-esr="@Model.RMudGuardData.EstimatedRepairCost" data-des="@Model.RMudGuardData.Description" data-img="@Model.RMudGuardData.ImagePath">
+                    <path d="M0,83 L2.53742396,83 L5.46257604,83 C6.86379265,83 8,82.2180194 8,81.2537613 L6.09679979,26.7462387 C6.09679979,25.7814771 6.86379265,25 5.46257604,25 L2.83840254,25 L0.300978577,25 L0,83 L0,83 Z" id="Shape" class="hover-able" fill="#9D9D9D"></path>
+                    <g id="Label---Left" transform="translate(77.000000, 0.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-6)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001" xlink:href="#ex-path-5"></use>
+                        <text id="GRILL" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able" fill="#4E4E4E">
+                            <tspan x="43.1538462" y="18.8">@Resource.RMudGuard</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(0.000000, 0.300000)">
+                            <g id="rating">
+                                <ellipse stroke="#B4C0C4" stroke-width="3" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                                <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18" letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                    <tspan x="4.862" y="19" id="rating-@Model.RMudGuardId">@String.Format("{0:n1}", Model.RMudGuardData.Ratting)</tspan>
+
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_grill" class="svg-container div-@Model.GrillId" transform="translate(357.000000, 0.000000)" data-partname="@Resource.Grill" data-v="@Model.GrillData.Id" data-name="@Model.GrillId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.GrillData.ArabicCondition:Model.GrillData.Condition)" data-sv="@Model.GrillData.Severity" data-cor="@Model.GrillData.CostOfRepair" data-corp="@Model.GrillData.CostOfReplacement" data-esr="@Model.GrillData.EstimatedRepairCost" data-des="@Model.GrillData.Description" data-img="@Model.GrillData.ImagePath">
+                    <path d="M30.7398567,41.2372508 L18.4003249,41.2372508 C17.9548925,41.085606 17.4863599,41 16.9997489,41 C16.5131379,41 16.0446053,41.0860951 15.5991729,41.2372508 L3.25964109,41.2372508 L0,41.6726183 L0.418816926,43.2790755 C0.641282032,44.1326893 1.43020456,44.7309527 2.33412599,44.7309527 L12.3099033,44.7309527 C12.0678532,45.4314541 11.932265,46.1965268 11.932265,46.9997554 C11.932265,50.3134401 14.2016099,53 17.0002511,53 C19.7988923,53 22.067735,50.3134401 22.067735,46.9997554 C22.067735,46.1965268 21.9321468,45.4314541 21.6900967,44.7309527 L31.6653718,44.7309527 C32.5702976,44.7309527 33.358718,44.1326893 33.5811831,43.2790755 L34,41.6726183 L30.7398567,41.2372508 L30.7398567,41.2372508 Z" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED"></path>
+                    <g id="label" transform="translate(198.000000, 0.000000)">
+                        <g id="Group-10" transform="translate(0.185897, 0.000000)">
+                            <g id="label">
+                                <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-8)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001" xlink:href="#ex-path-7"></use>
+                                <text id="GRILL" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able" fill="#4E4E4E">
+                                    <tspan x="41.1538462" y="19.8">@Resource.Grill</tspan>
+                                </text>
+                                <g id="Group-9" transform="translate(0.000000, 0.300000)">
+                                    <g id="rating">
+                                        <ellipse stroke="#B4C0C4" stroke-width="3" cx="15.3141026" cy="15.2" rx="14.5" ry="14.5"></ellipse>
+                                        <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18" letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                            <tspan x="5.862" y="19" id="rating-@Model.GrillId">@String.Format("{0:n1}", Model.GrillData.Ratting)</tspan>
+
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_bonnet" class="svg-container div-@Model.HoodId" transform="translate(282.000000, 40.000000)" data-partname="@Resource.Hood" data-v="@Model.HoodData.Id" data-name="@Model.HoodId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.HoodData.ArabicCondition:Model.HoodData.Condition)" data-sv="@Model.HoodData.Severity" data-cor="@Model.HoodData.CostOfRepair" data-corp="@Model.HoodData.CostOfReplacement" data-esr="@Model.HoodData.EstimatedRepairCost" data-des="@Model.HoodData.Description" data-img="@Model.HoodData.ImagePath">
+                    <path d="M176.435102,165 L175.460425,162.687861 L174.771386,161.394819 L174.050776,160.290965 L172.14051,158.116051 L170.730861,156.854793 L167.849425,154.332276 C167.849425,154.332276 151.594115,142.098069 133.177979,138.692671 C114.761843,135.287273 92.3006716,134.913436 92.3006716,134.913436 C92.3006716,134.913436 88.3232873,134.638482 78.664713,135.387165 C71.5568362,135.938082 61.3139567,136.764963 47.6123515,140.080055 C15.2901535,147.899858 7.3659533,164.254344 7.3659533,164.254344 L4.39231109,161.267684 L2.30665236,158.546897 L1.36404687,153.953898 L0.682023433,115.984469 L0.0145324611,86.3867684 L0,67.3054412 L1.54444983,42.2053886 L14.0413641,34.6469188 L37.7823944,21.1817234 L61.2067172,9.51659599 L66.9956479,7.4188709 L68.5010104,6.79631372 L69.1529667,6.28373828 L69.8460147,5.62687486 L71.0622314,4.25714816 L72.3696518,2.53426909 L73.7677748,2.26183726 L75.0361078,2.0146306 L75.2355533,2.68158408 L75.4540414,3.34450153 L75.8779883,4.13203132 L76.4417476,4.63653471 L77.3608005,4.85952521 L78.7278541,4.84186759 L80.1530375,4.84186759 L87.3200464,4.84186759 L87.0123591,6.10312606 L86.9432047,7.61663623 L87.1842431,8.89353431 L87.7169329,10.1704324 L88.124343,11.0689529 L88.7196727,11.8100684 L89.4868865,12.5986072 L90.2541002,13.0718314 L91.2252695,13.3558668 L92.0010022,13.3704974 L92.932082,13.3240831 L93.8090408,13.0087685 L94.3753057,12.6894178 L95.1244791,12.0734192 L95.6882384,11.5371321 L96.1267178,10.8959083 L96.4293939,10.1916215 L96.6173137,9.73958649 L96.8468263,8.99342598 L97.0572965,7.18175431 L97.0572965,6.18536012 L96.9034528,5.4386951 L96.6819581,4.84186759 L98.7681179,4.84186759 L106.243315,4.84186759 L106.935862,4.81866044 L107.459031,4.66024637 L107.924571,4.42464329 L108.187157,4.11941874 L108.46578,3.61087932 L108.88672,2 L111.53714,2.42277384 L112.361982,3.45448327 L113.426861,4.65267882 L114.387507,5.7666223 L115.493978,6.70197159 L121.259858,9.35868643 L136.038368,15.9838249 L148.922147,22.613504 L163.197033,30.1941719 L174.148495,36.6513108 L182.274646,42.2124516 L184,65.6653007 L182.915077,132.259748 L182.645474,148.571856 L182.617913,155.375589 L182.313232,157.059117 L181.838171,158.283042 L181.020845,159.592733 L176.435102,165 L176.435102,165 Z" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED"></path>
+                    <path d="M10.6502778,169.514462 C10.6502778,169.514462 8.31407998,175.803609 8.51439705,179 C8.51439705,179 22.311736,154.009529 61.759175,149.117914 C61.759175,149.117914 91.5613471,143.597383 127.18273,150.134947 C127.18273,150.134947 159.468834,155.352704 174.657876,179 C174.657876,179 175.066522,176.005797 172.691263,169.514462 L176,165.001313 C176,165.001313 174.507137,158.160468 161.894674,150.473789 C161.894674,150.473789 145.601885,138.467512 120.058453,136.619884 C120.058453,136.619884 87.4788852,134.352641 78.4035204,135.182728 C78.4035204,135.182728 49.6880684,136.866268 36.109075,143.310866 C36.109075,143.310866 16.1239417,149.847922 7,164.097565 L10.6502778,169.514462 L10.6502778,169.514462 Z" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED"></path>
+                    <path d="M10.9725261,170 L7.85391165,166.110634 C7.12366035,165.221002 6.84179138,164.043904 7.08604439,162.917743 C20.9512897,99.016548 36.8924348,57.4660955 76,5" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509"></path>
+                    <path d="M74,4 C32.3414727,53.6309135 17.650584,103.253267 6,163" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509"></path>
+                    <path d="M173.223878,170 L176.146379,166.110634 C176.876126,165.221002 177.158496,164.043904 176.913742,162.917743 C163.04854,99.016548 147.107444,57.4655912 108,5" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509"></path>
+                    <path d="M178,163 C166.3415,103.257982 151.651219,53.6247106 110,4" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509"></path>
+                    <g id="Group-18" transform="translate(274.000000, 0.000000)">
+                        <g id="Group-10" transform="translate(29.564103, 0.000000)">
+                            <use id="Combined-Shape" stroke="#4A4A4A" mask="url(#ex-mask-10)" stroke-width="2.4" class="hover-able" fill="#424478" opacity="0.100000001" xlink:href="#ex-path-9"></use>
+                            <text id="HOOD" class="hover-able" fill="#414042" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal">
+                                <tspan x="9.58974359" y="18">@Resource.Hood</tspan>
+                            </text>
+                        </g>
+                        <g id="Group-9">
+                            <g id="Oval-2">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-11"></use>
+                                <use stroke="#FFFFFF" mask="url(#ex-mask-12)" stroke-width="9.6" xlink:href="#ex-path-11"></use>
+                                <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-11"></use>
+                            </g>
+                            <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18" letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                <tspan x="4.862" y="18" id="rating-@Model.HoodId">@String.Format("{0:n1}", Model.HoodData.Ratting)</tspan>
+
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_right_fender" class="svg-container div-@Model.RightFenderId" transform="translate(455.000000, 76.000000)" data-partname="@Resource.RightFender" data-v="@Model.RightFenderData.Id" data-name="@Model.RightFenderId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.RightFenderData.ArabicCondition:Model.RightFenderData.Condition)" data-sv="@Model.RightFenderData.Severity" data-cor="@Model.RightFenderData.CostOfRepair" data-corp="@Model.RightFenderData.CostOfReplacement" data-esr="@Model.RightFenderData.EstimatedRepairCost" data-des="@Model.RightFenderData.Description" data-img="@Model.RightFenderData.ImagePath">
+                    <polygon id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED" points="18.2649055 23.8528225 15.9339686 17.3689606 12.9537443 10.3462026 8.97364648 2.20137324 7.55966436 0 8.43249283 3.57955868 9.19670265 5.91225955 9.28204588 8.38182295 10.630081 29.8128833 10.3638683 64.905037 9.31065525 117.679124 9.24470821 119.789423 8.99789172 120.965334 8.72052623 121.901735 8.2744139 122.690707 6.12628605 125.47123 4.24049165 127.758646 2.17964665 130.361549 0 133.354914 1.14243549 136.8278 1.85863974 140.007841 2.1636448 144 3.20231068 143.615074 4.31468207 142.879438 5.01924861 142.090969 5.46778546 140.975942 5.96917693 139.82519 6.91280148 138.789664 7.78805448 137.987609 8.85629954 137.245935 9.94588042 136.66427 11.0694046 136.206887 12.4950245 135.736925 15.7162464 135.093873 19.1469472 134.769831 22.826889 134.798511 23 117.952346 22.903504 54.363604 22.7522137 40.5892971 21.1462093 33.5841501"></polygon>
+                    <g id="Label---Left" transform="translate(101.000000, 6.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-14)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001" xlink:href="#ex-path-13"></use>
+                        <text id="GRILL" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able" fill="#4E4E4E">
+                            <tspan x="43.1538462" y="18.8">@Resource.RightFender</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(0.000000, 0.300000)">
+                            <g id="rating">
+                                <ellipse stroke="#B4C0C4" stroke-width="3" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                                <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18" letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                    <tspan x="4.862" y="19" id="rating-@Model.RightFenderId">@String.Format("{0:n1}", Model.RightFenderData.Ratting)</tspan>
+
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_left_fender" class="svg-container div-@Model.LeftFenderId" transform="translate(19.000000, 76.000000)" data-partname="@Resource.LeftFender" data-v="@Model.LeftFenderData.Id" data-name="@Model.LeftFenderId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.LeftFenderData.ArabicCondition:Model.LeftFenderData.Condition)" data-sv="@Model.LeftFenderData.Severity" data-cor="@Model.LeftFenderData.CostOfRepair" data-corp="@Model.LeftFenderData.CostOfReplacement" data-esr="@Model.LeftFenderData.EstimatedRepairCost" data-des="@Model.LeftFenderData.Description" data-img="@Model.LeftFenderData.ImagePath">
+                    <polygon id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED" points="254.735094 23.8528225 257.066031 17.3689606 260.046256 10.3462026 264.026354 2.20137324 265.440336 0 264.567507 3.57955868 263.803297 5.91225955 263.717954 8.38182295 262.369919 29.8128833 262.636132 64.905037 263.689345 117.679124 263.755292 119.789423 264.002108 120.965334 264.279474 121.901735 264.725586 122.690707 266.873714 125.47123 268.759508 127.758646 270.820353 130.361549 273 133.354914 271.857565 136.8278 271.14136 140.007841 270.836355 144 269.797689 143.615074 268.685318 142.879438 267.980751 142.090969 267.532215 140.975942 267.030823 139.82519 266.087199 138.789664 265.211946 137.987609 264.1437 137.245935 263.05412 136.66427 261.930595 136.206887 260.504976 135.736925 257.283754 135.093873 253.853053 134.769831 250.173111 134.798511 250 117.952346 250.096496 54.363604 250.247786 40.5892971 251.853791 33.5841501"></polygon>
+                    <g id="tag_lfender" transform="translate(0.000000, 5.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-16)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001" xlink:href="#ex-path-15"></use>
+                        <text id="LEFT-FENDER" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" class="hover-able" fill="#4E4E4E">
+                            <tspan x="33.52" y="19">@Resource.LeftFender</tspan>
+                        </text>
+                        <g id="Group-14" transform="translate(142.000000, 0.000000)">
+                            <g id="Oval-2">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-17"></use>
+                                <use stroke="#FFFFFF" mask="url(#ex-mask-18)" stroke-width="9.6" xlink:href="#ex-path-17"></use>
+                                <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-17"></use>
+                            </g>
+                            <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18" letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                <tspan x="4.862" y="19" id="rating-@Model.LeftFenderId">@String.Format("{0:n1}", Model.LeftFenderData.Ratting)</tspan>
+
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_front_bumper" class="svg-container div-@Model.FrontBumperId" transform="translate(16.000000, 1.000000)" data-partname="@Resource.FrontBumper" data-v="@Model.FrontBumperData.Id" data-name="@Model.FrontBumperId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.FrontBumperData.ArabicCondition:Model.FrontBumperData.Condition)" data-sv="@Model.FrontBumperData.Severity" data-cor="@Model.FrontBumperData.CostOfRepair" data-corp="@Model.FrontBumperData.CostOfReplacement" data-esr="@Model.FrontBumperData.EstimatedRepairCost" data-des="@Model.FrontBumperData.Description" data-img="@Model.FrontBumperData.ImagePath">
+                    <path d="M364.988489,38 L350.012004,38 C349.120094,38 348.242984,38.1781067 347.421125,38.53432 L344,40 L371,40 L367.578382,38.53432 C366.757016,38.1781067 365.879906,38 364.988489,38 L364.988489,38 Z" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED"></path>
+                    <path d="M283.744613,60.8529752 C281.188102,62.4616708 278.638575,64.1926233 276.042657,66.0437949 C273.350963,67.958642 271.111211,70.3757607 269.393236,73.205496 L268,78 C269.717975,75.170774 273.351462,70.829639 276.042657,68.9137732 C293.766134,56.262742 309.716764,49.3190655 335.079343,44.3880414 L335.182102,44.4761682 L338,41 L337.247762,41.1054465 C314.402785,45.3569265 299.125078,51.089242 283.744613,60.8529752 L283.744613,60.8529752 Z" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED"></path>
+                    <path d="M445.607752,73.2073357 C443.889765,70.3779929 441.649497,67.9602649 438.957784,66.0443199 C420.735846,53.0376974 404.389027,46.0611309 377.752243,41.1054508 L377,41 L379.817419,44.4763118 L379.921177,44.3871625 C405.283937,49.3194091 421.234182,56.2633724 438.957784,68.9144167 C441.649497,70.8293428 445.283509,75.1706572 447,78 L445.607752,73.2073357 L445.607752,73.2073357 Z" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED"></path>
+                    <g id="Label---Right">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-20)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001" xlink:href="#ex-path-19"></use>
+                        <text id="FRONT-BUMPER" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able" fill="#4E4E4E">
+                            <tspan x="19.683" y="19.8">@Resource.FrontBumper</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(159.000000, 15.300000) translate(-159.000000, -15.300000) translate(144.000000, 0.300000)">
+                            <g id="rating">
+                                <g>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-21"></use>
+                                    <use stroke="#FFFFFF" mask="url(#ex-mask-22)" stroke-width="9.6" xlink:href="#ex-path-21"></use>
+                                    <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-21"></use>
+                                </g>
+                                <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                      letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                    <tspan x="4.862" y="19.7" id="rating-@Model.FrontBumperId">@String.Format("{0:n1}", Model.FrontBumperData.Ratting) </tspan>
+
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_head_lights" class="svg-container div-@Model.HeadlightId" transform="translate(34.000000, 41.000000)" data-partname="@Resource.Headlight" data-v="@Model.HeadlightData.Id" data-name="@Model.HeadlightId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.HeadlightData.ArabicCondition:Model.HeadlightData.Condition)" data-sv="@Model.HeadlightData.Severity" data-cor="@Model.HeadlightData.CostOfRepair" data-corp="@Model.HeadlightData.CostOfReplacement" data-esr="@Model.HeadlightData.EstimatedRepairCost" data-des="@Model.HeadlightData.Description" data-img="@Model.HeadlightData.ImagePath">
+                    <use id="Shape" stroke="#A4B1B7" mask="url(#ex-mask-24)" stroke-width="2" class="hover-able" fill="#FFFFFF" xlink:href="#ex-path-23"></use>
+                    <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-26)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001" xlink:href="#ex-path-25"></use>
+                    <text id="HEADLIGHT" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" class="hover-able" fill="#4E4E4E">
+                        <tspan x="30.377" y="20">@Resource.Headlight</tspan>
+                    </text>
+                    <g id="Group-13" transform="translate(127.000000, 0.000000)">
+                        <g id="Oval-2">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-27"></use>
+                            <use stroke="#FFFFFF" mask="url(#ex-mask-28)" stroke-width="9.6" xlink:href="#ex-path-27"></use>
+                            <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-27"></use>
+                        </g>
+                        <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                              letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                            <tspan x="4.862" y="19" id="rating-@Model.HeadlightId">@String.Format("{0:n1}", Model.HeadlightData.Ratting)</tspan>
+
+                        </text>
+                    </g>
+                    <use id="Shape" stroke="#A4B1B7" mask="url(#ex-mask-30)" stroke-width="2" class="hover-able" fill="#FFFFFF" xlink:href="#ex-path-29"></use>
+                </g>
+                <g id="vc_lfdoor" class="svg-container div-@Model.LeftFenderId" transform="translate(55.000000, 210.000000)" data-partname="@Resource.LeftDoor" data-v="@Model.LeftFenderData.Id" data-name="@Model.LeftFenderId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.LeftFenderData.ArabicCondition:Model.LeftFenderData.Condition)" data-sv="@Model.LeftFenderData.Severity" data-cor="@Model.LeftFenderData.CostOfRepair" data-corp="@Model.LeftFenderData.CostOfReplacement" data-esr="@Model.LeftFenderData.EstimatedRepairCost" data-des="@Model.LeftFenderData.Description" data-img="@Model.LeftFenderData.ImagePath">
+                    <polygon id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED" points="252 138 250.298393 137.177743 232.439958 126.34767 229.581442 124.416672 217.890118 121.226153 216.553689 117.702408 215.311879 114.644576 214 0 219.878139 0.0929814146 221.156774 0.302566549 222.435409 0.55386767 223.671593 0.721234216 224.774799 0.93735318 225.824302 1.26504984 226.469245 1.44347364 229.583488 9.68514519 233.5135 21.2460019 236.067189 29.1700289 240.007941 42.3628351 242.67773 52.2600784 245.529086 64.18884 248.360494 78.7004746 249.707152 87.8870383 250.904466 102.494167"></polygon>
+                    <polygon id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#FAFAFA" points="250 130 232.334722 116.339007 230 15 234.677423 28.8298519 242.564403 57.2147446 245.667722 72.5 247.552059 83.6823843 249.048355 96.9167067"></polygon>
+                    <path d="M230,30 L234.418634,30 C240.841174,50.5565143 248.141658,78.5172469 249.090609,101.853228 C249.485203,112.616888 249.791038,122.289834 250,131 L232.036365,117.36205 L230,30 L230,30 Z" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#FFFFFF"></path>
+                    <path d="M229,115 L232,117" id="Shape" stroke="#A4B1B7" stroke-width="1.01535509"></path>
+                    <g id="Label---Right" transform="translate(0.000000, 28.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-32)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001" xlink:href="#ex-path-31"></use>
+                        <text id="LEFT-DOOR" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able" fill="#4E4E4E">
+                            <tspan x="13.404" y="19.8">@Resource.LeftDoor</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(120.000000, 15.300000)  translate(-120.000000, -15.300000) translate(105.000000, 0.300000)">
+                            <g id="rating">
+                                <g>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-33"></use>
+                                    <use stroke="#FFFFFF" mask="url(#ex-mask-34)" stroke-width="9.6" xlink:href="#ex-path-33"></use>
+                                    <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-33"></use>
+                                </g>
+                                <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                      letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                    <tspan x="4.862" y="19.7" id="rating-@Model.LeftFenderId">@String.Format("{0:n1}", Model.LeftFenderData.Ratting)</tspan>
+
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_rfdoor" class="svg-container div-@Model.RRDoorId" transform="translate(441.000000, 210.000000)" data-partname="@Resource.RightDoor" data-v="@Model.RRDoorData.Id" data-name="@Model.RRDoorId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.RRDoorData.ArabicCondition:Model.RRDoorData.Condition)" data-sv="@Model.RRDoorData.Severity" data-cor="@Model.RRDoorData.CostOfRepair" data-corp="@Model.RRDoorData.CostOfReplacement" data-esr="@Model.RRDoorData.EstimatedRepairCost" data-des="@Model.RRDoorData.Description" data-img="@Model.RRDoorData.ImagePath">
+                    <polygon id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED" points="0 138 1.70111848 137.177743 19.5603053 126.34767 22.418348 124.416672 34.1098295 121.226153 35.4462764 117.702408 36.6881032 114.644576 38 0 32.1217815 0.0929814146 30.8431296 0.302566549 29.5644777 0.55386767 28.3282771 0.721234216 27.2250562 0.93735318 26.1755387 1.26504984 25.5305867 1.44347364 22.4168136 9.68514519 18.4862377 21.2460019 15.9325141 29.1700289 11.991709 42.3628351 9.32188379 52.2600784 6.47049006 64.18884 3.6390433 78.7004746 2.29236712 87.8870383 1.09503748 102.494167"></polygon>
+                    <polygon id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#FFFFFF" points="2 130 19.6648379 116.339007 22 15 17.3226933 28.8298519 9.43541147 57.2147446 6.33266833 72.5 4.4478803 83.6823843 2.95162095 96.9167067"></polygon>
+                    <g id="Group-10" transform="translate(114.000000, 30.000000)">
+                        <g id="Label---Left">
+                            <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-36)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001" xlink:href="#ex-path-35"></use>
+                            <text id="GRILL" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able"
+                                  fill="#4E4E4E">
+                                <tspan x="43.1538462" y="18.8">@Resource.RightDoor</tspan>
+                            </text>
+                            <g id="Group-9" transform="translate(0.000000, 0.300000)">
+                                <g id="rating">
+                                    <ellipse stroke="#B4C0C4" stroke-width="3" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                                    <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                          letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                        <tspan x="4.862" y="19.1" id="rating-@Model.RRDoorId">@String.Format("{0:n1}", Model.RRDoorData.Ratting)</tspan>
+
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_left_rocker_panel" class="svg-container div-@Model.LRockerPanelId" transform="translate(0.000000, 210.000000)" data-partname="@Resource.LtRockerPanel" data-v="@Model.LRockerPanelData.Id" data-name="@Model.LRockerPanelId" data-cr="" data-sv="@Model.LRockerPanelData.Severity" data-cor="@Model.LRockerPanelData.CostOfRepair" data-corp="@Model.LRockerPanelData.CostOfReplacement" data-esr="@Model.LRockerPanelData.EstimatedRepairCost" data-des="@Model.LRockerPanelData.Description" data-img="@Model.LRockerPanelData.ImagePath">
+                    <use id="lrocker" stroke="#A4B1B7" mask="url(#ex-mask-38)" stroke-width="2" class="hover-able" fill="#E4E9ED" xlink:href="#ex-path-37"></use>
+                    <g id="Group-4" transform="translate(0.000000, 70.000000)"></g>
+                    <g id="Label---Right" transform="translate(12.000000, 69.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-40)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001" xlink:href="#ex-path-39"></use>
+                        <text id="LT.ROCKER-PANEL" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able" fill="#4E4E4E">
+                            <tspan x="10.436" y="19.8">@Resource.LtRockerPanel</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(163.000000, 15.300000)  translate(-163.000000, -15.300000) translate(148.000000, 0.300000)">
+                            <g id="rating">
+                                <g>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-41"></use>
+                                    <use stroke="#FFFFFF" mask="url(#ex-mask-42)" stroke-width="9.6" xlink:href="#ex-path-41"></use>
+                                    <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-41"></use>
+                                </g>
+                                <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                      letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                    <tspan x="4.862" y="19.7" id="rating-@Model.LRockerPanelId">@String.Format("{0:n1}", Model.LRockerPanelData.Ratting)</tspan>
+
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_right_mirror" class="svg-container div-@Model.RightMirrorId" transform="translate(462.000000, 201.000000)" data-partname="@Resource.RightMirror" data-v="@Model.RightMirrorData.Id" data-name="@Model.RightMirrorId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.RightMirrorData.ArabicCondition:Model.RightMirrorData.Condition)" data-sv="@Model.RightMirrorData.Severity" data-cor="@Model.RightMirrorData.CostOfRepair" data-corp="@Model.RightMirrorData.CostOfReplacement" data-esr="@Model.RightMirrorData.EstimatedRepairCost" data-des="@Model.RightMirrorData.Description" data-img="@Model.RightMirrorData.ImagePath">
+                    <path d="M11.954951,29.12101 C20.9032951,30.8628207 28.2371947,33.9196471 31.4818466,38.2617357 C32.7169601,39.9186752 33.1440887,41.6443895 32.9584911,43.9207912 C32.9345923,44.3461227 32.8771333,44.7875505 32.8044198,45.2519033 C32.7647578,45.4996881 32.6030591,45.716256 32.344748,45.855757 C32.0950812,45.9947701 31.7808366,46.0333036 31.4894739,45.9713574 L4.78885188,40.3054732 C4.25595811,40.189385 3.92544193,39.77137 4.01442706,39.3299422 L4.39375793,37.5037481 L4.53104926,36.8691652 L5.41022228,32.6275563 C5.66090609,31.4354574 6.50855295,30.3823716 7.75078528,29.7165717 C7.87231354,29.6468212 8.00045211,29.5926793 8.13011615,29.5312208 L8.13825193,29.5312208 C9.29251611,29.0205303 10.6557682,28.8654209 11.954951,29.12101 L11.954951,29.12101 Z"
+                          id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#D4DCDF"></path>
+                    <g id="Group-10" transform="translate(93.000000, 0.000000)">
+                        <g id="Label---Left">
+                            <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-44)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                                 xlink:href="#ex-path-43"></use>
+                            <text id="GRILL" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able"
+                                  fill="#4E4E4E">
+                                <tspan x="43.1538462" y="18.8">@Resource.RightMirror</tspan>
+                            </text>
+                            <g id="Group-9" transform="translate(0.000000, 0.300000)">
+                                <g id="rating">
+                                    <ellipse stroke="#B4C0C4" stroke-width="3" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                                    <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                          letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                        <tspan x="4.862" y="19" id="rating-@Model.RightMirrorId">@String.Format("{0:n1}", Model.RightMirrorData.Ratting)</tspan>
+
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <path d="M4.53181324,37 L4.01443206,39.4255741 C3.9253162,39.8611678 4.25682718,40.2727221 4.7899946,40.3871496 L31.529843,45.9719799 C31.8201061,46.0325591 32.1358308,45.9950577 32.3863737,45.8580332 C32.6450643,45.7200471 32.8070005,45.5070582 32.8467207,45.262818 C32.9195411,44.8051081 32.9770845,44.3699952 33,43.9507483 L32.9770845,43.9507483 L4.53181324,37 L4.53181324,37 Z"
+                          id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#B4C0C4"></path>
+                    <path d="M8,30 C7.86553292,30.0611808 7.73264781,30.1159988 7.60661789,30.1859896 C6.3188979,30.8545733 5.43985235,31.9107984 5.17935535,33.1070052 L4.26761585,37.3632303 L4.12523894,38 L0,38 L0,30.0078311 L8,30 L8,30 Z"
+                          id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#F2F4F4"></path>
+                </g>
+                <g id="vc_left_mirror" class="svg-container div-@Model.LeftMirrorId" transform="translate(29.000000, 197.000000)" data-partname="@Resource.LeftMirror" data-v="@Model.LeftMirrorData.Id" data-name="@Model.LeftMirrorId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.LeftMirrorData.ArabicCondition:Model.LeftMirrorData.Condition)" data-sv="@Model.LeftMirrorData.Severity" data-cor="@Model.LeftMirrorData.CostOfRepair" data-corp="@Model.LeftMirrorData.CostOfReplacement" data-esr="@Model.LeftMirrorData.EstimatedRepairCost" data-des="@Model.LeftMirrorData.Description" data-img="@Model.LeftMirrorData.ImagePath">
+                    <use id="Shape" stroke="#A4B1B7" mask="url(#ex-mask-46)" stroke-width="2" class="hover-able" fill="#D4DCDF" style="mix-blend-mode: multiply;"
+                         xlink:href="#ex-path-45"></use>
+                    <path d="M252.468187,41 L252.985568,43.4255741 C253.074684,43.8611678 252.743173,44.2727221 252.210005,44.3871496 L225.470157,49.9719799 C225.179894,50.0325591 224.864169,49.9950577 224.613626,49.8580332 C224.354936,49.7200471 224.192999,49.5070582 224.153279,49.262818 C224.080459,48.8051081 224.022916,48.3699952 224,47.9507483 L224.022916,47.9507483 L252.468187,41 L252.468187,41 Z"
+                          id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#B4C0C4"></path>
+                    <path d="M248,34 C248.134467,34.0611808 248.267352,34.1159988 248.393382,34.1859896 C249.681102,34.8545733 250.560148,35.9107984 250.820645,37.1070052 L251.732384,41.3632303 L251.874761,42 L256,42 L256,34.0078311 L248,34 L248,34 Z"
+                          id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#F2F4F4"></path>
+                    <g id="label">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-48)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-47"></use>
+                        <text id="LEFT-MIRROR" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" class="hover-able" fill="#4E4E4E">
+                            <tspan x="22.727" y="19">@Resource.LeftMirror</tspan>
+                        </text>
+                        <g id="Group-16" transform="translate(132.000000, 0.000000)">
+                            <g id="Oval-2">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-49"></use>
+                                <use stroke="#FFFFFF" mask="url(#ex-mask-50)" stroke-width="9.6" xlink:href="#ex-path-49"></use>
+                                <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-49"></use>
+                            </g>
+                            <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                  letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                <tspan x="4.862" y="20" id="rating-@Model.LeftMirrorId"> @String.Format("{0:n1}", Model.LeftMirrorData.Ratting)</tspan>
+
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_lrdoor" class="svg-container div-@Model.LRdoorId" transform="translate(72.000000, 325.000000)" data-partname="@Resource.LRDoor" data-v="@Model.LRdoorData.Id" data-name="@Model.LRdoorId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.LRdoorData.ArabicCondition:Model.LRdoorData.Condition)" data-sv="@Model.LRdoorData.Severity" data-cor="@Model.LRdoorData.CostOfRepair" data-corp="@Model.LRdoorData.CostOfReplacement" data-esr="@Model.LRdoorData.EstimatedRepairCost" data-des="@Model.LRdoorData.Description" data-img="@Model.LRdoorData.ImagePath">
+                    <g id="Group" transform="translate(197.000000, 0.000000)" stroke-width="1.01535509" stroke="#A4B1B7">
+                        <polygon id="Shape" class="hover-able" fill="#E4E9ED"
+                                 points="20.0072773 112.023756 19.3957433 112.36454 18.60019 112.36454 17.9368052 112.546257 15.7773735 113.468941 13.655559 114 11.5586532 113.930031 9.30009498 113.225812 7.14574666 112.36454 4.52677485 111.308462 0 109.507895 0.188594438 92.8306281 2.08775568 86.4926525 1.23780985 0 3.80035584 6.59167579 14.8496515 9.63054152 36.0113708 22.5677435 37.7026206 23.3912625 38 40.563849 37.7437962 61.2071956 36.8699584 74.1222491 36.1074472 80.476836 35.2813934 84.8184323 34.1376266 89.8521672 32.4723021 94.6860627 31.0824984 97.8613427 28.9723757 101.667853 26.0041737 105.897197 23.4609447 108.679846"></polygon>
+                        <path d="M18,22 L35.9043465,30.1317883 C36.5353457,74.6266215 34.0649532,89.3623983 27.8836118,100 L19.5718823,97.1986136 L19.5718823,97.1895345 L18.5993471,47.6926579 L18,22 L18,22 Z"
+                              id="Shape" class="hover-able" fill="#FFFFFF"></path>
+                    </g>
+                    <g id="Label---Right" transform="translate(0.000000, 33.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-52)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-51"></use>
+                        <text id="LR-DOOR" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able"
+                              fill="#4E4E4E">
+                            <tspan x="13.146" y="19.8">@Resource.LRDoor</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(103.000000, 15.300000)  translate(-103.000000, -15.300000) translate(88.000000, 0.300000)">
+                            <g id="rating">
+                                <g>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-53"></use>
+                                    <use stroke="#FFFFFF" mask="url(#ex-mask-54)" stroke-width="9.6" xlink:href="#ex-path-53"></use>
+                                    <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-53"></use>
+                                </g>
+                                <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                      letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                    <tspan x="4.862" y="19.7" id="rating-@Model.LRdoorId">@String.Format("{0:n1}", Model.LRdoorData.Ratting)</tspan>
+
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_rrdoor" class="svg-container div-@Model.RRDoorId" transform="translate(441.000000, 325.000000)" data-partname="@Resource.RRDoor" data-v="@Model.RRDoorData.Id" data-name="@Model.RRDoorId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.RRDoorData.ArabicCondition:Model.RRDoorData.Condition)" data-sv="@Model.RRDoorData.Severity" data-cor="@Model.RRDoorData.CostOfRepair" data-corp="@Model.RRDoorData.CostOfReplacement" data-esr="@Model.RRDoorData.EstimatedRepairCost" data-des="@Model.RRDoorData.Description" data-img="@Model.RRDoorData.ImagePath">
+                    <g id="Group" stroke-width="1.01535509" stroke="#A4B1B7" class="hover-able" fill="#E4E9ED">
+                        <polygon id="Shape"
+                                 points="17.9924551 112.023756 18.6039972 112.36454 19.3995612 112.36454 20.0629548 112.546257 22.2224155 113.468941 24.34375 114 26.4406839 113.930031 28.6997806 113.225812 30.8541577 112.36454 33.4731646 111.308462 38 109.507895 37.811403 92.8306281 35.911708 86.4926525 36.7616652 0 34.1995933 6.59167579 23.1501498 9.63054152 1.98814747 22.5677435 0.296875 23.3912625 0 40.563849 0.256207192 61.2071956 1.12954837 74.1222491 1.89206978 80.476836 2.71813463 84.8184323 3.86191674 89.8521672 5.52726348 94.6860627 6.91708583 97.8613427 9.02723673 101.667853 11.9954784 105.897197 14.5387414 108.679846"></polygon>
+                    </g>
+                    <g id="r" transform="translate(2.000000, 22.000000)" stroke-width="1.01535509" stroke="#A4B1B7">
+                        <polygon id="Shape" class="hover-able" fill="#808080"
+                                 points="14.4169376 86.9090529 15.1011121 87 15.6359281 86.8246742 16.0419162 86.4457279 16.2087254 85.8394139 18 -1.42108547e-14 0 8.14582898 0.409067579 43.9825249 1.47818648 56.9086347 3.15859709 65.8760192 4.47254063 70.4663217 6.63233533 75.5608753 9.13036784 79.9824204 11.5724551 83.4348735"></polygon>
+                        <path d="M18,0 L0.0959211785,8.13229265 C-0.536125632,52.6266215 1.93488128,67.3623983 8.11699342,78 L16.4290727,75.1986136 L16.4290727,75.1895345 L17.4011382,25.6926579 L18,0 L18,0 Z"
+                              id="Shape" class="hover-able" fill="#FFFFFF"></path>
+                        <path d="M16,77 L9,79.5505163 C10.4175645,81.9175309 11.9998582,84.1496954 13.7711936,86.5331035 C14.0788205,86.9350094 14.5898781,87.1037042 15.055784,86.9350094 C15.5202013,86.7679012 15.8342784,86.3062382 15.8427134,85.7853469 L16,77 L16,77 Z"
+                              id="Shape" class="hover-able" fill="#FFFFFF"></path>
+                    </g>
+                    <g id="tag_rrdoor" transform="translate(116.000000, 34.000000)">
+                        <g id="Label---Right">
+                            <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-56)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                                 xlink:href="#ex-path-55"></use>
+                            <text id="GRILL" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able"
+                                  fill="#4E4E4E">
+                                <tspan x="43.1538462" y="18.8">@Resource.RRDoor</tspan>
+                            </text>
+                            <g id="Group-9" transform="translate(0.000000, 0.300000)">
+                                <g id="rating">
+                                    <ellipse stroke="#B4C0C4" stroke-width="3" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                                    <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                          letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                        <tspan x="4.862" y="19.7" id="rating-@Model.RRDoorId">@String.Format("{0:n1}", Model.RRDoorData.Ratting)</tspan>
+
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_rear_window" class="svg-container div-@Model.RearWindowId" transform="translate(32.000000, 319.000000)" data-partname="@Resource.RearWindow" data-v="@Model.RearWindowData.Id" data-name="@Model.RearWindowId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.RearWindowData.ArabicCondition:Model.RearWindowData.Condition)" data-sv="@Model.RearWindowData.Severity" data-cor="@Model.RearWindowData.CostOfRepair" data-corp="@Model.RearWindowData.CostOfReplacement" data-esr="@Model.RearWindowData.EstimatedRepairCost" data-des="@Model.RearWindowData.Description" data-img="@Model.RearWindowData.ImagePath">
+                    <g id="l" transform="translate(255.000000, 28.000000)" stroke-width="1.01535509" stroke="#A4B1B7">
+                        <polygon id="Shape" class="hover-able" fill="#808080"
+                                 points="3.58296028 86.9090529 2.89880528 87 2.36400445 86.8246742 1.95751476 86.4457279 1.79173676 85.8394139 0 -1.42108547e-14 18 8.14582898 17.5904308 43.9825249 16.5208292 56.9086347 14.8409797 65.8760192 13.5270737 70.4663217 11.3673405 75.5608753 8.8698925 79.9824204 6.42736164 83.4348735"></polygon>
+                        <path d="M2,77 L9,79.550574 C7.58193933,81.917642 5.99964559,84.1493281 4.22781401,86.5333189 C3.92117947,86.935234 3.40912957,87.1034037 2.94471222,86.935234 C2.48029487,86.7681219 2.1652254,86.3064485 2.15728665,85.7855454 L2,77 L2,77 Z"
+                              id="Shape" class="hover-able" fill="#FFFFFF"></path>
+                        <path d="M0,0 L17.9043465,8.13178826 C18.5353457,52.6266215 16.0649532,67.3623983 9.88361175,78 L1.57188226,75.1986136 L1.57188226,75.1895345 L0.599347118,25.6926579 L0,0 L0,0 Z"
+                              id="Shape" class="hover-able" fill="#FFFFFF"></path>
+                    </g>
+                    <g id="r" transform="translate(411.000000, 28.000000)" stroke-width="1.01535509" stroke="#A4B1B7">
+                        <polygon id="Shape" class="hover-able" fill="#808080"
+                                 points="14.4169376 86.9090529 15.1011121 87 15.6359281 86.8246742 16.0419162 86.4457279 16.2087254 85.8394139 18 -1.42108547e-14 0 8.14582898 0.409067579 43.9825249 1.47818648 56.9086347 3.15859709 65.8760192 4.47254063 70.4663217 6.63233533 75.5608753 9.13036784 79.9824204 11.5724551 83.4348735"></polygon>
+                        <path d="M18,0 L0.0959211785,8.13229265 C-0.536125632,52.6266215 1.93488128,67.3623983 8.11699342,78 L16.4290727,75.1986136 L16.4290727,75.1895345 L17.4011382,25.6926579 L18,0 L18,0 Z"
+                              id="Shape" class="hover-able" fill="#FFFFFF"></path>
+                        <path d="M16,77 L9,79.5505163 C10.4175645,81.9175309 11.9998582,84.1496954 13.7711936,86.5331035 C14.0788205,86.9350094 14.5898781,87.1037042 15.055784,86.9350094 C15.5202013,86.7679012 15.8342784,86.3062382 15.8427134,85.7853469 L16,77 L16,77 Z"
+                              id="Shape" class="hover-able" fill="#FFFFFF"></path>
+                    </g>
+                    <g id="Label---Right">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-58)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-57"></use>
+                        <text id="REAR-WINDOW" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able"
+                              fill="#4E4E4E">
+                            <tspan x="9.195" y="19.8">@Resource.RearWindow</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(143.000000, 15.300000)  translate(-143.000000, -15.300000) translate(128.000000, 0.300000)">
+                            <g id="rating">
+                                <g>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-59"></use>
+                                    <use stroke="#FFFFFF" mask="url(#ex-mask-60)" stroke-width="9.6" xlink:href="#ex-path-59"></use>
+                                    <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-59"></use>
+                                </g>
+                                <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                      letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                    <tspan x="4.862" y="19.7" id="rating-@Model.RearWindowId">@String.Format("{0:n1}", Model.RearWindowData.Ratting)</tspan>
+
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_roof" class="svg-container div-@Model.RoofId" transform="translate(281.000000, 212.000000)" data-partname="@Resource.Roof" data-v="@Model.RoofData.Id" data-name="@Model.RoofId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.RoofData.ArabicCondition:Model.RoofData.Condition)" data-sv="@Model.RoofData.Severity" data-cor="@Model.RoofData.CostOfRepair" data-corp="@Model.RoofData.CostOfReplacement" data-esr="@Model.RoofData.EstimatedRepairCost" data-des="@Model.RoofData.Description" data-img="@Model.RoofData.ImagePath">
+                    <g id="Shape">
+                        <use fill="#E4E9ED" class="hover-able" fill-rule="evenodd" xlink:href="#ex-path-61"></use>
+                        <use stroke="#A4B1B7" mask="url(#ex-mask-62)" stroke-width="2" xlink:href="#ex-path-61"></use>
+                    </g>
+                    <g class="hover-able"  xmlns="http://www.w3.org/2000/svg" id="label" transform="translate(289.000000, 232.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-66)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-65"></use>
+                        <text id="Roof" font-family="Montserrat-Regular, Montserrat" class="hover-able" font-size="13" font-weight="normal" fill="#4E4E4E">
+                            <tspan x="29.9679487" y="18">@Resource.Roof</tspan>
+                        </text>
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg" id="rating" transform="translate(276.000000, 232.000000)">
+                        <g id="Oval-2">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-67"></use>
+                            <use stroke="#FFFFFF" mask="url(#ex-mask-68)" stroke-width="9.6" xlink:href="#ex-path-67"></use>
+                            <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-67"></use>
+                        </g>
+                        <text class="hover-able" id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18" letter-spacing="0.200000003" fill="#5B5B5B">
+                            <tspan x="4.862" y="19" id="rating-@Model.RoofId">@String.Format("{0:n1}", Model.RoofData.Ratting)</tspan>
+                            
+                        </text>
+                    </g>
+                </g>
+                <g id="vc_vc_sun_roof" class="svg-container div-@Model.SunRoofID" transform="translate(339.000000, 280.000000)" data-partname="@Resource.SunRoof" data-v="@Model.SunRoofData.Id" data-name="@Model.SunRoofID" data-cr="
+@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.SunRoofData.ArabicCondition:Model.SunRoofData.Condition)" data-sv="@Model.SunRoofData.Severity" data-cor="@Model.SunRoofData.CostOfRepair" data-corp="@Model.SunRoofData.CostOfReplacement" data-esr="@Model.SunRoofData.EstimatedRepairCost" data-des="@Model.SunRoofData.Description" data-img="@Model.SunRoofData.ImagePath">
+                    <g id="ex-path54" transform="translate(36.000000, 27.500000) rotate(-270.000000) translate(-36.000000, -27.500000) ">
+                        <use fill="#E4E9ED" class="hover-able" fill-rule="evenodd" xlink:href="#ex-path-63"></use>
+                        <use stroke="#B4C0C4" mask="url(#ex-mask-64)" stroke-width="2" xlink:href="#ex-path-63"></use>
+                    </g>
+                    <g id="Group-10" transform="translate(230.000000, 0.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-66)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-65"></use>
+                        <text id="Roof" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" class="hover-able" fill="#4E4E4E">
+                            <tspan x="29.9679487" y="18">@Resource.SunRoof</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-9" transform="translate(217.000000, 0.000000)">
+                        <g id="Oval-2">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-67"></use>
+                            <use stroke="#FFFFFF" mask="url(#ex-mask-68)" stroke-width="9.6" xlink:href="#ex-path-67"></use>
+                            <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-67"></use>
+                        </g>
+                        <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                              letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                            <tspan x="4.862" y="19" id="rating-@Model.SunRoofID">@String.Format("{0:n1}", Model.SunRoofData.Ratting)</tspan>
+
+                        </text>
+                    </g>
+                </g>
+                <g id="vc_fog_lights" class="svg-container" transform="translate(272.000000, 176.000000)" stroke="#A4B1B7" stroke-width="1.01535509" fill="#DB4726">
+                    <path d="M0,0.449142727 C0,0.200840241 0.184276874,-5.55111512e-17 0.412101765,-5.55111512e-17 L1.58743983,-5.55111512e-17 C1.81526473,-5.55111512e-17 2,0.200840241 2,0.449142727 L2,21.5508573 C2,21.7991598 1.81526473,22 1.58743983,22 L0.412101765,22 C0.184276874,22 0,21.7991598 0,21.5508573 L0,0.449142727 L0,0.449142727 Z"
+                          id="Shape"></path>
+                    <path d="M204,0.449142727 C204,0.200840241 203.815265,-5.55111512e-17 203.587898,-5.55111512e-17 L202.41256,-5.55111512e-17 C202.184735,-5.55111512e-17 202,0.200840241 202,0.449142727 L202,21.5508573 C202,21.7991598 202.184735,22 202.41256,22 L203.587898,22 C203.815265,22 204,21.7991598 204,21.5508573 L204,0.449142727 L204,0.449142727 Z"
+                          id="Shape"></path>
+                </g>
+                <g id="vc_left_quarter" class="svg-container div-@Model.LeftQuarterPanelId" transform="translate(32.000000, 419.000000)" data-partname="@Resource.LeftQuarter" data-v="@Model.LeftQuarterPanelData.Id" data-name="@Model.LeftQuarterPanelId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.LeftQuarterPanelData.ArabicCondition:Model.LeftQuarterPanelData.Condition)" data-sv="@Model.LeftQuarterPanelData.Severity" data-cor="@Model.LeftQuarterPanelData.CostOfRepair" data-corp="@Model.LeftQuarterPanelData.CostOfReplacement" data-esr="@Model.LeftQuarterPanelData.EstimatedRepairCost" data-des="@Model.LeftQuarterPanelData.Description" data-img="@Model.LeftQuarterPanelData.ImagePath">
+                    <polygon id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED"
+                             points="272.789439 123.146446 269.949316 126.260236 267.791683 123.889475 264.781449 120.875157 261.38693 116.981663 258.440744 112.962572 255.878843 109.257473 252.996704 104.547601 252.484324 103.731223 252.142566 103.597589 250.114565 103.982919 249.681604 104.388345 249.554534 104.862095 249.708248 105.535293 249.970587 106.353178 251.160333 109.121829 252.753324 111.925144 255.77278 116.205476 258.67234 119.71163 260.660375 121.910575 263.56967 124.911831 265.562829 126.847526 270.299784 131.100226 273.876198 134 270.506786 132.786737 267.445314 131.247928 265.716543 130.129616 264.433543 129.081135 261.470448 126.367244 258.762519 123.573976 256.108389 120.420497 254.277655 118.018086 251.797222 114.082894 249.281948 109.38307 247.391777 104.664155 246.204592 101.072092 244.713566 95.1002261 243.585304 87.8533032 243.27429 83.697061 242 17.1685506 245.396568 18.5139412 247.317994 19.0022607 248.641472 19.0022607 250.392276 18.7651344 252.36084 17.9889475 253.710962 17.4624466 254.455451 17.3634765 255.218385 17.1685506 255.770218 16.7606129 257.864316 14.7877418 260.170027 12.4014067 262.565917 9.49108264 264.825514 6.12459181 266.633704 2.89525245 268.034551 0 269.069559 2.6395378 270.916177 6.69429792 272.633676 9.72519467 274.420858 12.3129867 276.720933 15.0997237 279 17.6347651 270.716349 44.6797287 265.747286 61.4729967 265.427048 65.0695805 265.645834 68.1708114 266.048565 70.3109771 266.89553 72.9726199 267.907993 75.065059 268.88459 76.5189651 269.949316 77.7015825 270.077411 80.366742 270.865964 102.914846 271.456738 118.583271 271.695508 120.384326 272.284745 121.870887"></polygon>
+                    <g id="Label---Right" transform="translate(0.000000, 18.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-70)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-69"></use>
+                        <text id="LEFT-QUARTER" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able"
+                              fill="#4E4E4E">
+                            <tspan x="15.393" y="19.8">@Resource.LeftQuarter</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(143.000000, 15.300000)  translate(-143.000000, -15.300000) translate(128.000000, 0.300000)">
+                            <g id="rating">
+                                <g>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-71"></use>
+                                    <use stroke="#FFFFFF" mask="url(#ex-mask-72)" stroke-width="9.6" xlink:href="#ex-path-71"></use>
+                                    <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-71"></use>
+                                </g>
+                                <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                      letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                    <tspan x="4.862" y="19.7" id="rating-@Model.LeftQuarterPanelId">@String.Format("{0:n1}", Model.LeftQuarterPanelData.Ratting)</tspan>
+
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_right_quarter" class="svg-container div-@Model.RightQuarterPanelId" transform="translate(436.000000, 419.000000)" data-partname="@Resource.RightQuarter" data-v="@Model.RightQuarterPanelData.Id" data-name="@Model.RightQuarterPanelId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.RightQuarterPanelData.ArabicCondition:Model.RightQuarterPanelData.Condition)" data-sv="@Model.RightQuarterPanelData.Severity" data-cor="@Model.RightQuarterPanelData.CostOfRepair" data-corp="@Model.RightQuarterPanelData.CostOfReplacement" data-esr="@Model.RightQuarterPanelData.EstimatedRepairCost" data-des="@Model.RightQuarterPanelData.Description" data-img="@Model.RightQuarterPanelData.ImagePath">
+                    <polygon id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED"
+                             points="6.21056057 123.146446 9.0506841 126.260236 11.2083172 123.889475 14.2185509 120.875157 17.6130698 116.981663 20.5592561 112.962572 23.1211571 109.257473 26.0032959 104.547601 26.5156761 103.731223 26.8574337 103.597589 28.8854346 103.982919 29.3183958 104.388345 29.4454661 104.862095 29.2922644 105.535293 29.0294134 106.353178 27.8396665 109.121829 26.2466765 111.925144 23.2272199 116.205476 20.3276602 119.71163 18.339625 121.910575 15.4303301 124.911831 13.4371711 126.847526 8.70072841 131.100226 5.12380214 134 8.49270204 132.786737 11.5551986 131.247928 13.283457 130.129616 14.5664571 129.081135 17.5295519 126.367244 20.2374813 123.573976 22.8916108 120.420497 24.7223453 118.018086 27.2027779 114.082894 29.7180524 109.38307 31.608223 104.664155 32.795408 101.072092 34.285922 95.1002261 35.4146956 87.8533032 35.7262228 83.697061 37 17.1685506 33.6034316 18.5139412 31.6820058 19.0022607 30.3585277 19.0022607 28.6077245 18.7651344 26.6391597 17.9889475 25.2895502 17.4624466 24.5445494 17.3634765 23.7811029 17.1685506 23.2297818 16.7606129 21.1356838 14.7877418 18.8299729 12.4014067 16.434083 9.49108264 14.1739739 6.12459181 12.3668088 2.89525245 10.965449 0 9.93044092 2.6395378 8.08331025 6.69429792 6.36632416 9.72519467 4.57965435 12.3129867 2.27906719 15.0997237 0 17.6347651 8.28365092 44.6797287 13.2522019 61.4729967 13.5724395 65.0695805 13.3546779 68.1708114 12.9509223 70.3109771 12.1044702 72.9726199 11.0925192 75.065059 10.1154102 76.5189651 9.0506841 77.7015825 8.92258904 80.366742 8.13403589 102.914846 7.54326151 118.583271 7.30449233 120.384326 6.71576746 121.870887"></polygon>
+                    <g id="Group-10" transform="translate(133.000000, 59.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-74)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-73"></use>
+                        <text id="RIGHT-QUARTER" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" class="hover-able" fill="#4E4E4E">
+                            <tspan x="29.9679487" y="18">@Resource.RightQuarter</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-9" transform="translate(120.000000, 59.000000)">
+                        <g id="Oval-2">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-75"></use>
+                            <use stroke="#FFFFFF" mask="url(#ex-mask-76)" stroke-width="9.6" xlink:href="#ex-path-75"></use>
+                            <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-75"></use>
+                        </g>
+                        <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                              letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                            <tspan x="4.862" y="19" id="rating-@Model.RightQuarterPanelId">@String.Format("{0:n1}", Model.RightQuarterPanelData.Ratting)</tspan>
+
+                        </text>
+                    </g>
+                </g>
+                <g id="vc_trunk" class="svg-container div-@Model.TRUNKCARGOData.Id" transform="translate(26.000000, 497.000000)" data-partname="@Resource.TrunkCargo" data-v="@Model.TRUNKCARGOData.Id" data-name="@Model.TRUNKCARGOId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.TRUNKCARGOData.ArabicCondition:Model.TRUNKCARGOData.Condition)" data-sv="@Model.TRUNKCARGOData.Severity" data-cor="@Model.TRUNKCARGOData.CostOfRepair" data-corp="@Model.TRUNKCARGOData.CostOfReplacement" data-esr="@Model.TRUNKCARGOData.EstimatedRepairCost" data-des="@Model.TRUNKCARGOData.Description" data-img="@Model.TRUNKCARGOData.ImagePath">
+                    <path d="M412.245674,54.0798453 L404.938759,57.4216765 L403.879199,59.571224 C403.879199,59.571224 401.828082,60.1721673 399.049925,60.6452396 C395.875745,61.1850272 391.625504,61.6414207 386.201696,62.2827975 C374.042506,63.7212203 358.108602,64.9018794 347.127979,64.9953819 C335.702331,65.0924224 319.643419,63.6443966 307.530732,62.1347097 C304.360552,61.7399774 301.116868,61.4139821 298.708232,61.0839434 C294.075469,60.449137 291.142802,59.6753403 291.142802,59.6753403 L290.415261,58.0251469 L290.259252,57.6834836 L290.018739,57.3842754 L282.967339,54.2223735 L282.355304,53.7573879 L279.942667,51.6659636 L277,48.8512845 L279.771657,45.7192023 L278.997613,43.7035909 L278.386079,38.7979929 L277.0005,-5.68434189e-14 C277.0005,-5.68434189e-14 278.546088,1.71589789 283.34736,4.29656789 C287.373589,6.46127796 292.844899,9.2122742 302.625954,11.2556837 C313.223555,13.4699248 328.728935,14.8780225 348.795073,14.5014852 C365.313011,14.1916633 377.962228,13.8323103 387.630777,12.2265938 C397.601843,10.5703354 404.644742,7.64850746 409.234003,5.573762 C416.538917,2.26983724 418,0.000505419115 418,0.000505419115 L416.549418,40.4865982 L416.362407,42.9409134 L415.871879,44.2241725 L415.340349,45.5827391 L418,48.8538116 L415.610364,51.1590282 L412.245674,54.0798453 L412.245674,54.0798453 Z"
+                          id="ex-path46" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED"></path>
+                    <g id="Label---Right">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-78)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-77"></use>
+                        <text id="TRUNK/CARGO" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able"
+                              fill="#4E4E4E">
+                            <tspan x="15.61" y="19.8">@Resource.TrunkCargo</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(149.000000, 15.300000)  translate(-149.000000, -15.300000) translate(134.000000, 0.300000)">
+                            <g id="rating">
+                                <g>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-79"></use>
+                                    <use stroke="#FFFFFF" mask="url(#ex-mask-80)" stroke-width="9.6" xlink:href="#ex-path-79"></use>
+                                    <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-79"></use>
+                                </g>
+                                <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                      letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                    <tspan x="4.862" y="19.7" id="rating-@Model.TRUNKCARGOId">@String.Format("{0:n1}", Model.TRUNKCARGOData.Ratting) </tspan>
+
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_rare_bumper" class="svg-container div-@Model.REARBUMPERData.Id" transform="translate(269.000000, 434.000000)" data-partname="@Resource.RearBumper" data-v="@Model.REARBUMPERData.Id" data-name="@Model.REARBUMPERId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.REARBUMPERData.ArabicCondition:Model.REARBUMPERData.Condition)" data-sv="@Model.REARBUMPERData.Severity" data-cor="@Model.REARBUMPERData.CostOfRepair" data-corp="@Model.REARBUMPERData.CostOfReplacement" data-esr="@Model.REARBUMPERData.EstimatedRepairCost" data-des="@Model.REARBUMPERData.Description" data-img="@Model.REARBUMPERData.ImagePath">
+                    <path d="M196.015502,98.5415138 L193.623489,103.025209 L191.390043,106.479323 L188.811951,109.909246 L186.010765,113.159258 L183.654768,115.357009 L179.818143,118.217463 L176.463222,120.239838 L173.299883,121.862575 L169.076595,123.703526 L164.307575,125.43915 L159.543558,126.890039 L151.824789,128.772818 L141.937603,130.535656 L131.494181,131.794538 L119.563128,132.642191 L107.748626,133 L95.4309097,132.88913 L85.1140411,132.453208 L74.734646,131.571285 L66.1059923,130.563373 L58.4102335,129.140202 L52.528743,127.828909 L46.3401225,126.115459 L40.0024388,123.900573 L34.5361241,121.480577 L29.7781094,118.909394 L24.5979159,114.981058 L21.7011893,112.090367 L19.1431061,108.967353 L17.4033694,106.611863 L15.3780117,103.521606 L13.9123911,100.978644 L12.5198014,98.2421641 L11.4198357,95.7858832 L9.03432554,89.0636159 L7.66324496,83.6556655 L6.53676796,77.3426104 L5.71191868,73.728239 L4.40036331,71.3828284 L3.23787106,69.5166798 L1.65920258,66.500504 L0.860364317,63.3810172 L0.256108448,48.2905628 L0,0.00100791173 L6.53676796,2.65887114 L7.3601166,46.8497529 L7.6437367,64.6081497 L7.800303,70.4026342 L8.08542373,73.5629414 L8.56112517,77.4166919 C8.56112517,77.4166919 10.6144947,92.5399035 17.8360526,102.700662 C20.5887182,106.574066 23.2103283,110.235306 26.3396534,112.924414 C28.0648839,114.406548 29.8376346,116.09984 31.3787872,117.093137 C34.3755562,119.025304 36.5959964,119.56756 36.5959964,119.56756 C36.5959964,119.56756 41.0128667,121.359627 49.0097529,123.106842 C51.6898878,123.692943 55.4429771,124.109715 58.6698435,124.671625 C60.938304,125.066727 62.3283926,124.996677 64.8564631,125.270325 C69.5629561,125.779824 75.166829,126.594217 80.4820797,127.036186 C88.0607889,127.666635 96.0496718,128.073327 104.352187,128.18571 C110.868947,128.274406 117.401713,127.744244 123.5118,127.305299 C132.899776,126.630502 141.9316,125.909845 149.231691,124.738148 C152.805205,124.164142 156.345704,123.869832 159.14589,123.278187 C166.885167,121.642347 171.107455,119.852799 171.107455,119.852799 L172.901714,119.222855 L174.652456,118.655904 C174.652456,118.655904 179.502009,116.511068 185.862202,109.394203 C192.222396,102.277339 195.411246,94.4660228 195.411246,94.4660228 L196.848855,90.8138546 L198.34949,85.9002849 L199.537493,81.1756987 L200.006692,77.1485874 L200.54542,74.4383128 L200.933584,70.9494263 L201.681401,31.8500106 L202.160604,2.65786323 L209,0 L208.694371,36.4506237 L208.10362,59.820569 L207.916041,63.7892214 L207.042671,66.5 L205.849666,68.9023576 L203.698255,72.3569751 L202.851396,74.0573221 L202.382198,76.0101511 L201.787946,79.7898201 L200.537417,85.9320342 L199.130321,90.7826094 L197.517138,94.8006495 L196.015502,98.5415138 L196.015502,98.5415138 Z"
+                          id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E4E9ED"></path>
+                    <g id="Group-10" transform="translate(300.000000, 124.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-82)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-81"></use>
+                        <text id="REAR-BUMPER" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" class="hover-able" fill="#4E4E4E">
+                            <tspan x="29.9679487" y="18">@Resource.RearBumper</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-9" transform="translate(287.000000, 123.000000)">
+                        <g id="Oval-2">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-83"></use>
+                            <use stroke="#FFFFFF" mask="url(#ex-mask-84)" stroke-width="9.6" xlink:href="#ex-path-83"></use>
+                            <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-83"></use>
+                        </g>
+                        <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                              letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                            <tspan x="4.862" y="19" id="rating-@Model.REARBUMPERId">@String.Format("{0:n1}", Model.REARBUMPERData.Ratting)</tspan>
+
+                        </text>
+                    </g>
+                </g>
+                <g id="vc_petrol_cap" class="svg-container" transform="translate(469.000000, 479.000000)" stroke="#A4B1B7" stroke-width="1.01535509" fill="#808080">
+                    <ellipse id="Oval" transform="translate(2.227210, 11.572040) rotate(3.640665) translate(-2.227210, -11.572040) " cx="2.22720963" cy="11.5720403"
+                             rx="1.5" ry="11.5"></ellipse>
+                </g>
+                <g id="vc_wind_screen" class="svg-container div-@Model.WindshieldId" transform="translate(294.000000, 161.000000)" data-partname="@Resource.Windshield" data-v="@Model.WindshieldData.Id" data-name="@Model.WindshieldId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.WindshieldData.ArabicCondition:Model.WindshieldData.Condition)" data-sv="@Model.WindshieldData.Severity" data-cor="@Model.WindshieldData.CostOfRepair" data-corp="@Model.WindshieldData.CostOfReplacement" data-esr="@Model.WindshieldData.EstimatedRepairCost" data-des="@Model.WindshieldData.Description" data-img="@Model.WindshieldData.ImagePath">
+                    <g id="Shape">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-85"></use>
+                        <use stroke="#A4B1B7" mask="url(#ex-mask-86)" stroke-width="2" xlink:href="#ex-path-85"></use>
+                    </g>
+                    <g id="Label---Left" transform="translate(262.000000, 0.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-88)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-87"></use>
+                        <text id="GRILL" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able"
+                              fill="#4E4E4E">
+                            <tspan x="43.1538462" y="18.8">@Resource.Windshield</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(0.000000, 0.300000)">
+                            <g id="rating">
+                                <ellipse stroke="#B4C0C4" stroke-width="3" cx="14.3846154" cy="14.4" rx="14.3846154" ry="14.4"></ellipse>
+                                <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                      letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                    <tspan x="4.862" y="19" id="rating-@Model.WindshieldId">@String.Format("{0:n1}", Model.WindshieldData.Ratting)</tspan>
+
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_wipers" class="svg-container div-@Model.WIPERSId" transform="translate(55.500000, 157.500000)" data-partname="@Resource.Wipers" data-v="@Model.WIPERSData.Id" data-name="@Model.WIPERSId" data-cr="
+@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.WIPERSData.ArabicCondition:Model.WIPERSData.Condition)" data-sv="@Model.WIPERSData.Severity" data-cor="@Model.WIPERSData.CostOfRepair" data-corp="@Model.WIPERSData.CostOfReplacement" data-esr="@Model.WIPERSData.EstimatedRepairCost" data-des="@Model.WIPERSData.Description" data-img="@Model.WIPERSData.ImagePath">
+                    <path d="M389.270445,70.3104455 C384.557445,66.2014455 378.816445,62.4204455 372.710445,58.6704455 C369.849445,56.8044455 366.931445,54.9834455 364.070445,53.2704455 C360.027445,50.6824455 354.748445,48.1834455 350.630445,46.3104455 L349.790445,47.2704455 C362.920445,54.6954455 377.562445,63.6884455 388.430445,71.2704455 L389.270445,70.3104455 Z M326.150445,35.3904455 C328.784445,35.4214455 330.794445,35.8174455 333.110445,36.5904455 C333.923445,36.7734455 347.779445,40.6964455 353.750445,42.5904455 C354.600445,42.8974455 355.707445,43.7414455 356.390445,44.2704455 C361.852445,48.5194455 367.070445,52.5504455 367.070445,52.5504455 L368.270445,54.3504455 C368.270445,54.3504455 370.302445,55.6184455 371.390445,56.3904455 C372.552445,57.0894455 371.990445,58.0704455 371.990445,58.0704455 L365.750445,54.2304455 L365.150445,52.7904455 L355.070445,46.0704455 C355.070445,46.0704455 353.664445,45.0964455 352.550445,44.7504455 C351.444445,44.4654455 325.430445,38.0304455 325.430445,38.0304455 C325.430445,38.0304455 324.271445,37.9944455 322.550445,38.0304455 C320.916445,37.9794455 320.599445,37.4054455 320.630445,36.7104455 C320.608445,36.0174455 320.692445,35.4284455 321.710445,35.3904455 C322.724445,35.3634455 324.400445,35.3694455 326.150445,35.3904455 Z"
+                          id="Combined-Shape" stroke="#D4DCDF" stroke-width="0.75" class="hover-able" fill="#A4B1B7"></path>
+                    <path d="M314.575403,44.2727132 C314.937646,44.2427741 315.299962,44.2126525 315.662311,44.1823111 C323.845311,43.5863111 334.168311,43.0933111 341.342311,43.5823111 L341.462311,44.7823111 C326.126311,45.2133111 302.276311,47.2543111 284.582311,49.4623111 L284.582311,48.1423111 C289.650311,47.1513111 298.465311,45.5463111 303.902311,45.1423111 C306.454801,44.9279598 309.03107,44.7231198 311.616618,44.5141463 L306.182311,44.9023111 L304.022311,43.9423111 L266.942311,46.9423111 C266.942311,46.9423111 265.782311,47.2463111 263.942311,47.7823111 C262.141311,48.2493111 261.576311,47.8043111 261.302311,47.1823111 C261.063311,46.4863111 260.932311,45.9013111 262.022311,45.5023111 C263.114311,45.2193111 264.936311,44.7133111 266.822311,44.1823111 C269.710311,43.4303111 272.041311,43.1923111 274.862311,43.1023111 C276.955311,43.1333111 306.182311,42.8623111 306.182311,42.8623111 L308.582311,43.5823111 C308.582311,43.5823111 311.272311,43.3043111 312.782311,43.2223111 C314.211158,43.1299522 314.528229,44.0903362 314.575403,44.2727132 L314.575403,44.2727132 Z"
+                          id="Combined-Shape" stroke="#D4DCDF" stroke-width="0.75" class="hover-able" fill="#A4B1B7"></path>
+                    <g id="Label---Left" transform="translate(0.752114, 0.855571)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-90)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             transform="translate(51.247886, 14.644429) scale(-1, 1) translate(-51.247886, -14.644429) " xlink:href="#ex-path-89"></use>
+                        <text id="Wipers" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able"
+                              fill="#4E4E4E">
+                            <tspan x="32.272" y="18.644429">@Resource.Wipers</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(104.000000, 0.300000)">
+                            <g id="rating">
+                                <g>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-91"></use>
+                                    <use stroke="#FFFFFF" mask="url(#ex-mask-92)" stroke-width="9.6" xlink:href="#ex-path-91"></use>
+                                    <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-91"></use>
+                                </g>
+                                <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                      letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                    <tspan x="5.609886" y="19.344429" id="rating-@Model.WIPERSId">@String.Format("{0:n1}", Model.WIPERSData.Ratting)</tspan>
+
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_backscreen" class="svg-container div-@Model.BackScreenId" transform="translate(302.000000, 409.000000)" data-partname="@Resource.Backscreen" data-v="@Model.BackScreenData.Id" data-name="@Model.BackScreenId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.BackScreenData.ArabicCondition:Model.BackScreenData.Condition)" data-sv="@Model.BackScreenData.Severity" data-cor="@Model.BackScreenData.CostOfRepair" data-corp="@Model.AnteenaData.CostOfReplacement" data-esr="@Model.BackScreenData.EstimatedRepairCost" data-des="@Model.BackScreenData.Description" data-img="@Model.BackScreenData.ImagePath">
+                    <path d="M143,75.4096222 C143,80.0105451 141.321833,84.4380941 138.918526,86.1753408 C122.797531,97.8209571 100.831937,98.3225389 77.5774825,98.8541855 C75.5484899,98.8997839 73.514,98.9468854 71.4735132,99 C69.4869995,98.9468854 67.4455131,98.900786 65.4090242,98.8546866 L65.298579,98.8526823 C42.116589,98.3310573 20.2269572,97.8399982 4.07947453,86.1738376 C1.67766703,84.4365909 0,80.0100441 0,75.4106244 C0,73.9745272 0.165917621,72.5965553 0.479262045,71.4270329 L12.1854499,32 C12.9595655,32.1042248 13.7286837,32.2064452 14.4918048,32.3061603 C15.5522782,32.4474651 16.6012574,32.589772 17.635244,32.733081 C37.1430583,35.3427093 54.6578622,37.5033692 71.4985007,37.5113865 C88.3401388,37.5028681 105.850445,35.3437114 125.349763,32.7355865 C126.397743,32.5902731 127.447722,32.4479661 128.513693,32.3061603 C129.272816,32.2064452 130.039935,32.1037237 130.81455,32.0005011 L142.545226,71.5137199 C142.835582,72.6005639 143,73.9945704 143,75.4096222 L143,75.4096222 Z"
+                          id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#FFFFFF"></path>
+                    <g id="Group-10" transform="translate(267.000000, 0.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-94)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-93"></use>
+                        <text id="Backscreen" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" class="hover-able" fill="#4E4E4E">
+                            <tspan x="29.9679487" y="18">@Resource.Backscreen</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-9" transform="translate(254.000000, 0.000000)">
+                        <g id="Oval-2">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-95"></use>
+                            <use stroke="#FFFFFF" mask="url(#ex-mask-96)" stroke-width="9.6" xlink:href="#ex-path-95"></use>
+                            <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-95"></use>
+                        </g>
+                        <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                              letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                            <tspan x="4.862" y="19" id="rating-@Model.BackScreenId">@String.Format("{0:n1}", Model.BackScreenData.Ratting)</tspan>
+
+                        </text>
+                    </g>
+                </g>
+                <g id="vc_antenna" class="svg-container div-@Model.AnteenaId" transform="translate(52.000000, 397.000000)" data-partname="@Resource.Anetenna" data-v="@Model.AnteenaData.Id" data-name="@Model.AnteenaId" data-cr="
+@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.AnteenaData.ArabicCondition:Model.AnteenaData.Condition)" data-sv="@Model.AnteenaData.Severity" data-cor="@Model.AnteenaData.CostOfRepair" data-corp="@Model.AnteenaData.CostOfReplacement" data-esr="@Model.AnteenaData.EstimatedRepairCost" data-des="@Model.AnteenaData.Description" data-img="@Model.AnteenaData.ImagePath">
+                    <g id="Group-10">
+                        <g id="Label---Right">
+                            <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-98)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                                 xlink:href="#ex-path-97"></use>
+                            <text id="ANNTENA" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" line-spacing="18" class="hover-able"
+                                  fill="#4E4E4E">
+                                <tspan x="24.75" y="19.8">@Resource.Anetenna</tspan>
+                            </text>
+                            <g id="Group-9" transform="translate(123.000000, 15.300000)  translate(-123.000000, -15.300000) translate(108.000000, 0.300000)">
+                                <g id="rating">
+                                    <g>
+                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-99"></use>
+                                        <use stroke="#FFFFFF" mask="url(#ex-mask-100)" stroke-width="9.6" xlink:href="#ex-path-99"></use>
+                                        <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-99"></use>
+                                    </g>
+                                    <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                          letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                        <tspan x="4.862" y="19.7" id="rating-@Model.AnteenaId">@String.Format("{0:n1}", Model.AnteenaData.Ratting)</tspan>
+
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <path d="M319.321901,43.5216802 L320.416463,43.5216802 L320.416463,57.5576014 C320.416463,57.8022276 320.613915,58 320.856933,58 L321.142087,58 C321.385595,58 321.583048,57.8022276 321.583048,57.5576014 L321.583048,43.5216802 L322.678099,43.5216802 C323.408133,43.5216802 324,42.9254038 324,42.1905388 L324,35.3316345 C324,34.5967696 323.408133,34 322.678099,34 L319.321901,34 C318.591377,34 318,34.5967696 318,35.3316345 L318,42.1905388 C318,42.9254038 318.591377,43.5216802 319.321901,43.5216802 L319.321901,43.5216802 Z"
+                          id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#D4DCDF"></path>
+                </g>
+                <g id="vc_tailer_hitch" class="svg-container div-@Model.TAILERHITCHId" transform="translate(24.000000, 557.000000)" data-partname="@Resource.TailerHitch" data-v="@Model.TAILERHITCHData.Id" data-name="@Model.TAILERHITCHId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.TAILERHITCHData.ArabicCondition:Model.TAILERHITCHData.Condition)" data-sv="@Model.TAILERHITCHData.Severity" data-cor="@Model.TAILERHITCHData.CostOfRepair" data-corp="@Model.TAILERHITCHData.CostOfReplacement" data-esr="@Model.TAILERHITCHData.EstimatedRepairCost" data-des="@Model.TAILERHITCHData.Description" data-img="@Model.TAILERHITCHData.ImagePath">
+                    <path d="M344,3.00115781 C344,4.10478175 346.462709,5 349.499752,5 C352.536796,5 355,4.10431863 355,3.00115781 C355,1.89568137 352.536796,1 349.499752,1 C346.462709,1 344,1.89568137 344,3.00115781 L344,3.00115781 Z"
+                          id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#D4DCDF"></path>
+                    <g id="Group-7">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-102)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-101"></use>
+                        <text id="TAILER-HITCH" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" class="hover-able" fill="#4E4E4E">
+                            <tspan x="26.597" y="19">@Resource.TailerHitch</tspan>
+                        </text>
+                        <g id="Group-9" transform="translate(137.000000, 0.000000)">
+                            <g id="Oval-2">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-103"></use>
+                                <use stroke="#FFFFFF" mask="url(#ex-mask-104)" stroke-width="9.6" xlink:href="#ex-path-103"></use>
+                                <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-103"></use>
+                            </g>
+                            <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                                  letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                                <tspan x="4.862" y="19" id="rating-@Model.TAILERHITCHId">@String.Format("{0:n1}", Model.TAILERHITCHData.Ratting)</tspan>
+
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="vc_tail_lights" class="svg-container div-@Model.RRockerPanelId" transform="translate(284.000000, 518.000000)" data-partname="@Resource.RRearLight" data-v="@Model.RREARLIGHTData.Id" data-name="@Model.RRockerPanelId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.RREARLIGHTData.ArabicCondition:Model.RREARLIGHTData.Condition)" data-sv="@Model.RREARLIGHTData.Severity" data-cor="@Model.RREARLIGHTData.CostOfRepair" data-corp="@Model.RREARLIGHTData.CostOfReplacement" data-esr="@Model.RREARLIGHTData.EstimatedRepairCost" data-des="@Model.RREARLIGHTData.Description" data-img="@Model.RREARLIGHTData.ImagePath">
+                    <path d="M1.87569141,6 C2.07477973,6 2.25636029,6.11265743 2.34890135,6.29331529 C10.4825099,22.2541328 24.6878122,34.0227745 25.3976271,34.3379108 L32.1441203,37.3253625 C32.2196538,37.3588553 32.2796804,37.4187363 32.3141957,37.4943487 L33,39 C30.3198109,38.4676683 28.1738588,37.6333943 25.7062641,36.6737763 C25.1310088,36.4499839 24.5392463,36.2201018 23.9219724,35.9866675 C22.575375,35.4766643 3.16076154,19.0677544 0.0418778163,7.05096188 C-0.0226508125,6.86370696 -0.0106454862,6.70081041 0.064387803,6.56379461 C0.140421536,6.42576389 0.270479237,6.32782297 0.42154626,6.29686755 L1.76714325,6.01167172 C1.80315923,6.00405973 1.8391752,6 1.87569141,6 L1.87569141,6 Z"
+                          id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E82328"></path>
+                    <path d="M179.122362,6 C179.158378,6 179.195394,6.00406023 179.231409,6.01116562 L180.576987,6.29639655 C180.728052,6.32837083 180.857607,6.42530875 180.932639,6.56183387 C181.008172,6.70038911 181.020677,6.86381323 180.967654,7.01099645 C179.58206,12.3461343 175.010097,18.5329048 170.224542,23.8177973 C164.194453,30.4780917 157.827219,35.7056336 157.075897,35.9893419 C156.459132,36.2222974 155.868878,36.4522077 155.293631,36.6760277 C152.836577,37.6327187 150.697658,38.4640501 148,39 L148.683794,37.4977161 C148.718308,37.4220944 148.778334,37.3622061 148.853867,37.3287092 L155.600263,34.3408899 C156.310068,34.0257148 170.515167,22.2556251 178.649159,6.29233632 C178.741699,6.11216376 178.922777,6 179.122362,6 L179.122362,6 Z"
+                          id="Shape" stroke="#A4B1B7" stroke-width="1.01535509" class="hover-able" fill="#E82328"></path>
+                    <g id="Group-10" transform="translate(285.000000, 0.000000)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-106)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-105"></use>
+                        <text id="R.REAR-LIGHT" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" class="hover-able" fill="#4E4E4E">
+                            <tspan x="29.9679487" y="18">@Resource.RRearLight</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-9" transform="translate(272.000000, 0.000000)">
+                        <g id="Oval-2">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-107"></use>
+                            <use stroke="#FFFFFF" mask="url(#ex-mask-108)" stroke-width="9.6" xlink:href="#ex-path-107"></use>
+                            <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-107"></use>
+                        </g>
+                        <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                              letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                            <tspan x="4.862" y="19" id="rating-@Model.RRockerPanelId">@String.Format("{0:n1}", Model.RRockerPanelData.Ratting)</tspan>
+
+                        </text>
+                    </g>
+                </g>
+                <g id="vc_right_rocker_panel" class="svg-container div-@Model.RRockerPanelId" transform="translate(477.000000, 210.000000)" data-partname="@Resource.RtRockerPanel" data-v="@Model.RRockerPanelData.Id" data-name="@Model.RRockerPanelId" data-cr="@(System.Globalization.CultureInfo.CurrentCulture.Name == "ar"?Model.RRockerPanelData.ArabicCondition:Model.RRockerPanelData.Condition)" data-sv="@Model.RRockerPanelData.Severity" data-cor="@Model.RRockerPanelData.CostOfRepair" data-corp="@Model.RRockerPanelData.CostOfReplacement" data-esr="@Model.RRockerPanelData.EstimatedRepairCost" data-des="@Model.RRockerPanelData.Description" data-img="@Model.RRockerPanelData.ImagePath">
+                    <use id="lrocker" stroke="#A4B1B7" mask="url(#ex-mask-110)" stroke-width="2" class="hover-able" fill="#E4E9ED"
+                         transform="translate(2.250000, 112.000000)  translate(-2.250000, -112.000000) " xlink:href="#ex-path-109"></use>
+                    <g id="Group-2" transform="translate(2.000000, 127.000000)"></g>
+                    <g id="Group-10" transform="translate(78.185897, 108.685714)">
+                        <use id="Combined-Shape" stroke="#000000" mask="url(#ex-mask-112)" stroke-width="2.4" class="hover-able" fill="#414478" opacity="0.100000001"
+                             xlink:href="#ex-path-111"></use>
+                        <text id="RT.ROCKER-PANEL" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" class="hover-able" fill="#4E4E4E">
+                            <tspan x="43.9679487" y="19">@Resource.RtRockerPanel</tspan>
+                        </text>
+                        <g id="Oval-2">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ex-path-113"></use>
+                            <use stroke="#FFFFFF" mask="url(#ex-mask-114)" stroke-width="9.6" xlink:href="#ex-path-113"></use>
+                            <use stroke="#B4C0C4" stroke-width="3" xlink:href="#ex-path-113"></use>
+                        </g>
+                        <text id="rating_text" font-family="ProximaNova-SemiBold, Proxima Nova" font-size="13" font-weight="500" line-spacing="18"
+                              letter-spacing="0.200000003" class="hover-able" fill="#5B5B5B">
+                            <tspan x="5.67610256" y="20.3142857" id="rating-@Model.RRockerPanelId">@String.Format("{0:n1}", Model.RRockerPanelData.Ratting)</tspan>
+
+                        </text>
+                    </g>
+                </g>
+                <g id="lines" transform="translate(201.000000, 14.000000)">
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(33.427174, 288.206447) scale(-1, 1)  translate(-33.427174, -288.206447) " points="66.6325889 279.800825 51.1225788 279.800825 0.221759724 296.61207"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(86.000000, 409.250000) scale(-1, 1)  translate(-86.000000, -409.250000) " points="171 397 137.326861 397 1 421.5"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="342.620254 319.427331 314.449462 319.427331 278.50297 325.311266"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="343.124908 0 308.019768 0 175 31"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="343.138318 162 308.033178 162 214 208.032129"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="343.331776 201 307.626168 201 274 222.614458"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="343.255607 240 308.150467 240 269 260.413655"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="342.669626 280 307.564486 280 199 296.811245"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="343.135514 359.401606 307.429907 359.401606 269 395"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="344 479 308 479 258 480"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(269.380841, 554.256024) scale(1, -1) translate(-269.380841, -554.256024) " points="342.761682 550.5 307.056075 550.5 196 558.012048"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="342.68972 81 307.584579 81 276 109.098795"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="342.378037 120 307.272897 120 282.5 147.5"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="343.157009 40 308.051869 40 190 62.0421687"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(72.500000, 16.000000) scale(-1, 1) translate(-72.500000, -16.000000) " points="144 3 110.927184 3 1 29"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(63.750000, 173.750000) scale(-1, 1) translate(-63.750000, -173.750000) " points="126.5 160 93.4271845 160 1 187.5"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(36.145631, 211.807229) scale(-1, 1) translate(-36.145631, -211.807229) " points="67.2912621 201 38.618123 201 5 222.614458"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(37.106958, 250.206827) scale(-1, 1) translate(-37.106958, -250.206827) " points="73.2139159 240 40.1411003 240 1 260.413655"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(46.250000, 332.250000) scale(-1, 1) translate(-46.250000, -332.250000) " points="91.5 319 58.4271845 319 1 345.5"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(41.000000, 363.750000) scale(-1, 1) translate(-41.000000, -363.750000) " points="81 360 47.3268608 360 1 367.5"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(42.000000, 460.250000) scale(-1, -1) translate(-42.000000, -460.250000) " points="83 482.5 49.3268608 482.5 1 438"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(86.000000, 509.250000) scale(-1, 1) translate(-86.000000, -509.250000) " points="171 497 137.326861 497 1 521.5"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(86.750000, 551.856426) scale(-1, -1) translate(-86.750000, -551.856426) " points="172.5 545.5 138.826861 545.5 1 558.212851"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(49.653722, 47.604418) scale(-1, 1) translate(-49.653722, -47.604418) " points="98.3074434 41 64.6343042 41 1 54.2088353"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(32.500000, 135.000000) scale(-1, 1) translate(-32.500000, -135.000000) " points="64 120 30.9271845 120 1 150"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="343.201075 410 299.283178 410 228.38 447.204819"></polyline>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="343 518 309.555556 518 258.911111 519"></polyline>
+                    <path d="M257.587846,520.587846 C258.367757,521.367757 259.636223,521.363777 260.412154,520.587846 L260.587846,520.412154 C261.367757,519.632243 261.363777,518.363777 260.587846,517.587846 L260.412154,517.412154 C259.632243,516.632243 258.363777,516.636223 257.587846,517.412154 L257.412154,517.587846 C256.632243,518.367757 256.636223,519.636223 257.412154,520.412154 L257.587846,520.587846 Z" id="Oval" fill="#29629A" transform="translate(259.000000, 519.000000)  translate(-259.000000, -519.000000) "></path>
+                    <polyline id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" transform="translate(36.702149, 95.049398) scale(-1, 1) translate(-36.702149, -95.049398) " points="72.4042989 81 35.8761146 81 1 109.098795"></polyline>
+                    <polyline xmlns="http://www.w3.org/2000/svg" id="Shape" stroke="#67767D" stroke-dasharray="2.4,2.4" points="343 445 308 445 208 392"/>
+                    <circle xmlns="http://www.w3.org/2000/svg" id="Oval" fill="#29629A" cx="208.5" cy="391.5" r="2.5"></circle>
+                </g>
+                <g id="Group-19" transform="translate(345.500000, 43.000000)  translate(-345.500000, -43.000000) translate(343.000000, 40.000000)"></g>
+                <g id="circles" transform="translate(263.000000, 40.000000)" fill="#29629A">
+                    <ellipse id="Oval" cx="112.401869" cy="5.40160643" rx="2.40186916" ry="2.40160643"></ellipse>
+                    <circle id="Oval" cx="151.5" cy="181.5" r="2.5"></circle>
+                    <circle id="Oval" cx="213.5" cy="195.5" r="2.5"></circle>
+                    <circle id="Oval" cx="206.5" cy="235.5" r="2.5"></circle>
+                    <circle id="Oval" cx="136.5" cy="270.5" r="2.5"></circle>
+                    <circle id="Oval" cx="213.5" cy="83.5" r="2.5"></circle>
+                    <circle id="Oval" cx="220.5" cy="121.5" r="2.5"></circle>
+                    <ellipse id="Oval" transform="translate(19.401294, 341.401606)  translate(-19.401294, -341.401606) " cx="19.4012945" cy="341.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(21.401294, 456.401606)  translate(-21.401294, -456.401606) " cx="21.4012945" cy="456.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(109.401294, 395.401606)  translate(-109.401294, -395.401606) " cx="109.401294" cy="395.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(109.401294, 495.401606)  translate(-109.401294, -495.401606) " cx="109.401294" cy="495.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(110.401294, 519.401606)  translate(-110.401294, -519.401606) " cx="110.401294" cy="519.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(35.401294, 28.401606)  translate(-35.401294, -28.401606) " cx="35.4012945" cy="28.4016064" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(65.401294, 161.401606)  translate(-65.401294, -161.401606) " cx="65.4012945" cy="161.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(3.401294, 195.401606)  translate(-3.401294, -195.401606) " cx="3.4012945" cy="195.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(11.401294, 234.401606)  translate(-11.401294, -234.401606) " cx="11.4012945" cy="234.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(29.401294, 319.401606)  translate(-29.401294, -319.401606) " cx="29.4012945" cy="319.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(163.401294, 422.401606)  translate(-163.401294, -422.401606) " cx="163.401294" cy="422.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(204.401294, 371.401606)  translate(-204.401294, -371.401606) " cx="204.401294" cy="371.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <path d="M194.587846,455.587846 C195.367757,456.367757 196.636223,456.363777 197.412154,455.587846 L197.587846,455.412154 C198.367757,454.632243 198.363777,453.363777 197.587846,452.587846 L197.412154,452.412154 C196.632243,451.632243 195.363777,451.636223 194.587846,452.412154 L194.412154,452.587846 C193.632243,453.367757 193.636223,454.636223 194.412154,455.412154 L194.587846,455.587846 Z" id="Oval" transform="translate(196.000000, 454.000000)  translate(-196.000000, -454.000000) "></path>
+                    <ellipse id="Oval" transform="translate(133.401294, 524.401606)  translate(-133.401294, -524.401606) " cx="133.401294" cy="524.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(2.401294, 124.401606)  translate(-2.401294, -124.401606) " cx="2.4012945" cy="124.401606" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(3.932039, 270.624498)  translate(-3.932039, -270.624498) " cx="3.93203883" cy="270.624498" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <circle id="Oval" cx="218.5" cy="299.5" r="2.5"></circle>
+                    <ellipse id="Oval" cx="87.4012945" cy="3.00200803" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" transform="translate(10.401294, 83.401606)  translate(-10.401294, -83.401606) " cx="10.4012945" cy="83.4016064" rx="2.4012945" ry="2.40160643"></ellipse>
+                    <ellipse id="Oval" cx="127.5" cy="37" rx="2.5" ry="2.4"></ellipse>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <div class="col-md-4 col-lg-3">
+        <div class="panel panel-default">
+            <div class="panel-body p-left-10 p-right-10">
+                <div class="part-detail part_detail">
+                    <div class="part-img">
+                        <img src="/assets/images/no_img.png" class="img-responsive">
+                    </div>
+                    <div class="part-title part_title">
+                        <div class="title">@Model.Part</div>
+                        <div class="value">N/A</div>
+                    </div>
+                    <div class="part-item part_condition">
+                        <div class="title">@Model.Condition</div>
+                        <div class="value">N/A</div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,470 @@
+@import "mixins/clearfix";
+@import "mixins";
+
+.img-top {
+  //margin-left: -15px;
+  //margin-right: -15px;
+  //height: 100px;
+  //margin-bottom: 30px;
+  //background-image: url('../../images/audi-q7-2014-s-line-wallpaper-2.jpg');
+}
+
+.filter-toggle {
+  display: block;
+  position: fixed;
+  top: 175px;
+  left: 0;
+  z-index: 999;
+  box-sizing: border-box;
+
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+  a {
+    padding: 5px 15px;
+    font-size: 1.5em;
+    color: orangered;
+    background-color: rgba(255, 255, 255, 0.51);
+    border: 2px solid #9d9d9d;
+    @include border-right-radius(50px);
+  }
+}
+
+.content-container {
+  margin-left: 0;
+  margin-right: 0;
+
+  @media (min-width: $screen-md-min) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media (min-width: $screen-lg-min) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .box-item {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #c7c7c7;
+    box-shadow: 0 0 1px 0 #9d9d9d;
+    .box-body {
+      @include clearfix;
+      .item-img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        overflow: hidden;
+        text-align: center;
+
+        @media (min-width: $screen-sm-min) {
+          width: 100%;
+        }
+        @media (min-width: $screen-md-min) {
+          float: left;
+          width: 355px;
+          height: 200px;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+
+          @media (min-width: $screen-md-min) {
+            width: auto;
+            height: 100%;
+          }
+        }
+      }
+
+      .item-info {
+        width: 100%;
+        padding: 10px;
+
+        @media (min-width: $screen-md-min) {
+          margin-left: 20px;
+          float: left;
+          width: calc(100% - 355px - 20px);
+        }
+
+        .item-title {
+          @include clearfix;
+          padding-bottom: 5px;
+          margin-bottom: 10px;
+          border-bottom: 2px solid #9d9d9d;
+          .item-make {
+            margin-bottom: 5px;
+            font-size: 0.9em;
+          }
+          .item-model {
+            float: left;
+            font-weight: 600;
+          }
+          .item-price {
+            float: right;
+            color: #5c5594;
+            font-weight: 800;
+          }
+        }
+        .item-detail {
+          .item-detail-list {
+            padding: 0;
+            list-style: none;
+            .list-item {
+              @include clearfix;
+              position: relative;
+              padding: 3px 0;
+
+              .icon {
+                float: left;
+                width: 25px;
+                color: #9292c0;
+                background-color: #ffffff;
+              }
+              .left {
+                float: left;
+                padding-right: 5px;
+                background-color: #ffffff;
+              }
+              .right {
+                float: right;
+                padding-left: 5px;
+                background-color: #ffffff;
+              }
+              .dot-line {
+                position: absolute;
+                left: 0;
+                bottom: 10px;
+                width: 100%;
+                border: 1px dashed #a5a5a5;
+                z-index: -999;
+              }
+            }
+          }
+        }
+      }
+    }
+    .box-footer {
+      @include clearfix;
+      margin: 10px 10px;
+      > div {
+        float: left;
+        padding-right: 5px;
+      }
+      .f-btn {
+        width: 50%;
+        margin-top: 5px;
+        @media(min-width: $screen-md-min) {
+          width: 33%;
+        }
+      }
+      .f-qr {
+        position: relative;
+        button {
+          margin-top: 5px;
+          height: 33px;
+          width: 40px;
+        }
+        .pop-up {
+          position: absolute;
+          padding: 10px;
+          background: white;
+          z-index: 999;
+          display: none;
+          .pop-up-anchor {
+            display: inline-block;
+            img {
+              height: 150px;
+              width: 150px;
+            }
+          }
+          .pop-up-footer {
+            @include clearfix;
+            margin-top: 3px;
+          }
+        }
+      }
+      .f-btn:nth-of-type(1) {
+        button {
+          background-color: #4be3c0;
+          color: #ffffff;
+          &:hover,
+          &:focus {
+            background-color: darken(#4be3c0, 10%);
+          }
+        }
+      }
+      .f-btn:nth-of-type(3) {
+        width: calc(50% - 40px - 5px);
+        @media(min-width: $screen-md-min) {
+          width: calc(33% - 40px - 5px);
+        }
+        .rating {
+          color: #4be3c0;
+          font-weight: 800;
+          padding-left: 3px;
+        }
+      }
+      .f-btn:nth-of-type(4) {
+        button {
+          background-color: darkorange;
+          color: #ffffff;
+          &:hover,
+          &:focus {
+            background-color: darken(darkorange, 10%);
+          }
+        }
+      }
+      .btn-vir {
+        @include clearfix;
+        img {
+          float: left;
+          height: 18px;
+          width: auto;
+        }
+        .rating {
+          float: right;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+
+  .compare-box {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    .compare-box-title {
+      margin-bottom: 20px;
+      span {
+        display: inline-block;
+        padding: 5px 15px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        border-left: 3px solid darkorange;
+        border-right: 3px solid darkorange;
+      }
+    }
+    .compare-box-body {
+      padding-bottom: 20px;
+      .c-item {
+        @include clearfix;
+        padding: 2px;
+        margin-bottom: 5px;
+        box-shadow: 0 1px 1px 0 #9d9d9d;
+        .c-item-name {
+          display: inline-block;
+          float: left;
+          width: 90%;
+          padding: 2px 5px;
+          margin-bottom: 3px;
+          border-left: 3px solid #a5a5a5;
+          border-right: 3px solid #a5a5a5;
+          &.active {
+            color: darkorange;
+            border-left: 3px solid darkorange;
+            border-right: 3px solid darkorange;
+          }
+        }
+        .c-cancel {
+          float: right;
+          width: 10%;
+          height: 23px;
+          text-align: center;
+          .fa {
+            color: darkorange;
+          }
+        }
+      }
+    }
+
+    .compare-box-footer {
+      @include clearfix;
+      .c-btn {
+        float: left;
+        width: 50%;
+        padding: 0 5px;
+
+        .btn {
+          text-align: left;
+          @include border-top-radius(20px);
+          @include border-right-radius(20px);
+          @include border-bottom-radius(20px);
+          @include border-left-radius(20px);
+        }
+      }
+    }
+  }
+
+  .filter-box {
+    position: fixed;
+    top: 0;
+    left: -75%;
+    width: 75%;
+    z-index: 999;
+    @media (min-width: $screen-md-min) {
+      position: static;
+      width: auto;
+    }
+    .filter-box-title {
+      margin-bottom: 30px;
+      span {
+        display: inline-block;
+        padding: 5px 15px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        border-left: 3px solid darkorange;
+        border-right: 3px solid darkorange;
+      }
+    }
+
+    .filter-box-body {
+      background-color: rgba(85, 85, 85, 0.8);
+
+      @media (min-width: $screen-md-min) {
+        background-color: #555555;
+      }
+
+      padding: 40px 10px;
+
+      #slider {
+      }
+      .custom-group {
+        padding: 0 20px;
+        label {
+          color: #FFFFFF;
+        }
+
+        .custom-control {
+          color: #ffffff;
+          background-color: #444;
+          border-color: transparent;
+          @include border-top-radius(20px);
+          @include border-right-radius(20px);
+          @include border-bottom-radius(20px);
+          @include border-left-radius(20px);
+        }
+      }
+    }
+
+    .filter-box-footer {
+      background-color: grey;
+      padding: 20px 10px;
+
+      .filter-btn {
+        padding: 20px;
+        .btn {
+          position: relative;
+          text-align: left;
+          @include border-top-radius(20px);
+          @include border-right-radius(20px);
+          @include border-bottom-radius(20px);
+          @include border-left-radius(20px);
+          .fa {
+            font-size: 1.7em;
+          }
+        }
+      }
+      .reset {
+        a {
+          font-size: 1.3em;
+          color: #8a9ac7;
+          text-decoration: none;
+          &:active,
+          &:hover,
+          &:focus {
+            color: #8a9ac7;
+          }
+        }
+      }
+    }
+  }
+
+  .search-info-box {
+    @include clearfix;
+    margin-bottom: 30px;
+    border: 2px solid #c7c7c7;
+    box-shadow: 0 0 1px 0 #9d9d9d;
+    .left {
+      float: left;
+      padding: 30px 25px 30px 25px;
+    }
+    .right {
+      float: right;
+      padding: 25px;
+
+      a {
+        padding: 0 5px;
+        color: #000000;
+
+        &:hover,
+        &:focus {
+          color: darkorange;
+        }
+      }
+
+      a.active {
+        color: darkorange;
+      }
+    }
+  }
+
+  .pagination-box {
+    position: relative;
+    margin-top: 20px;
+    height: 50px;
+    .center {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      @include translate(-50%, -50%);
+      ul {
+        @include clearfix;
+        padding: 0;
+        list-style: none;
+        li {
+          float: left;
+          padding: 5px;
+          &.next,
+          &.prev {
+            a {
+              color: #cd5253;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-dialog.custom-modal-make-offer {
+  width: calc(100vw - 40px);
+  @media (min-width: $screen-sm-min) {
+    width: 80vw
+  }
+  @media (min-width: $screen-md-min) {
+    width: 60vw;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: 50vw;
+  }
+
+  .modal-content {
+    .modal-header {
+      background-color: #f0f0f0;
+      .modal-title {
+
+      }
+    }
+
+    .modal-body {
+      .contact-text {
+        color: #555555;
+      }
+      .custom-group {
+        .custom-control {
+          background-color: #f2f3f4;
+        }
+      }
+    }
+  }
+}
