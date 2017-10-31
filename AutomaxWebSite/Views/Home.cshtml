@@ -1,0 +1,306 @@
+﻿
+@using Our.Umbraco.Vorto.Extensions
+@using AutomaxWebSite.Common
+@inherits UmbracoTemplatePage
+@{
+    Layout = "MasterTemplate.cshtml";
+
+
+    var offers = Model.Content.GetVortoValue<string>("offerheading");
+    var brandHeading = Model.Content.GetVortoValue<string>("brand");
+    var contactPage = Model.Content.Children(x => x.DocumentTypeAlias == "contactUS").FirstOrDefault();
+    var featureHeading = Model.Content.GetVortoValue<string>("featuresHeading");
+    var url = Model.Content.GetPropertyValue<string>("applicationUrl").ToString();
+
+
+    DataHelper obj = new DataHelper();
+    
+var featureList = obj.GetFeatureVehicles();
+    var homeVegiclesList = obj.GetHomeVehicles();
+
+
+
+}
+@section mainArea{
+    @Html.Partial("~/Views/Partials/Home/Banner.cshtml")
+    @Html.Partial("~/Views/Partials/Home/Search.cshtml")
+    <div class="feature-tab">
+        <div class="tab-title text-center">
+            <h3 class="title">@featureHeading</h3>
+            <div class="under-line"></div>
+        </div>
+        @if (featureList != null)
+        {
+            <div class="carousel-custom-feature">
+                @foreach (var item in featureList)
+                {
+                    var title = item.YearName + " " + item.Maker + " " + item.AutoModelName + " " + item.SubModelName;
+
+                    if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                    {
+                        if (title.Length > 20)
+                        {
+                            title = "..." + title.Substring(0, 20);
+                        }
+                        
+                    }
+                    else
+                    {
+                        if (title.Length > 20)
+                        {
+                            title = title.Substring(0,20) + "...";
+                        }
+                    }
+
+                    <div class="carousel-item">
+                    <div class="item-img">
+
+                        <a href="@(System.Globalization.CultureInfo.CurrentCulture.Name=="ar"?"/ar/Vehicle?id="+ @item.VehicleID : "/Vehicle?id="+ @item.VehicleID)">
+                            @if (!string.IsNullOrEmpty(@item.ImageName))
+                            {
+                                if (item.ImageName.StartsWith("http://"))
+                                {
+                                    <img src="@item.ImageName">
+                                }
+                                else
+                                {
+                                    var featureImage = url + "VehicleAttachments/" + item.ImageName;
+                                    <img src="@featureImage">
+                                }
+
+                            }
+                            else if (!string.IsNullOrEmpty(@item.ImageName2))
+                            {
+                                if (item.ImageName2.StartsWith("http://"))
+                                {
+                                    <img src="@item.ImageName2">
+                                }
+                                else
+                                {
+                                    var featureImage = url + "VehicleAttachments/" + item.ImageName2;
+                                    <img src="@featureImage">
+                                }
+
+                            }
+                            else
+                            {
+                                <img src="/assets/images/audi-q7-2014-s-line-wallpaper-2.jpg">
+                            }
+                        </a>
+                    </div>
+                    <div class="item-info">
+                        <div class="item-name"><a href="@(System.Globalization.CultureInfo.CurrentCulture.Name=="ar"?"/ar/Vehicle?id="+ @item.VehicleID : "/Vehicle?id="+ @item.VehicleID)">@title</a></div>
+                    </div>
+
+                </div>
+                }
+
+            </div>
+        }
+
+    </div>
+    <div class="deal-tab">
+        <div class="tab-title text-center">
+            <h3 class="title">@offers</h3>
+            <div class="under-line"></div>
+        </div>
+        @if (homeVegiclesList != null)
+        {
+            <div class="carousel-custom">
+                @foreach (var item in homeVegiclesList)
+                {
+                    var img = "/media/1061/audi-q7-2014-s-line-wallpaper-2.jpg";
+                    var title = item.YearName + " " + item.Maker + " " + item.AutoModelName + " " + item.SubModelName;
+
+
+                    if (System.Globalization.CultureInfo.CurrentCulture.Name == "ar")
+                    {
+                        if (title.Length > 20)
+                        {
+                            title = "..." + title.Substring(0, 20);
+                        }
+                    }
+                    else
+                    {
+                        if (title.Length > 20)
+                        {
+                            title = title.Substring(0, 20) + "...";
+                        }
+                    }
+                    if (!string.IsNullOrEmpty(item.ImageName))
+                    {
+                        if (item.ImageName.StartsWith("http://"))
+                        {
+                            img = item.ImageName;
+                        }
+                        else
+                        {
+                            var offerPath = url + "VehicleAttachments/" + item.ImageName;
+                            img = offerPath;
+                        }
+
+                    }
+                    else if (!string.IsNullOrEmpty(item.ImageName2))
+                    {
+
+                        if (item.ImageName2.StartsWith("http://"))
+                        {
+                            <img src="@item.ImageName2">
+                        }
+                        else
+                        {
+                            var offerPath = url + "VehicleAttachments/" + item.ImageName2;
+                            img = offerPath;
+                        }
+                    }
+
+                    <div class="carousel-item">
+                        <div class="item-img">
+                            <a href="@(System.Globalization.CultureInfo.CurrentCulture.Name=="ar"?"/ar/Vehicle?id="+ @item.VehicleID : "/Vehicle?id="+ @item.VehicleID)"><img src="@img"></a>
+
+                        </div>
+                        <div class="item-info">
+                            <div class="item-name"><a href="@(System.Globalization.CultureInfo.CurrentCulture.Name=="ar"?"/ar/Vehicle?id="+ @item.VehicleID : "/Vehicle?id="+ @item.VehicleID)">@title</a></div>
+
+                            <div class="item-price">
+                                <span class="title">@Model.Content.GetVortoValue("price")</span>
+                                @if (item.VehiclePrice != null)
+                                {
+                                    <span class="price">@String.Format("{0:#,##0.00}", @item.VehiclePrice) SAR </span>
+                                }
+                                else
+                                {
+                                    <span class="price">N/A</span>
+                                }
+                            </div>
+                            <div class="item-price">
+                                <span class="title">@Model.Content.GetVortoValue("taqeem")</span>
+                                @if (item.TotalRatting != null)
+                                {
+                                    <span class="price">@String.Format("{0:#,##0.0}", @item.TotalRatting)  </span>
+                                }
+                                else
+                                {
+                                    <span class="price">4.0  </span>
+                                }
+
+
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        }
+        
+    </div>
+    <div class="reason-tab">
+        <div class="carousel-custom-reason">
+            @foreach (var item in Model.Content.GetVortoValue<IEnumerable<IPublishedContent>>("service"))
+            {
+
+                if (item.HasValue("image"))
+                {
+                    var img = Umbraco.Media(item.GetPropertyValue<int>("image"));
+                    @*<div class="carousel-item"><img src="@img.Url"></div>*@
+                    <div class="carousel-item">
+                        <div class="reason-img">
+                            <img src="@img.Url">
+                        </div>
+                        <div class="text-center reason-text">@Html.Raw(@item.GetPropertyValue("title"))</div>
+                    </div>
+                }
+
+            }
+
+        </div>
+    </div>
+    <div class="brand-tab">
+        <div class="tab-title text-center">
+            <h3 class="title">@brandHeading</h3>
+            <div class="under-line"></div>
+        </div>
+        <div class="carousel-custom-brand">
+            @if (Model.Content.HasValue("brandLogo"))
+            {
+                var caseStudyImagesList = Model.Content.GetVortoValue<string>("brandLogo").Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse);
+                var caseStudyImagesCollection = Umbraco.TypedMedia(caseStudyImagesList).Where(x => x != null);
+
+                foreach (var caseStudyImage in caseStudyImagesCollection)
+                {
+
+                    <div class="carousel-item"><img src="@caseStudyImage.Url"></div>
+                }
+            }
+
+        </div>
+    </div>
+    <div class="comments-tab">
+        <div class="tab-title text-center">
+            <h3 class="title">@Model.Content.GetVortoValue("testimonialHeading")</h3>
+            <div class="under-line"></div>
+        </div>
+        <div class="quote-icon text-center"><i class="fa fa-quote-left"></i></div>
+        <div class="carousel-custom-comment">
+            @foreach (var item in Model.Content.GetVortoValue<IEnumerable<IPublishedContent>>("testimonial"))
+            {
+                <div class="carousel-item text-center">
+                    <span class="comment-text">@Html.Raw(@item.GetPropertyValue("testimonial"))</span>
+                </div>
+            }
+
+        </div>
+    </div>
+    <div class="contact-tab">
+        <div class="contact-info">
+            <div class="content-content">
+                <div class="icon"><img src="/assets/images/location.png"></div>
+                <div class="text">@Html.Raw(@contactPage.GetVortoValue("address"))</div>
+            </div>
+            <div class="content-content">
+                <div class="icon"><img src="/assets/images/phone.png"></div>
+                <div class="text">Contact Us:<a href="tel:@contactPage.GetPropertyValue("phone")">@contactPage.GetPropertyValue("phone")</a></div>
+            </div>
+            <div class="content-content">
+                <div class="icon"><img src="/assets/images/mail.png"></div>
+                <div class="text">@contactPage.GetPropertyValue("email")</div>
+            </div>
+            <div class="social-links">
+                <ul>
+                    @*<li><a href="#" class="socicon-twitter"></a></li>*@
+                    <li>
+                        @if (Model.Content.HasValue("facebook"))
+                        {
+
+                        <li><a href="@Model.Content.GetPropertyValue("facebook")" class="socicon-facebook" target="_blank"></a></li>
+                        }
+                        else
+                        {
+                            <li><a href="javascript:void(0)" class="socicon-facebook"></a></li>
+
+                        }
+
+                        @if (Model.Content.HasValue("youTube"))
+                        {
+
+                            <li><a href="@Model.Content.GetPropertyValue("youTube")" class="socicon-youtube" target="_blank"></a></li>
+                        }
+                        else
+                        {
+                            <li><a href="javascript:void(0)" class="socicon-youtube"></a></li>
+
+                        }
+
+                    </ul>
+                </div>
+            </div>
+            <div class="map-box">
+                <div id="map"></div>
+            </div>
+        </div>
+}
+@section jsArea{
+    <script type="text/javascript" src="/assets/scripts/home_page.js"></script>
+
+}

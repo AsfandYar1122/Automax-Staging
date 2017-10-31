@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div style="padding: 50px;">
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="http://www.automax.online/assets/images/logo.png" style="width: 50%;">
+        </div>
+        <div style="margin-bottom: 30px;">
+            <div style="background-color: rgba(215, 215, 215, 0.8); margin-bottom: 20px;">
+                <h3 style="padding: 20px; text-align: right;">@name@</h3>
+            </div>
+            <div>
+                <div class="print-rating">
+                    <div style="width: 30%; height: 100px; float: left; text-align: center; overflow: hidden;">
+                        @img2@
+                    </div>
+                    <div style="width: 40%; float: left; box-sizing: border-box; text-align: center;">
+                        <div style="position: relative; padding: 5px; display: inline-block;">
+                            <img style="height: 150px; width: auto;" src="http://www.automax.online/assets/images/auto_eva_old.png">
+                            <div style="position: absolute; top: 85px; left: 20px; width: 250px; z-index: -100; height: 40px; background-color: #4f0f12; border-radius: 10px; text-align:right;">
+                                <span style="font-size: 35px; display: inline-block; color: #fff; margin-right: 10px;">@vir@</span>
+                            </div>
+                        </div>
+                        <!-- <div style="float: right; text-align: center; padding: 20px; background-color: rgba(215,215,215,0.8);">
+                            <span style="color: orangered; font-size: 50px; line-height: 1.2;">@vir@</span>
+                        </div> -->
+                        <span style="content:' '; display: table; clear: both;"></span>
+                    </div>
+                    <div style="width: 30%; height: 100px; float: left; text-align: center; overflow: hidden;">
+                        @img1@
+                    </div>
+                    <span style="content:' '; display: table; clear: both;"></span>
+                </div>
+                <div style="margin-top: 20px; width: 100%;">
+                    <div style="padding: 5px 20px; border-bottom: 2px solid orangered; margin-bottom: 5px;" class="print-item-title">
+                        <div style="background-color: rgba(215, 215, 215, 0.8); margin-bottom: 20px;">
+                            <h3 style="padding: 20px; text-align: right;">مواصفات السيارة</h3>
+                        </div>
+                    </div>
+                    <div style="border-bottom: 1px solid #9d9d9d;">
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li>
+                              
+                                <div style="padding: 10px 1%; width: 48%; float: right; display: block;">
+                                    <span style="font-weight: 600; float: right;">الصف العام</span>
+                                    <span style="color: grey; float: left;">@vir@</span>
+                                    <span style="content: ' '; display: table; clear: both;"></span>
+                                </div>
+                                <span style="content:' '; display: table; clear: both;"></span>
+                            </li>
+                            <li style=" background-color: rgba(215, 215, 215, 0.8);">
+                                <div style="padding: 10px 1%; width: 48%; float: right; display: block;">
+                                    <span style="font-weight: 600; float: right;">عداد المسافات</span>
+                                    <span style="color: grey; float: left;">@odometer@</span>
+                                    <span style="content: ' '; display: table; clear: both;"></span>
+                                </div>
+                                <div style="padding: 10px 1%; width: 48%; float: right; display: block;">
+                                    <span style="font-weight: 600; float: right;">VIN #</span>
+                                    <span style="color: grey; float: left;">@vin@</span>
+                                    <span style="content: ' '; display: table; clear: both;"></span>
+                                </div>
+                                <span style="content:' '; display: table; clear: both;"></span>
+                            </li>
+                            <li class="list-item">
+                                <div style="padding: 10px 1%; width: 48%; float: right; display: block;">
+                                    <span style="font-weight: 600; float: right;">محرك</span>
+                                    <span style="color: grey; float: left;">@engine@</span>
+                                    <span style="content: ' '; display: table; clear: both;"></span>
+                                </div>
+                                <div style="padding: 10px 1%; width: 48%; float: right; display: block;">
+                                    <span style="font-weight: 600; float: right;">الأبواب</span>
+                                    <span style="color: grey; float: left;">@door@</span>
+                                    <span style="content: ' '; display: table; clear: both;"></span>
+                                </div>
+                                <span style="content:' '; display: table; clear: both;"></span>
+                            </li>
+                            <li style=" background-color: rgba(215, 215, 215, 0.8);">
+                                <div style="padding: 10px 1%; width: 48%; float: right; display: block;">
+                                    <span style="font-weight: 600; float: right;">تحويل</span>
+                                    <span style="color: grey; float: left;">@transformation@</span>
+                                    <span style="content: ' '; display: table; clear: both;"></span>
+                                </div>
+                                <div style="padding: 10px 1%; width: 48%; float: right; display: block;">
+                                    <span style="font-weight: 600; float: right;">نوع الوقود</span>
+                                    <span style="color: grey; float: left;">@fueltype@</span>
+                                    <span style="content: ' '; display: table; clear: both;"></span>
+                                </div>
+                                <span style="content:' '; display: table; clear: both;"></span>
+                            </li>
+                            <li class="list-item">
+                                <div style="padding: 10px 1%; width: 48%; float: right; display: block;">
+                                    <span style="font-weight: 600; float: right;">#مخزون</span>
+                                    <span style="color: grey; float: left;">@stock@</span>
+                                    <span style="content: ' '; display: table; clear: both;"></span>
+                                </div>
+                                <div style="padding: 10px 1%; width: 48%; float: right; display: block;">
+                                    <span style="font-weight: 600; float: right;">نوع القيادة</span>
+                                    <span style="color: grey; float: left;">@drivetype@</span>
+                                    <span style="content: ' '; display: table; clear: both;"></span>
+                                </div>
+                                <span style="content:' '; display: table; clear: both;"></span>
+                            </li>
+                            <li style=" background-color: rgba(215, 215, 215, 0.8);">
+                                <div style="padding: 10px 1%; width: 48%; float: right; display: block;">
+                                    <span style="font-weight: 600; float: right;">داخلي</span>
+                                    <span style="color: grey; float: left;">@interiorcolor@</span>
+                                    <span style="content: ' '; display: table; clear: both;"></span>
+                                </div>
+                                <div style="padding: 10px 1%; width: 48%; float: right; display: block;">
+                                    <span style="font-weight: 600; float: right;">الخارج</span>
+                                    <span style="color: grey; float: left;">@exteriorcolor@</span>
+                                    <span style="content: ' '; display: table; clear: both;"></span>
+                                </div>
+                                <span style="content:' '; display: table; clear: both;"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="print-item-info">
+
+                    <div style="background-color: rgba(215, 215, 215, 0.8); margin-bottom: 20px;">
+                        <h3 style="padding: 20px; text-align: right;">السيارة الميزات</h3>
+                    </div>
+                    <div class="print-feature-list-box">
+                        <ol class="print-feature-list">
+                            @option@
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <img style="width: 100%; height: auto" src="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

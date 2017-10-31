@@ -1,0 +1,154 @@
+﻿@model AutoMax.Models.VirMainViewModel
+@using AutoMax.Common.Enums;
+@{
+    var userName = ComonMethods.GetUserName(User.Identity.Name);
+    var userRole = User.Identity.Name.GetUserRole();
+}
+<div id="menu2" class="tab-pane fade margin-none clsoptionTab">
+    <div class="panel panel-default border-top-none">
+        <div class="panel-body view-height-250 custom-panel-padding">
+            <form action="" method="">
+                <div class="row" style="margin-bottom: 20px;">
+                    <p class="alert alert-success" id="optionSuccess" style="display:none;"></p>
+                    <p class="alert alert-danger" id="optionError" style="display:none;"></p>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="input-group custom-group" style="margin-top: 25px;">
+                            <label class="input-group-btn">
+                                <span class="btn btn-block btn-default">
+                                    Select Template… <input type="file" id="fileUpload" style="display: none;">
+                                </span>
+                            </label>
+                            <span class="input-group-btn">
+                                <input class="btn btn-custom" type="button" id="upload" value="Upload">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <label for="p_location">Vehicle Location</label>
+                        <div class="input-group custom-group">
+                          
+                            <select class="form-control custom-control" id="p_location" name="">
+                                @foreach (var item in Model.Vir.Locations)
+                                {
+                                    <option value="@item.Id" selected="@item.IsSelected">
+                                        @item.Name
+                                    </option>
+                                }
+
+                            </select>
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-custom-02"><i class="fa fa-plus" data-toggle="modal" data-target="#address_modal" style="color: #FFFFFF;"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="row" id="flagOptions">
+
+                    <div class="col-md-3 col-lg-3" id="interiorList">
+                        <div class="well">
+                            <h4 class="header-tertiary m-top-20">Interior</h4>
+
+                            @foreach (var item in Model.Vir.Otions.FirstOrDefault(a => a.Name == "Interior").List)
+                            {
+                                <div class="checkbox custom-checkbox"><label><input type="checkbox" name="" id="@item.Id" @(@item.Checked ? "checked" : "")>@item.Name</label></div>
+                            }
+                        </div>
+                        <div class="well">
+                            <h4 class="header-tertiary  m-top-20">Windows</h4>
+                            @foreach (var item in Model.Vir.Otions.FirstOrDefault(a => a.Name == "Windows").List)
+                            {
+                                <div class="checkbox custom-checkbox"><label><input type="checkbox" name="" id="@item.Id" @(@item.Checked ? "checked" : "")>@item.Name</label></div>
+                            }
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-lg-3" id="systemList">
+                        <div class="well">
+                            <h4 class="header-tertiary  m-top-20">System</h4>
+                            @foreach (var item in Model.Vir.Otions.FirstOrDefault(a => a.Name == "System").List)
+                            {
+                                <div class="checkbox custom-checkbox"><label><input type="checkbox" name="" id="@item.Id" @(@item.Checked ? "checked" : "")>@item.Name</label></div>
+                            }
+
+                        </div>
+                        <div class="well">
+                            <h4 class="header-tertiary m-top-20">Drive Train</h4>
+                            @foreach (var item in Model.Vir.Otions.FirstOrDefault(a => a.Name == "Drive Train").List)
+                            {
+                                <div class="checkbox custom-checkbox"><label><input type="checkbox" name="" id="@item.Id" @(@item.Checked ? "checked" : "")>@item.Name</label></div>
+                            }
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-lg-3" id="safetyList">
+                        <div class="well">
+                            <h4 class="header-tertiary  m-top-20">Safety</h4>
+                            @foreach (var item in Model.Vir.Otions.FirstOrDefault(a => a.Name == "Safety").List)
+                            {
+                                <div class="checkbox custom-checkbox"><label><input type="checkbox" name="" id="@item.Id" @(@item.Checked ? "checked" : "")>@item.Name</label></div>
+                            }
+                        </div>
+                        <div class="well">
+                            <h4 class="header-tertiary m-top-20">Sound System</h4>
+                            @foreach (var item in Model.Vir.Otions.FirstOrDefault(a => a.Name == "Sound System").List)
+                            {
+                                <div class="checkbox custom-checkbox"><label><input type="checkbox" name="" id="@item.Id" @(@item.Checked ? "checked" : "")>@item.Name</label></div>
+                            }
+                        </div>
+
+                    </div>
+                        <div class="col-md-3 col-lg-3" id="windowList">
+                            
+
+                            
+                        </div>
+                        <div class="col-md-3 col-lg-3" id="comfortList">
+                            
+                            <div class="well">
+                                <h4 class="header-tertiary m-top-20">Comfort</h4>
+                                @foreach (var item in Model.Vir.Otions.FirstOrDefault(a => a.Name == "Comfort").List)
+                                {
+                                    <div class="checkbox custom-checkbox"><label><input type="checkbox" name="" id="@item.Id" @(@item.Checked ? "checked" : "")>@item.Name</label></div>
+                                }
+                            </div>
+                           
+                            <div class="well">
+                                <h4 class="header-tertiary m-top-20">Seats</h4>
+                                @foreach (var item in Model.Vir.Otions.FirstOrDefault(a => a.Name == "Seats").List)
+                                {
+                                    <div class="checkbox custom-checkbox"><label><input type="checkbox" name="" id="@item.Id" @(@item.Checked ? "checked" : "")>@item.Name</label></div>
+                                }
+                            </div>
+                            <div class="form-group custom-group">
+                                <label for="more_option">More Options</label>
+                                <textarea class="form-control custom-control" id="more_option" rows="7" name=""> @Model.Vir.MoreOption</textarea>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </div>
+        <div class="m-bottom-20">
+            <div class="row">
+                <div class="col-md-offset-4 col-lg-offset-4 col-md-4 col-lg-4">
+                    <button class="btn btn-block btn-custom" name="" value="" onclick="SaveOptions();">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        var isFinanceUser = '@(userRole == UserRolesConst.Finance ? "true" : "false")';
+        if (isFinanceUser == 'true')
+        {
+            $(".clsoptionTab input,select,checbox,a,choose").each(function () { $(this).attr('disabled', true); });
+            console.log('Finance User');
+        }
+       
+    });
+</script>
+
+
