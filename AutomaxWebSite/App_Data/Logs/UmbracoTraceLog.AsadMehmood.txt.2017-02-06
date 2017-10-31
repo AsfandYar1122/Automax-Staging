@@ -1,8 +1,0 @@
-﻿ 2017-02-06 00:00:22,822 [P10496/D17/T16] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Vehicle' with Id '1126' has been published.
- 2017-02-06 00:00:26,887 [P10496/D17/T31] INFO  umbraco.content - Save Xml to file...
- 2017-02-06 00:00:26,919 [P10496/D17/T31] INFO  umbraco.content - Saved Xml to file.
- 2017-02-06 00:02:54,527 [P10496/D17/T31] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Vehicle' with Id '1126' has been published.
- 2017-02-06 00:02:58,600 [P10496/D17/T39] INFO  umbraco.content - Save Xml to file...
- 2017-02-06 00:02:58,629 [P10496/D17/T39] INFO  umbraco.content - Saved Xml to file.
- 2017-02-06 00:13:37,310 [P10496/D17/T32] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: admin@gmail.com, IP Address: ::1
- 2017-02-06 00:13:43,310 [P10496/D17/T64] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: admin@gmail.com, IP Address: ::1
